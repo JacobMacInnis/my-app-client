@@ -12,9 +12,21 @@
     font-size: 1.5em;
   }
 }
-/* If the screen size is greater than 600px and less than 600px wide */
-@media  only screen and (min-device-width : 600px) and (max-device-width : 1000px) {
+/* If the screen size is greater than 600px and less than 849px wide */
+@media  only screen and (min-device-width : 600px) and (max-device-width : 899px) {
   .landing-page {
     font-size: 2em;
+  }
+}
+/* If the screen size is greater than 850px and less than px wide */
+@media  only screen and (min-device-width : 900px) and (max-device-width : 1199px) {
+  .landing-page {
+    font-size: 2.5em;
+  }
+}
+/* If the screen size is greater than 850px and less than px wide */
+@media  only screen and (min-device-width : 1200px) {
+  .landing-page {
+    font-size: 3em;
   }
 }
