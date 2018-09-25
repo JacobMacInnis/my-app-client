@@ -1,0 +1,20 @@
+.landing-page {
+  height: 100vh;
+  padding-top: 30%;
+  background-color: #124E78;
+  color: #EAE0CC;
+  font-size: 1em;
+}
+
+/* If the screen size is greater than 425px and less than 600px wide */
+@media  only screen and (min-device-width : 425px) and (max-device-width : 599px) {
+  .landing-page {
+    font-size: 1.5em;
+  }
+}
+/* If the screen size is greater than 600px and less than 600px wide */
+@media  only screen and (min-device-width : 600px) and (max-device-width : 1000px) {
+  .landing-page {
+    font-size: 2em;
+  }
+}
