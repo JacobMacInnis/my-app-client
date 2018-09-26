@@ -1,44 +1,58 @@
 .landing-page {
   height: 100vh;
   z-index: -1;
-  background-color: black;
-}
-.earth-landing-image {
-  max-height:100%;
-  width: auto; 
-  position: absolute;
+  background: url('../images/earth-upside-down.jpg') black no-repeat;
+  background-position: -850px 100px;
+  border-bottom: 3px solid white;
 }
 .header {
   color: aliceblue;
   text-shadow: 2px 2px 4px #6E8898;
   font-size: 1em;
   position: absolute;
-  top: 25%;
+  top: 10%;
   left: 0;
   right: 0;
   margin: auto 3%;
 }
-/* If the screen size is greater than 425px and less than 600px wide */
-@media  only screen and (min-device-width : 425px) and (max-device-width : 599px) {
+/* If the viewport width is greater than 425px*/
+@media  (min-width: 425px) {
+  .landing-page {
+    background-position: -850px 220px;
+  }
   .header {
     font-size: 1.5em;
   }
 }
-/* If the screen size is greater than 600px and less than 849px wide */
-@media  only screen and (min-device-width : 600px) and (max-device-width : 899px) {
+/* If the viewport width is greater than 600px*/
+@media  (min-width: 600px) {
   .header {
     font-size: 2em;
   }
 }
-/* If the screen size is greater than 900px and less than 1199px wide */
-@media  only screen and (min-device-width : 900px) and (max-device-width : 1199px) {
+/* If the viewport width is greater than 900px*/
+@media (min-width : 900px) {
+  .landing-page {
+    background-position: -750px 220px;
+  }
   .header {
     font-size: 2.5em;
   }
 }
-/* If the screen size is greater than 1200px wide */
-@media  only screen and (min-device-width : 1200px) {
+/* If the viewport width is greater than 1023px */
+@media (min-width : 1023px) {
+  .landing-page {
+    background-position: -600px 520px;
+  }
+}
+/* If the viewport width is greater than 1200px*/
+@media (min-width : 1200px) {
+  .landing-page {
+    background-position: -500px 220px;
+  }
   .header {
-    font-size: 3em;
+    top: 0%;
+    left: 700px;
+    font-size: 2.7em;
   }
 }
