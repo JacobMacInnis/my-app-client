@@ -1,5 +1,9 @@
+.project-1-container {
+  margin: 5%;
+  
+  border: 2px solid white;
+}
 #beachtides {
-  /* display:inline-flex;  */
-  width:640px; 
-  height:480px
+  padding: 0;
+  margin: 0;
 }
