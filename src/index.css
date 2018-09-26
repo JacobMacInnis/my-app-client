@@ -13,5 +13,7 @@ html, body, #root {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Josefin Slab', serif;
+  background-color: black;
+  color: white;
 }
