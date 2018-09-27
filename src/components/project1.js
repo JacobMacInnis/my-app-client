@@ -26,5 +26,3 @@ class Project1 extends Component {
 }
 
 export default Project1;
-
-//https:github.com/JacobMacInnis/beach-tides-client

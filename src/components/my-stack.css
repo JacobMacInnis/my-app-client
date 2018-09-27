@@ -1,0 +1,11 @@
+.tech-stack {
+  height: 100vh;
+  border: 2px solid #DDA77B;
+}
+.javascript {
+  color: yellow;
+}
+.node-icon {
+  background-color: white;
+  padding: 2px;
+}

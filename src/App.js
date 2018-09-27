@@ -4,6 +4,7 @@ import LandingPage from './components/landing';
 import AboutMe from './components/about-me';
 import Contact from './components/contact';
 import Projects from './components/projects';
+import MyStack from './components/my-stack';
 
 class App extends Component {
   render() { 
@@ -12,6 +13,7 @@ class App extends Component {
         <LandingPage />
         <AboutMe />
         <Projects />
+        <MyStack />
         <Contact />
       </div>
     );
