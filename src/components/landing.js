@@ -10,7 +10,7 @@ class LandingPage extends Component {
       <div className="landing-page">
         <header className='header'>
           <h1>Hello, I'm Jacob.</h1>
-          <Typing className='what-i-do' loop={true} hide cursor={true}>
+          <Typing className='what-i-do' loop={true} hideCursor={true}>
             <h1>I am a Full-Stack Web Developer.</h1>
             <Typing.Delay ms={1500} />
             <Typing.Backspace count={32} />

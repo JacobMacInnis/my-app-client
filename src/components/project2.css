@@ -1,0 +1,23 @@
+.project-2 {
+  border: 1px solid white;
+  margin: 1%;
+  padding: 2%;
+}
+.project-2-container {
+  border: 2px solid white;
+  margin: 5%;
+}
+#project-2-iframe {
+  padding: 0;
+  margin: 0;
+}
+.project-2-link, .project-2-github-link {
+  font-family: 'Anonymous Pro', monospace;
+  text-decoration: none;
+  color: white;
+  margin: 2%;
+}
+.project-2-link {
+  font-size: 2em;
+  color: #9EE493;
+}

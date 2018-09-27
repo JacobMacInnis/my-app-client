@@ -12,9 +12,9 @@ class Contact extends Component {
         </div>
         <section className='footer-icons'>
           <a href='mailto:jacobmacinnis7@gmail.com' className='mail-link'><i className="fas fa-envelope fa-4x icon"></i></a>
-          <a href='https://github.com/JacobMacInnis' className='github-link'  target="_blank"><i className="fab fa-github fa-4x icon"></i></a>
-          <a href='https://www.linkedin.com/in/jacob-macinnis/' className='linkedin-link'  target="_blank"><i className="fab fa-linkedin-in fa-4x icon"></i></a>
-          <a href='https://twitter.com/jacobcmacinnis' className='twitter-link' target='_blank'><i className="fab fa-twitter icon fa-4x"></i></a>
+          <a href='https://github.com/JacobMacInnis' className='github-link'  target="_blank" rel='noopener noreferrer'><i className="fab fa-github fa-4x icon"></i></a>
+          <a href='https://www.linkedin.com/in/jacob-macinnis/' className='linkedin-link'  target="_blank" rel='noopener noreferrer'><i className="fab fa-linkedin-in fa-4x icon"></i></a>
+          <a href='https://twitter.com/jacobcmacinnis' className='twitter-link' target='_blank' rel='noopener noreferrer'><i className="fab fa-twitter icon fa-4x"></i></a>
         </section>
       </footer>
     );

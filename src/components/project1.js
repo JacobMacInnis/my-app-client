@@ -19,7 +19,7 @@ class Project1 extends Component {
           />
         </div>
         <a className='beachtides-link' href='https://www.beachtides.us'>BeachTides.us</a>
-        <a href='https://github.com/JacobMacInnis/beach-tides-client' className='beachtides-github-link'  target="_blank"><i className="fab fa-github fa-2x icon"></i></a>
+        <a href='https://github.com/JacobMacInnis/beach-tides-client' className='beachtides-github-link'  target="_blank" rel='noopener noreferrer'><i className="fab fa-github fa-2x icon"></i></a>
       </article>
     );
   }

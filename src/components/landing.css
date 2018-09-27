@@ -4,6 +4,7 @@
   background: url('../images/earth-upside-down.jpg') black no-repeat;
   background-position: -850px 100px;
   border-bottom: 3px solid white;
+  position: relative;
 }
 .header {
   color: aliceblue;
