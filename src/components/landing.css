@@ -4,12 +4,10 @@
   background: url('../images/earth-upside-down.jpg') black no-repeat;
   background-position: -850px 100px;
   border-bottom: 3px solid white;
-  /* position: absolute;
-  top: 0; */
 }
 .header {
+  font-family: 'Montserrat', sans-serif;
   color: aliceblue;
-  text-shadow: 2px 2px 4px #6E8898;
   font-size: 1em;
   position: absolute;
   top: 10%;
