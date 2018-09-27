@@ -1,0 +1,9 @@
+.projects {
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.projects-header {
+  font-size: 3em;
+  padding: 0;
+  margin: 5% 0 5% 0;
+}
