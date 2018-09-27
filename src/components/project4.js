@@ -6,7 +6,7 @@ class Project4 extends Component {
   render() {
     return (
       <article className='project-4'>
-        <h2>Bookmark App</h2>
+        <h2 className='project-4-header'>Bookmark App</h2>
         <p className='project-4-description'></p>
         <div className='project-4-container'>
           <Iframe url="https://thinkful-ei23.github.io/jacob-bookmarks-app/"

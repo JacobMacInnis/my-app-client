@@ -3,6 +3,10 @@
   margin: 1%;
   padding: 2%;
 }
+.project-3-header {
+  font-size: 2em;
+  color: #86BBD8;
+}
 .project-3-container {
   border: 2px solid white;
   margin: 5%;

@@ -6,7 +6,7 @@ class Project3 extends Component {
   render() {
     return (
       <article className='project-3'>
-        <h2>Project 3</h2>
+        <h2 className='project-3-header'>Project 3</h2>
         <p className='project-3-description'></p>
         <div className='project-3-container'>
           <Iframe url="https://www.jacobmacinnis.com/"
