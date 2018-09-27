@@ -7,18 +7,19 @@ class Project1 extends Component {
     return (
       <article className='project-1'>
         <h2>Beach Tides</h2>
-        <a href='https://www.beachtides.us'>(BeachTides.us)</a>
-        <p>A full-stack mobile first responisive web application built to give users in coastal U.S. current and future tidal predictions. Users search by zipcode or city and state. Users can create accounts using Google OAuth 2.0 to allow storing locations and unlock other personalized themes.</p>
+        <p className='project-1-description'>A full-stack mobile first responisive web app built to give users in coastal U.S. tidal predictions. Users search by zipcode or city and state. Users can create accounts using Google OAuth 2.0 to allow storing locations and unlock other personalized themes.</p>
         <div className='project-1-container'>
           <Iframe url="https://www.beachtides.us/"
           id="beachtides"
           className="beachtides"
           width='100%'
-          height='500px'
+          height='600px'
           display="initial"
           position="relative"
           />
         </div>
+        <a className='beachtides-link' href='https://www.beachtides.us'>BeachTides.us</a>
+        <a href='https://github.com/JacobMacInnis/beach-tides-client' className='beachtides-github-link'  target="_blank"><i className="fab fa-github fa-2x icon"></i></a>
       </article>
     );
   }
