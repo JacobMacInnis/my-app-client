@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Typing from 'react-typing-animation';
 import './landing.css';
-// import earthUpdsideDown from '../images/earth-upside-down.jpg';
-
 
 class LandingPage extends Component {
   render() {

@@ -7,12 +7,13 @@
   font-size: 2em;
   color: #86BBD8;
 }
-.project-1-container {
-  margin: 5%;
-  border: 2px solid white;
-}
 .project-1-description {
   font-family: 'Anonymous Pro', monospace;
+  display: inline-block;
+  max-width: 450px;
+}
+.project-1-container {
+  margin: 5%;
 }
 #beachtides {
   padding: 0;

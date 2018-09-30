@@ -7,6 +7,11 @@
   font-size: 2em;
   color: #86BBD8;
 }
+.project-4-description {
+  font-family: 'Anonymous Pro', monospace;
+  display: inline-block;
+  max-width: 450px;
+}
 .project-4-container {
   border: 2px solid white;
   margin: 5%;

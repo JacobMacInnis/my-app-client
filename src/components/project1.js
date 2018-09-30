@@ -13,7 +13,7 @@ class Project1 extends Component {
           id="beachtides"
           className="beachtides"
           width='100%'
-          height='600px'
+          height='400px'
           display="initial"
           position="relative"
           />
