@@ -15,34 +15,34 @@ class MyStack extends Component {
         <h1>TECH STACK</h1>
         <div className='container-1'>
           <div>
-            <i class="fab fa-js fa-4x javascript"></i>
+            <i className="fab fa-js fa-4x javascript"></i>
           </div>
           <div>
-            <img className='react-icon' src={react} height='45px' />
+            <img className='react-icon' src={react} alt='react logo' height='50px' />
           </div>
           <div>
-            <img className='redux-icon' src={redux} height='45px' />
+            <img className='redux-icon' src={redux} alt='redux logo' height='50px' />
           </div>
           <div>
-            <img className='html5-icons' src={html5} height='45px' />
+            <img className='html5-icons' src={html5} alt='html5 logo' height='50px' />
           </div>
           <div>
-            <img className='css-icons' src={css3} height='45px' />
+            <img className='css-icons' src={css3} alt='css3 logo' height='50px' />
           </div>
           <div>
-            <img className='node-icon' src={node} height='50px' />
+            <img className='node-icon' src={node} alt='node.js logo' height='50px' />
           </div>
           <div>
-            <img className='git-icon' src={git} height='50px' />
+            <img className='git-icon' src={git} alt='git logo' height='50px' />
           </div>
           <div>
-            <i class="fab fa-github fa-3x"></i>
+            <i className="fab fa-github fa-3x"></i>
           </div>
           <div>
-            <img className='jquery-icon' src={jQuery} height='45px' />
+            <img className='jquery-icon' src={jQuery} alt= 'jquery logo' height='50px' />
           </div>
           <div>
-            <img className='heroku-icon' src={heroku} height='45px' />
+            <img className='heroku-icon' src={heroku} alt='heroku logo' height='50px' />
           </div>
         </div>
       </section>

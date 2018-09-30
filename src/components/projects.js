@@ -10,10 +10,12 @@ class Projects extends Component {
     return (
       <section className='projects'>
         <h2 className='projects-header'>Current Projects</h2>
-        <Project1 />
-        <Project2 />
-        <Project3 />
-        <Project4 />
+        <div className='projects-container'>
+          <Project1 />
+          <Project2 />
+          <Project3 />
+          <Project4 />
+        </div>
       </section>
     );
   }
