@@ -2,10 +2,24 @@
   height: 100vh;
   border: 2px solid #DDA77B;
 }
+.javscript-icon-container {
+  height: 45px;
+}
 .javascript {
   color: yellow;
+  height: 100%;
 }
 .node-icon {
   background-color: white;
-  padding: 2px;
+}
+.container-1 {
+  margin: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-1 > div {
+  border: 1px solid white;
+  /* padding: 5px; */
+  margin: 5px;
 }

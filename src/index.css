@@ -7,4 +7,5 @@ html, body, #root {
   font-family: 'Anonymous Pro', monospace;
   background-color: black;
   color: white;
+  box-sizing: border-box;
 }

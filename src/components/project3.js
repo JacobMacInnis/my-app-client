@@ -9,7 +9,7 @@ class Project3 extends Component {
         <h2 className='project-3-header'>Project 3</h2>
         <p className='project-3-description'></p>
         <div className='project-3-container'>
-          <Iframe url="https://www.jacobmacinnis.com/"
+          <Iframe url="https://www.beachtides.us/"
           id="project-3-iframe"
           className="project-3-iframe"
           width='100%'

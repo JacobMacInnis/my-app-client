@@ -4,6 +4,7 @@ import LandingPage from './components/landing';
 import AboutMe from './components/about-me';
 import Contact from './components/contact';
 import Projects from './components/projects';
+import Twitter from './components/twitter-section';
 import MyStack from './components/my-stack';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <LandingPage />
         <AboutMe />
         <Projects />
+        <Twitter />
         <MyStack />
         <Contact />
       </div>
