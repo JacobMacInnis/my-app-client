@@ -9,8 +9,9 @@ class LandingPage extends Component {
         <header className='header'>
           <h1>Hello, I'm Jacob.</h1>
           <Typing className='what-i-do' loop={true} hideCursor={true}>
-            <h1>I am a Full-Stack Web Developer.</h1>
-            <Typing.Delay ms={1500} />
+          <h1>This page is under construction please check back again :)</h1>
+            {/* <h1>I am a Full-Stack Web Developer.</h1> */}
+            {/* <Typing.Delay ms={1500} />
             <Typing.Backspace count={32} />
             <h1>I build API Servers.</h1>
             <Typing.Delay ms={1500} />
@@ -32,7 +33,7 @@ class LandingPage extends Component {
             <Typing.Backspace count={25} />
             <h1>I'm an animal person.</h1>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={21} />
+            <Typing.Backspace count={21} /> */}
           </Typing>
         </header>
       </div>
