@@ -1,6 +1,10 @@
 .twitter {
   margin-bottom: 20px;
 }
+.twitter-header {
+  font-size: 3em;
+  margin: 25px;
+}
 .twitter-widget {
   width: 84%;
   height: 500px;

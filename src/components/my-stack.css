@@ -1,6 +1,11 @@
 .tech-stack {
   height: 100%;
   border: 2px solid #DDA77B;
+  margin:5%;
+}
+.tech-stack-header {
+  font-size: 3em;
+  margin: 25px;
 }
 .javscript-icon-container {
   height: 45px;
@@ -15,7 +20,7 @@
 .container-1 {
   border: 1px solid aquamarine;
   padding: 5px;
-  margin: 10%;
+  margin: 0 10% 10% 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

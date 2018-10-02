@@ -12,37 +12,57 @@ class MyStack extends Component {
   render() {
     return (
       <section className='tech-stack'>
-        <h1>TECH STACK</h1>
+        <h1 className='tech-stack-header'>TECH STACK</h1>
         <div className='container-1'>
           <div>
-            <i className="fab fa-js fa-4x javascript"></i>
+            <a href='https://www.javascript.com/' target='_blank'>
+              <i className="fab fa-js fa-4x javascript"></i>
+            </a>
           </div>
           <div>
-            <img className='react-icon' src={react} alt='react logo' height='50px' />
+            <a href='https://reactjs.org/' target='_blank'>
+              <img className='react-icon' src={react} alt='react logo' height='65px' />
+            </a>
           </div>
           <div>
-            <img className='redux-icon' src={redux} alt='redux logo' height='50px' />
+            <a href='https://redux.js.org/' target='_blank'>
+              <img className='redux-icon' src={redux} alt='redux logo' height='65px' />
+            </a>
           </div>
           <div>
-            <img className='html5-icons' src={html5} alt='html5 logo' height='50px' />
+            <a href='https://nodejs.org/en/' target='_blank'>
+              <img className='node-icon' src={node} alt='node.js logo' height='65px' />
+            </a>
           </div>
           <div>
-            <img className='css-icons' src={css3} alt='css3 logo' height='50px' />
+            <a href='https://www.w3schools.com/Html/html5_intro.asp' target='_blank'>
+              <img className='html5-icons' src={html5} alt='html5 logo' height='65px' />
+            </a>
           </div>
           <div>
-            <img className='node-icon' src={node} alt='node.js logo' height='50px' />
+            <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3' target='_blank'>
+              <img className='css-icons' src={css3} alt='css3 logo' height='65px' />
+            </a>
           </div>
           <div>
-            <img className='git-icon' src={git} alt='git logo' height='50px' />
+            <a href='https://en.wikipedia.org/wiki/Git' target='_blank'>
+              <img className='git-icon' src={git} alt='git logo' height='65px' />
+            </a>
           </div>
           <div>
-            <i className="fab fa-github fa-3x"></i>
+            <a href='https://github.com/' target='_blank'>
+              <i className="fab fa-github fa-4x"></i>
+            </a>
           </div>
           <div>
-            <img className='jquery-icon' src={jQuery} alt= 'jquery logo' height='50px' />
+            <a href='https://jquery.com/' target='_blank'>
+              <img className='jquery-icon' src={jQuery} alt= 'jquery logo' height='65px' />
+            </a>
           </div>
           <div>
-            <img className='heroku-icon' src={heroku} alt='heroku logo' height='50px' />
+            <a href='https://www.heroku.com/' target='_blank'>
+              <img className='heroku-icon' src={heroku} alt='heroku logo' height='65px' />
+            </a>
           </div>
         </div>
       </section>
