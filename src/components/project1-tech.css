@@ -1,0 +1,18 @@
+.tech-used {
+  display: block;
+  color: black;
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  width: 50%;
+  border: 1px solid rgba(124,160,252,1);
+}
+.tech-used > li {
+  /* float: left; */
+  max-width: 200px;
+  padding: .3rem;
+  padding-right: 1.75rem;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+}

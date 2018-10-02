@@ -1,13 +1,17 @@
 .about-me {
-
-  margin: 0 3% 5%;
-  border-bottom: 2px solid white;
-  color: #B6F9C9;
+  /* margin: 0 3% 5%; */
+  color: black;
+  background: url('../images/board-bright-design-235994.jpg') black no-repeat;
+  background-size: cover;
+  background-position: -465px 0px;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
 }
 .about-me-header {
   font-size: 3em;
-  padding: 0;
-  margin: 5% 0 5% 0;
+  padding: 20px;
+  margin: 0;
 }
 .about-me-list {
   list-style: none;
@@ -31,19 +35,20 @@
   -moz-box-shadow: 0px 0px 19px 4px rgba(55,84,158,1);
   box-shadow: 0px 0px 19px 4px rgba(55,84,158,1);
 }
-/* If the screen size is greater than 425px and less than 600px wide */
-@media  only screen and (min-device-width : 425px) and (max-device-width : 599px) {
-  
+/* If the viewport width is greater than 425px*/
+@media  (min-width: 411px) {
+  .about-me {
+    background-position: -425px 0px;
+  }
 }
-/* If the screen size is greater than 600px and less than 849px wide */
-@media  only screen and (min-device-width : 600px) and (max-device-width : 899px) {
-
+/* If the viewport width is greater than 600px*/
+@media  (min-width: 600px) {
+  .about-me {
+    background-position: -530px 0px;
+  }
 }
-/* If the screen size is greater than 900px and less than 1199px wide */
-@media  only screen and (min-device-width : 900px) and (max-device-width : 1199px) {
- 
-}
-/* If the screen size is greater than 1200px wide */
-@media  only screen and (min-device-width : 1200px) {
-  
+@media  (min-width: 1000px) {
+  .about-me {
+    background-position: 0px 0px;
+  }
 }

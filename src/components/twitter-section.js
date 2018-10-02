@@ -7,7 +7,7 @@ class Twitter extends Component {
   render() {
     return (
       <section className='twitter'>
-        <h2 className='twitter-header'>My Twitter Feed</h2>
+        <h2 className='twitter-header'>Twitter</h2>
         <div className='twitter-widget'>
           <Timeline                     
             dataSource={{

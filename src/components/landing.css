@@ -1,25 +1,25 @@
 .landing-page {
   height: 100vh;
   z-index: -1;
-  background: url('../images/earth-upside-down.jpg') black no-repeat;
-  background-position: -850px 100px;
-  border-bottom: 3px solid white;
+  background: url('../images/beach-dawn.jpg') black no-repeat;
+  background-position: -975px -450px;
+  background-attachment: fixed;
 }
 .header {
   font-family: 'Montserrat', sans-serif;
-  color: aliceblue;
+  color: black;
   font-size: 1em;
   position: absolute;
-  top: 10%;
+  top: 35%;
   left: 0;
   right: 0;
   margin: auto 3%;
 }
 /* If the viewport width is greater than 425px*/
 @media  (min-width: 425px) {
-  .landing-page {
+  /* .landing-page {
     background-position: -850px 220px;
-  }
+  } */
   .header {
     font-size: 1.5em;
   }
@@ -32,23 +32,25 @@
 }
 /* If the viewport width is greater than 900px*/
 @media (min-width : 900px) {
-  .landing-page {
+  /* .landing-page {
     background-position: -750px 220px;
-  }
+  } */
   .header {
     font-size: 2.5em;
   }
 }
 /* If the viewport width is greater than 1023px */
 @media (min-width : 1023px) {
-  .landing-page {
+  /* .landing-page {
     background-position: -600px 520px;
-  }
+  } */
 }
 /* If the viewport width is greater than 1200px*/
 @media (min-width : 1200px) {
   .landing-page {
-    background-position: -500px 220px;
+    width: 100vw;
+    background-size:  cover;
+    background-position: 0;
   }
   .header {
     top: 0%;
