@@ -1,11 +1,20 @@
 .tech-stack {
   height: 100%;
-  border: 2px solid #DDA77B;
+  /* border: 2px solid #DDA77B; */
   margin:5%;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  border-radius: 5px;
+  color:black;
+  padding: 1rem;
 }
 .tech-stack-header {
   font-size: 3em;
   margin: 25px;
+  background: white;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
 }
 .javscript-icon-container {
   height: 45px;
@@ -17,13 +26,18 @@
 .node-icon {
   background-color: white;
 }
+.github-icon {
+  background-color: white;
+}
 .container-1 {
   border: 1px solid aquamarine;
-  padding: 5px;
-  margin: 0 10% 10% 10%;
+  background: black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 10% 5% 10%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .container-1 > div {
   /* border: 1px solid white; */

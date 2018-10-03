@@ -51,7 +51,7 @@ class MyStack extends Component {
           </div>
           <div>
             <a href='https://github.com/' target='_blank'>
-              <i className="fab fa-github fa-4x"></i>
+              <i className="fab fa-github fa-4x github-icon"></i>
             </a>
           </div>
           <div>

@@ -14,8 +14,8 @@ class App extends Component {
         <LandingPage />
         <AboutMe />
         <Projects />
-        <Twitter />
         <MyStack />
+        <Twitter />
         <Contact />
       </div>
     );
