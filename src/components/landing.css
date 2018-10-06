@@ -1,7 +1,8 @@
 .landing-page {
   height: 100vh;
   z-index: -1;
-  background: url('../images/beach-dawn.jpg') black no-repeat;
+  /* background: url('../images/beach-dawn.jpg') black no-repeat; */
+  background-color: #96e8bc;
   background-position: -975px -450px;
   background-attachment: fixed;
 }
