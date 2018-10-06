@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './project4.css';
 import Iframe from 'react-iframe';
+import Project1Tech from './project1-tech';
 
 class Project4 extends Component {
   render() {
@@ -19,7 +20,8 @@ class Project4 extends Component {
           />
         </div>
         <a className='project-4-link' href='https://thinkful-ei23.github.io/jacob-bookmarks-app/'>BeachTides.us</a>
-        <a href='https://github.com/thinkful-ei23/jacob-bookmarks-app' className='project-4-github-link'  target="_blank" rel='noopener noreferrer'><i className="fab fa-github fa-2x icon"></i></a>
+        <a href='https://github.com/thinkful-ei23/jacob-bookmarks-app' className='project-github-link'  target="_blank" rel='noopener noreferrer'><i className="fab fa-github fa-2x icon"></i></a>
+        <Project1Tech />
       </article>
     );
   }

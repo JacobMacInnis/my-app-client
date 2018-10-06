@@ -16,8 +16,8 @@ class Project1Tech extends Component {
         <li>HTML5</li>
         <li>CSS3</li>
         <li>JavaScript</li>
-        <li>Google OAuth 2.0</li>
-        <li>Passport JWTs</li>
+        <li>Google-OAuth-2.0</li>
+        <li>Passport-JWT</li>
         <li>Mocha</li>
         <li>Chai</li>
         <li>Enxyme</li>

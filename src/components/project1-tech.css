@@ -1,18 +1,28 @@
 .tech-used {
-  display: block;
+  /* display: block; */
   color: black;
-  position: relative;
+  /* position: relative; */
   margin: 0 auto;
   height: auto;
-  width: 50%;
+  width: 100%;
   border: 1px solid rgba(124,160,252,1);
+  /* text-align: center; */
+  max-width: 305px;
+  /* justify-content: space-evenly; */
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
 }
 .tech-used > li {
   /* float: left; */
-  max-width: 200px;
-  padding: .3rem;
-  padding-right: 1.75rem;
+  /* padding: .3rem; */
+  font-size: 1.2em;
+  padding: 1%;
+  margin: 0;
   font-weight: 700;
-  justify-content: center;
-  text-align: center;
+  /* text-align: center; */
+  /* display: inline-block; */
+  /* justify-content: space-evenly; */
 }

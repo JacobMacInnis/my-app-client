@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './project3.css';
 import Iframe from 'react-iframe';
+import Project1Tech from './project1-tech';
 
 class Project3 extends Component {
   render() {
@@ -19,7 +20,8 @@ class Project3 extends Component {
           />
         </div>
         <a className='project-3-link' href='https://google.com'>BeachTides.us</a>
-        <a href='https://github.com/JacobMacInnis' className='project-3-github-link'  target="_blank" rel='noopener noreferrer'><i className="fab fa-github fa-2x icon"></i></a>
+        <a href='https://github.com/JacobMacInnis' className='project-github-link'  target="_blank" rel='noopener noreferrer'><i className="fab fa-github fa-2x icon"></i></a>
+        <Project1Tech />
       </article>
     );
   }
