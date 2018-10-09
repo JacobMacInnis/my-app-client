@@ -6,7 +6,7 @@
   background-position: -465px 0px;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .about-me-header {
   font-size: 3em;
@@ -14,12 +14,16 @@
   margin: 0;
 }
 .about-me-list {
+  background-color: white;
   list-style: none;
   font-size: 1.3em;
   text-align: center;
   display: inline-block;
-  padding: 0;
+  padding: 10px;
   margin: 5% 3%;
+  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.75);
 }
 .about-me-list li {
   margin: 0 0 10px 0;

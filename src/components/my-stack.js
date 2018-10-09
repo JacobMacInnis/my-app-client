@@ -15,8 +15,8 @@ class MyStack extends Component {
         <h1 className='tech-stack-header'>TECH STACK</h1>
         <div className='container-1'>
           <div>
-            <a href='https://www.javascript.com/' target='_blank'>
-              <i className="fab fa-js fa-4x javascript"></i>
+            <a href='https://nodejs.org/en/' target='_blank'>
+              <img className='node-icon' src={node} alt='node.js logo' height='65px' />
             </a>
           </div>
           <div>
@@ -30,8 +30,8 @@ class MyStack extends Component {
             </a>
           </div>
           <div>
-            <a href='https://nodejs.org/en/' target='_blank'>
-              <img className='node-icon' src={node} alt='node.js logo' height='65px' />
+            <a href='https://www.javascript.com/' target='_blank'>
+              <i className="fab fa-js fa-4x javascript"></i>
             </a>
           </div>
           <div>
