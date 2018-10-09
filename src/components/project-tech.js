@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './project1-tech.css';
+import './project-tech.css';
 import Iframe from 'react-iframe';
 
 class Project1Tech extends Component {
