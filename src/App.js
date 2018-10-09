@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import LandingPage from './components/landing';
+import PersistantIcons from './components/persistant-icons';
 import AboutMe from './components/about-me';
 import Contact from './components/contact';
 import Projects from './components/projects';
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <LandingPage />
+        <PersistantIcons />
         <AboutMe />
         <Projects />
         <MyStack />

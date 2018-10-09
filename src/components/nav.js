@@ -5,8 +5,7 @@ class Nav extends Component {
   render() {
     return (
       <nav className="nav">
-        <header className="App-header">
-          
+        <header className="App-header"> 
         </header>
       </nav>
     );
