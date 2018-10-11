@@ -6,6 +6,9 @@
   background-color: transparent;
 }
 .fa-print:before {
+  background: black;
+  padding: 5px;
+  border-radius: 7px;
   color: white;
 }
 .fa-print:after {

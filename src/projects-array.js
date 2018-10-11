@@ -8,11 +8,11 @@ export  const projectsArray = [{
   githubLink: 'https://github.com/JacobMacInnis/beach-tides-client',
   techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
 }, {
-  name: 'functionearth',
-  h2: 'Function Earth',
-  description: 'A Full-Stack fully responsive web app designed to encourage users to pick up recylclable items log how much they have done',
-  projectLink: 'https://www.functionearth.com',
-  linkText: 'FunctionEarth.com',
-  githubLink: 'https://github.com/JacobMacInnis/client-function-earth',
-  techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+  name: 'bookmarkcentral',
+  h2: 'Bookmark Central',
+  description: 'Bookmark Central is a front-end fully responsive web app.  It allows users to save urls and rate them using 0 to 5 star rating.  Users can change ratings, edit descriptions and delete bookmarks.  This app is built using jQuery, HTML5, CSS3 a javascript',
+  projectLink: 'https://thinkful-ei23.github.io/jacob-bookmarks-app/',
+  linkText: 'BookmarkCentral',
+  githubLink: 'https://github.com/thinkful-ei23/jacob-bookmarks-app',
+  techList: ['JavaScript', 'JQuery', 'HTML5', 'CSS3', 'Github-Pages' ]
 }];

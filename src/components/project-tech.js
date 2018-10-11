@@ -1,31 +1,18 @@
 import React, { Component } from 'react';
 import './project-tech.css';
-import Iframe from 'react-iframe';
 
-class Project1Tech extends Component {
+class ProjectTech extends Component {
+  
   render() {
+    let techList = this.props.techList.map(tech => {
+      return <li>{tech}</li>;
+    })
     return (
-      <ul className='tech-used'>
-        <li>React.js</li>
-        <li>Redux.js</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>MongoDB</li>
-        <li>Mongoose</li>
-        <li>mLab</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Google-OAuth-2.0</li>
-        <li>Passport-JWT</li>
-        <li>Mocha</li>
-        <li>Chai</li>
-        <li>Enxyme</li>
-        <li>Travis CI</li>
-        <li>Heroku</li>
+      <ul className='tech-list'>
+        {techList}
       </ul>
     )
   }
 }
 
-export default Project1Tech;
+export default ProjectTech;
