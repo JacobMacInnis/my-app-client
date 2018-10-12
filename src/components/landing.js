@@ -7,16 +7,18 @@ class LandingPage extends Component {
     return (
       <div className="landing-page">
         <header className='header'>
-          <h1>Hello, I'm Jacob.</h1>
-          <Typing className='what-i-do' loop={true} hideCursor={true}>
-          <h1>This page is under construction please check back again :)</h1>
-            {/* <h1>I am a Full-Stack Web Developer.</h1> */}
-            {/* <Typing.Delay ms={1500} />
-            <Typing.Backspace count={32} />
-            <h1>I build API Servers.</h1>
+          <h1>Jacob MacInnis</h1>
+          <Typing className='what-i-do' loop={true} hideCursor={true} speed={40}>
+            <h1>I am a not your average Software Engineer.</h1>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={20} />
-            <h1>I am a leader.</h1>
+            <Typing.Backspace count={42} />
+            <h1>My approach to web developent is as a business owner.</h1>
+            <Typing.Delay ms={1500} />
+            <Typing.Backspace count={53} />
+            <h1>I build RESTful API Servers.</h1>
+            <Typing.Delay ms={1500} />
+            <Typing.Backspace count={28} />
+            <h1>I inspire and lead.</h1>
             <Typing.Delay ms={1500} />
             <Typing.Backspace count={14} />
             <h1>I love working with Node.js</h1>
@@ -33,7 +35,7 @@ class LandingPage extends Component {
             <Typing.Backspace count={25} />
             <h1>I'm an animal person.</h1>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={21} /> */}
+            <Typing.Backspace count={21} />
           </Typing>
         </header>
       </div>
