@@ -1,4 +1,3 @@
-'use strict';
 export  const projectsArray = [{
   name: 'beachtides',
   h2: 'Beach Tides',
@@ -7,6 +6,14 @@ export  const projectsArray = [{
   linkText: 'BeachTides.us',
   githubLink: 'https://github.com/JacobMacInnis/beach-tides-client',
   techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+}, {
+  name: 'CS Cards',
+  h2: 'CS Cards',
+  description: 'Computer Science Cards uses spaced repetition algorithms to show users computer science concepts they struggle with most.  It is built using linked-lists in a mongo db and changes values of data structures depending on user answers. My partner and I also added a global chat feature using socket.io that allows all users logged in to chat together.',
+  projectLink: 'https://client-cs-cards.herokuapp.com/',
+  linkText: 'CS-Cards',
+  githubLink: 'https://github.com/thinkful-ei23/Client-CS-Cards',
+  techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ]
 }, {
   name: 'bookmarkcentral',
   h2: 'Bookmark Central',

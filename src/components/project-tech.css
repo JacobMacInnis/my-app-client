@@ -1,3 +1,15 @@
 .tech-list {
+  margin-left: 5%;
+  margin-right: 5%;
   color: black;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.tech {
+  font-size: 1.3em;
+  padding-right: 10px;
 }

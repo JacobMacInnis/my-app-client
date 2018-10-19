@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './about-me.css';
+import './about.css';
 import JacobMacInnisImage from '../images/JacobMacInnis-square.jpg'
 
 

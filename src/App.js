@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import LandingPage from './components/landing';
 import PersistantIcons from './components/persistant-icons';
-import AboutMe from './components/about-me';
+import AboutMe from './components/about';
 import Contact from './components/contact';
 import Projects from './components/projects';
 import Twitter from './components/twitter-section';

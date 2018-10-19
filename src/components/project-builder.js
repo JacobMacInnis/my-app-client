@@ -9,7 +9,7 @@ class ProjectBuilder extends Component {
     
     const projectsComponents = projectsArray.map((project, index) => {
       return (
-        <article className='project'>
+        <article id={`project-builder-${index}`}className='project' key={index}>
           <h2 className='project-header'>{project.h2}</h2>
           <p className='project-description'>{project.description}</p>
           <div className='project-container'>

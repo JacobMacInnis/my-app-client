@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from './nav';
 import Typing from 'react-typing-animation';
 import './landing.css';
 
@@ -20,10 +21,10 @@ class LandingPage extends Component {
             <Typing.Backspace count={28} />
             <h1>I inspire and lead.</h1>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={14} />
+            <Typing.Backspace count={19} />
             <h1>I love working with Node.js</h1>
             <Typing.Delay ms={1500} />
-            <Typing.Backspace count={31} />
+            <Typing.Backspace count={27} />
             <h1>I think React is awesome!</h1>
             <Typing.Delay ms={1500} />
             <Typing.Backspace count={25} />
@@ -38,6 +39,7 @@ class LandingPage extends Component {
             <Typing.Backspace count={21} />
           </Typing>
         </header>
+        <Nav />
       </div>
     );
   }

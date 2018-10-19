@@ -4,8 +4,9 @@ import './project-tech.css';
 class ProjectTech extends Component {
   
   render() {
-    let techList = this.props.techList.map(tech => {
-      return <li>{tech}</li>;
+    let techList = this.props.techList.map((tech, index) => {
+      return <li className='tech' key={`${index}`}>&#9679; {tech}</li>;
+      
     })
     return (
       <ul className='tech-list'>
