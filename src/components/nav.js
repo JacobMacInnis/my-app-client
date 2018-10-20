@@ -9,7 +9,7 @@ class Nav extends Component {
   render() {
     return (
       <nav>
-        <a href={Projects}>Projects</a>
+        <a href='#projects'>Projects</a>
       </nav>
     );
   }

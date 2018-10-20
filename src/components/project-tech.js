@@ -5,7 +5,7 @@ class ProjectTech extends Component {
   
   render() {
     let techList = this.props.techList.map((tech, index) => {
-      return <li className='tech' key={`${index}`}>&#9679; {tech}</li>;
+      return <li className='tech' key={`${index}`}>&#10061; {tech}</li>;
       
     })
     return (
