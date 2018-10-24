@@ -14,7 +14,7 @@ class AboutMe extends Component {
               <li>&nbsp;&nbsp;I enjoy the entire process from envisioning a program to planning and development and finally deploying, maintaining and improving code.</li>  
               <li>&nbsp;&nbsp;I am a highly ambitious self starter with an entrepreneurial background in an ecommerce start-up, as well as revenue generation, early childhood education and psychology.</li>
               <li>&nbsp;&nbsp;I like building with Node.js and React.js!</li>
-              <li>&nbsp;&nbsp;I am currently learning Polish, </li>
+              <li>&nbsp;&nbsp;I am currently learning React-Native, GraphQL and Honing my Websocket skills with Socket.io.  In my spare time I am learning Polish. </li>
             </ul> 
       </section>
     );
