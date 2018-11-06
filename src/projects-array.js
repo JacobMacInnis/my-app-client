@@ -1,4 +1,13 @@
 export  const projectsArray = [{
+    name: 'thinkPrograming',
+    h2: 'Think Programming',
+    description: 'A place to challenge another coding enthusiest in a language or programing category to come up with the fastest and cleanest correct code.',
+    projectLink: 'https://think-programming-client.herokuapp.com/',
+    linkText: 'Demo Here',
+    githubLink: 'https://github.com/thinkful-ei23/think-programming-client',
+    techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'Socket.io', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+  },
+  {
   name: 'beachtides',
   h2: 'Beach Tides',
   description: 'A Full-Stack mobile first responisive web app built to give users in coastal U.S. tidal predictions. Users search by zipcode or city and state. Users can create accounts using Google OAuth 2.0 to allow storing locations and unlock other personalized themes.',
