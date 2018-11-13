@@ -28,7 +28,7 @@ export  const projectsArray = [{
   h2: 'Scottish Gaelic',
   description: 'Scottish Gaelic is a language learning app designed to improve your abilty to learn the beautiful Scottish language of Gaelic. Using our specialized algorithm we will teach you words and phrases that will build your language skills and based on your abilities you will progress quickly and with a stronger grasp of Gaelic!',
   projectLink: 'https://scottish-galic.herokuapp.com/',
-  linkText: 'BookmarkCentral',
+  linkText: 'Scottish Gaelic',
   githubLink: 'https://github.com/JacobMacInnis/scottish-gaelic-client',
   techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ]
 },
