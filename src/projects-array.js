@@ -24,6 +24,15 @@ export  const projectsArray = [{
   githubLink: 'https://github.com/thinkful-ei23/Client-CS-Cards',
   techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ]
 }, {
+  name: 'scottish-gaelic',
+  h2: 'Scottish Gaelic',
+  description: 'Scottish Gaelic is a language learning app designed to improve your abilty to learn the beautiful Scottish language of Gaelic. Using our specialized algorithm we will teach you words and phrases that will build your language skills and based on your abilities you will progress quickly and with a stronger grasp of Gaelic!',
+  projectLink: 'https://scottish-galic.herokuapp.com/',
+  linkText: 'BookmarkCentral',
+  githubLink: 'https://github.com/JacobMacInnis/scottish-gaelic-client',
+  techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ]
+},
+{
   name: 'bookmarkcentral',
   h2: 'Bookmark Central',
   description: 'Bookmark Central is a front-end fully responsive web app.  It allows users to save urls and rate them using 0 to 5 star rating.  Users can change ratings, edit descriptions and delete bookmarks.  This app is built using jQuery, HTML5, CSS3 a javascript',
