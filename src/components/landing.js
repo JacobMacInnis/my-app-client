@@ -10,7 +10,7 @@ class LandingPage extends Component {
         <header className='header'>
           <h1>Jacob MacInnis</h1>
           <Typing className='what-i-do' loop={true} hideCursor={true} speed={40}>
-            <h1>I am a not your average Software Engineer.</h1>
+            <h1>I am not your average Software Engineer.</h1>
             <Typing.Delay ms={1500} />
             <Typing.Backspace count={42} />
             <h1>My approach to web developent is as a business owner.</h1>
