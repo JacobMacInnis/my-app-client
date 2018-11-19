@@ -1,7 +1,7 @@
 .projects {
   margin-bottom: 10px;
   background-attachment: fixed;
-  background-color: black;
+  background-color: #222831;
 }
 .projects-header {
   color: white;
@@ -15,5 +15,5 @@
   justify-content: center;
 }
 .project-github-link {
-  color: rgb(0, 0, 0);
+  color: #222831;
 }

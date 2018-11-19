@@ -13,7 +13,7 @@ class MyStack extends Component {
   render() {
     return (
       <section className='tech-stack'>
-        <h1 className='tech-stack-header'>TECH STACK</h1>
+        <h1 className='tech-stack-header'>Tech Stack</h1>
         <div className='container-1'>
           <div>
             <a href='https://nodejs.org/en/' target='_blank' rel='noopener noreferrer'>

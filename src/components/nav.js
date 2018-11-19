@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Home from './landing';
-import AboutMe from './about';
-import Projects from './projects';
-import Contact from './contact';
+import PersistantIcons from './persistant-icons';
 import './nav.css';
 
 class Nav extends Component {
   render() {
     return (
-      <nav>
-        <a href='#projects'>Projects</a>
+      <nav className='nav'>
+        <a class='nav-bar-element' href='#home'>HOME</a>
+        <a class='nav-bar-element' href='#projects'>PROJECTS</a>
+        <a class='nav-bar-element' href='#about'>ABOUT</a>
+        <a class='nav-bar-element' href='#contact'>CONTACT</a>
+        <PersistantIcons class='nav-bar-element' />
       </nav>
     );
   }

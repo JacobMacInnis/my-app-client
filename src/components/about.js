@@ -6,7 +6,7 @@ import JacobMacInnisImage from '../images/JacobMacInnis-square.jpg'
 class AboutMe extends Component {
   render() {
     return (
-      <section className='about-me'>
+      <section className='about-me' id='about'>
         <h2 className='about-me-header'>About Me</h2>
             <img className='profile-image' src={JacobMacInnisImage} alt='Jacob MacInnis'/>
             <ul className='about-me-list'>

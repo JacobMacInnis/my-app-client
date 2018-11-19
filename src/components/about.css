@@ -1,7 +1,7 @@
 .about-me {
   /* margin: 0 3% 5%; */
-  color: black;
-  background: url('../images/board-bright-design-235994.jpg') black no-repeat;
+  color: #222831;
+  background: url('../images/board-bright-design-235994.jpg') #222831 no-repeat;
   background-size: cover;
   background-position: -465px 0px;
   background-attachment: fixed;
@@ -34,7 +34,7 @@
   width: 40%;
   max-width: 350px;
   border-radius: 4%;
-  border: 2px solid black;
+  border: 2px solid #222831;
 }
 /* If the viewport width is greater than 425px*/
 @media  (min-width: 411px) {

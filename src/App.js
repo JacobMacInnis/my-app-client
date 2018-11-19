@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 import LandingPage from './components/landing';
-import PersistantIcons from './components/persistant-icons';
 import AboutMe from './components/about';
 import Contact from './components/contact';
 import Projects from './components/projects';
 import Twitter from './components/twitter-section';
 import MyStack from './components/my-stack';
+import Nav from './components/nav';
 
 class App extends Component {
   render() { 
     return (
       <div className="App">
         <LandingPage />
-        <PersistantIcons />
+        <Nav />
+        
         <AboutMe />
         <Projects />
         <MyStack />
