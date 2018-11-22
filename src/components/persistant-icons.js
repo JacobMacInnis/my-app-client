@@ -7,7 +7,7 @@ class PersistantIcons extends Component {
     return (
       <div className='persistant-container'>
         <a href={resume}
-        alt='resume pdf'>RESUME <i className="fas fa-print fa-1x print-icon"></i>
+        alt='resume pdf'><i className="fas fa-print fa-2x print-icon"></i>
         </a>
       </div>
     );

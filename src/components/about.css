@@ -1,12 +1,13 @@
 .about-me {
   /* margin: 0 3% 5%; */
   color: #222831;
-  background: url('../images/architectural-design-architecture-blue-sky-.jpg') #222831 no-repeat;
-  background-size: cover;
+  background: white;
+  /* background: url('../images/architectural-design-architecture-blue-sky-.jpg') #222831 no-repeat; */
+  /* background-size: cover;
   background-position: -465px 0px;
   background-attachment: fixed;
   width: 100%;
-  height: 100%;
+  height: 100%; */
 }
 .about-me-content {
   background-color: white;
@@ -14,9 +15,10 @@
   margin: 20px 15px 15px 15px;
   padding: 10px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 0px 2px rgba(34,40,49,1);
--moz-box-shadow: 0px 0px 0px 2px rgba(34,40,49,1);
-box-shadow: 0px 0px 0px 2px rgba(34,40,49,1);
+  -webkit-box-shadow: 0px 0px 39px -9px rgba(34,40,49,1);
+-moz-box-shadow: 0px 0px 39px -9px rgba(34,40,49,1);
+box-shadow: 0px 0px 39px -9px rgba(34,40,49,1);
+border: 1px solid #cccccc;
 }
 .about-me-header {
   font-size: 3em;
@@ -32,9 +34,10 @@ box-shadow: 0px 0px 0px 2px rgba(34,40,49,1);
   padding: 20px;
   margin: 0 3% 5% 3%;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(34,40,49,1);
--moz-box-shadow: inset 0px 0px 0px 2px rgba(34,40,49,1);
-box-shadow: inset 0px 0px 0px 2px rgba(34,40,49,1);
+  -webkit-box-shadow: inset 0px 0px 39px -9px rgba(34,40,49,1);
+-moz-box-shadow: inset 0px 0px 39px -9px rgba(34,40,49,1);
+box-shadow: inset 0px 0px 39px -9px rgba(34,40,49,1);
+/* border: 1px solid #cccccc; */
 }
 .about-me-list li {
   margin: 0 0 10px 0;
@@ -44,8 +47,12 @@ box-shadow: inset 0px 0px 0px 2px rgba(34,40,49,1);
 .profile-image {
   width: 40%;
   max-width: 350px;
-  border-radius: 4%;
-  border: 2px solid #222831;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  -moz-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  margin-bottom: 15px;
 }
 /* If the viewport width is greater than 425px*/
 @media  (min-width: 411px) {

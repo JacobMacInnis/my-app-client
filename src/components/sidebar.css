@@ -1,6 +1,9 @@
+.burger-menu {
+  z-index: 1001;
+}
 .bm-item {
   display: inline-block;
-
+  z-index: 1001;
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
@@ -17,15 +20,17 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
+  z-index: 1001;
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 15px;
+  top: 15px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
+  z-index: 1001;
   background: rgb(0, 157, 168);
 }
 

@@ -1,8 +1,12 @@
 .landing-page {
   height: 100vh;
   z-index: -1;
-  background-color: #222831;
-  background-position: -975px -450px;
+  background: url('./../images/crossed_stripes.png')
+  #222831;
+  
+  background-size: cover;
+  /* background-color: #222831; */
+  /* background-position: -975px -450px; */
   background-attachment: fixed;
 }
 .header {
