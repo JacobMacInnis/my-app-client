@@ -11,7 +11,7 @@
   font-size: 1em;
   position: absolute;
   width: 100vw;
-  padding-top: 25%;
+  padding-top: 35%;
   margin: auto auto;
 }
 .what-i-do {
@@ -27,12 +27,14 @@
 @media  (min-width: 600px) {
   .header {
     font-size: 2em;
+    padding-top: 15%;
   }
 }
 /* If the viewport width is greater than 900px*/
 @media (min-width : 900px) {
   .header {
     font-size: 2.5em;
+    padding-top: 15%;
   }
 }
 

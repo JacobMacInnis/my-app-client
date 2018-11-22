@@ -6,7 +6,7 @@ import './twitter-section.css';
 class Twitter extends Component {
   render() {
     return (
-      <section className='twitter'>
+      <section className='twitter' id='twitter'>
         <h2 className='twitter-header'>Twitter</h2>
         <div className='twitter-widget'>
           <Timeline                     

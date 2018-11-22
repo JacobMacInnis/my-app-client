@@ -12,7 +12,7 @@ import git from './../images/tech-icons/git.png';
 class MyStack extends Component {
   render() {
     return (
-      <section className='tech-stack'>
+      <section className='tech-stack' id='tech-stack'>
         <h1 className='tech-stack-header'>Tech Stack</h1>
         <div className='container-1'>
           <div>

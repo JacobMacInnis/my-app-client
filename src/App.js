@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import SideBar from './components/sidebar';
 import LandingPage from './components/landing';
 import AboutMe from './components/about';
 import Contact from './components/contact';
@@ -12,8 +13,9 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
+        <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
         <LandingPage />
-        <Nav />
+        {/* <Nav /> */}
         
         <AboutMe />
         <Projects />
