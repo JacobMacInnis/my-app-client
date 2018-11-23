@@ -15,10 +15,6 @@
   margin: 20px 15px 15px 15px;
   padding: 10px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 39px -9px rgba(34,40,49,1);
--moz-box-shadow: 0px 0px 39px -9px rgba(34,40,49,1);
-box-shadow: 0px 0px 39px -9px rgba(34,40,49,1);
-border: 1px solid #cccccc;
 }
 .about-me-header {
   font-size: 3em;
@@ -28,21 +24,22 @@ border: 1px solid #cccccc;
 }
 .about-me-list {
   list-style: none;
-  font-size: 1.3em;
+  font-size: 1em;
   text-align: center;
   display: inline-block;
   padding: 20px;
   margin: 0 3% 5% 3%;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0px 0px 39px -9px rgba(34,40,49,1);
--moz-box-shadow: inset 0px 0px 39px -9px rgba(34,40,49,1);
-box-shadow: inset 0px 0px 39px -9px rgba(34,40,49,1);
-/* border: 1px solid #cccccc; */
+  -webkit-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  -moz-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  border: 1px solid #cccccc;
 }
 .about-me-list li {
   margin: 0 0 10px 0;
   line-height: 1.2;
   font-family: 'Anonymous Pro', monospace;
+  font-size: 1em;
 }
 .profile-image {
   width: 40%;
@@ -53,6 +50,11 @@ box-shadow: inset 0px 0px 39px -9px rgba(34,40,49,1);
   -moz-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
   box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
   margin-bottom: 15px;
+}
+.thinkful-link {
+  font-weight: 700;
+  color: rgb(1, 1, 163);
+  text-decoration: none;
 }
 /* If the viewport width is greater than 425px*/
 @media  (min-width: 411px) {
@@ -66,8 +68,28 @@ box-shadow: inset 0px 0px 39px -9px rgba(34,40,49,1);
     background-position: -530px 0px;
   }
 }
+/* If the viewport width is greater than 650px*/
+@media  (min-width: 650px) {
+  .about-me-list {
+    padding: 20px;
+    margin: 0 10% 5% 10%;
+  }
+}
+/* If the viewport width is greater than 800px*/
+@media  (min-width: 800px) {
+  .about-me-list {
+    margin: 0 20% 10px 20%;
+  }
+  .about-me-list li {
+    font-size: 1.3em;
+  }
+}
+/* If the viewport width is greater than 1000px*/
 @media  (min-width: 1000px) {
   .about-me {
     background-position: 0px 0px;
+  }
+  .about-me-list {
+    margin: 0 30% 10px 30%;
   }
 }

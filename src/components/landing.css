@@ -3,7 +3,6 @@
   z-index: -1;
   background: url('./../images/crossed_stripes.png')
   #222831;
-  
   background-size: cover;
   /* background-color: #222831; */
   /* background-position: -975px -450px; */
@@ -20,6 +19,10 @@
 }
 .what-i-do {
   margin: 0 5%;
+}
+.more {
+  
+  color: white;
 }
 /* If the viewport width is greater than 425px*/
 @media  (min-width: 425px) {

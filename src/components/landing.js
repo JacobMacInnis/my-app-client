@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import Typing from 'react-typing-animation';
 import './landing.css';
-import Nav from './nav';
 
 class LandingPage extends Component {
   render() {
     return (
       <div className="landing-page" id='home'>
-        {/* <Nav /> */}
         <header className='header'>
           <h1>Jacob MacInnis</h1>
           <Typing className='what-i-do' loop={true} hideCursor={true} speed={40}>

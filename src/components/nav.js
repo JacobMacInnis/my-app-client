@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PersistantIcons from './persistant-icons';
 import './nav.css';
 
 class Nav extends Component {
@@ -10,7 +9,6 @@ class Nav extends Component {
         <a class='nav-bar-element' href='#projects'>PROJECTS</a>
         <a class='nav-bar-element' href='#about'>ABOUT</a>
         <a class='nav-bar-element' href='#contact'>CONTACT</a>
-        <PersistantIcons class='nav-bar-element' />
       </nav>
     );
   }

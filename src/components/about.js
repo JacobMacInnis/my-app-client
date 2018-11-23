@@ -11,11 +11,12 @@ class AboutMe extends Component {
         <div className='about-me-content'>
           <img className='profile-image' src={JacobMacInnisImage} alt='Jacob MacInnis'/>
           <ul className='about-me-list'>
-            <li>&nbsp;&nbsp;Hi I'm Jacob MacInnis. I'm a full-stack web developer hailing from Massachusetts. I enjoy building client and server applications.</li>
-            <li>&nbsp;&nbsp;I enjoy the entire process from envisioning a program to planning and development and finally deploying, maintaining and improving code.</li>  
+            <li>&nbsp;&nbsp;Hi I'm a full-stack web developer hailing from Massachusetts. I enjoy building client and server applications.</li>
+            <li>&nbsp;&nbsp;I am mostly a self taught developer and I graduated from <a href='https://www.thinkful.com/bootcamp/web-development/full-time/' target="_blank" rel='noopener noreferrer' className='thinkful-link'>Thinkful</a>, A Full Stack Engineering Immersion School.</li> 
+            <li>I program in JavaScript and I am comfortable with NodeJS and ReactJs.</li>
             <li>&nbsp;&nbsp;I am a highly ambitious self starter with an entrepreneurial background in an ecommerce start-up, as well as revenue generation, early childhood education and psychology.</li>
-            <li>&nbsp;&nbsp;I am mostly a self taught developer and I graduated from Thinkfuls Full Stack Engineering Immersion Program in the fall of 2018. I like building in javascript with Node.js and React.js!</li>
-            <li>&nbsp;&nbsp;I am currently learning React-Native and GraphQL.  In my spare time I am building a company/website/native app called Function Earth.  Function Earth will be an app that inspires users to be responsible and take care of our planet.  I am learning Polish. </li>
+            <li>&nbsp;&nbsp;I am currently learning React-Native and GraphQL.</li>
+            <li>&nbsp;&nbsp;In my spare time I am building a project called Function Earth.  Function Earth is a native app that inspires users to be responsible and take care of our planet.</li>
           </ul>
         </div>           
       </section>

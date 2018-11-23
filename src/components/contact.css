@@ -13,6 +13,9 @@
   padding: 0;
   line-height: .5;
 }
+.footer-info p {
+  color: white;
+}
 .mail-link, .github-link, .linkedin-link, .twitter-link {
   text-decoration: none;
   color: white;

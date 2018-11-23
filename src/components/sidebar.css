@@ -31,7 +31,7 @@
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   z-index: 1001;
-  background: rgb(0, 157, 168);
+  background: #ffffff;
 }
 
 /* Position and sizing of clickable cross button */

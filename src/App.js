@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, withRouter } from 'react-router-dom';
 import './App.css';
 import SideBar from './components/sidebar';
 import TopNav from './components/top-nav';
@@ -8,24 +9,23 @@ import Contact from './components/contact';
 import Projects from './components/projects';
 import Twitter from './components/twitter-section';
 import MyStack from './components/my-stack';
-import Nav from './components/nav';
+import Resume from './components/resume';
 
 class App extends Component {
   render() { 
     return (
       <div className="App">
         <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
-        <TopNav />
-        <LandingPage />
-        {/* <Nav /> */}
-        
-        <AboutMe />
-        <Projects />
-        <MyStack />
-        <Twitter />
-        <Contact />
+        <Route exact path="/" component={TopNav} />
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/" component={AboutMe} />
+        <Route exact path="/" component={Projects} />
+        <Route exact path="/" component={MyStack} />
+        <Route exact path="/" component={Twitter} />
+        <Route exact path="/" component={Contact} />
+        <Route exact path="/resume" component={Resume} />
       </div>
     );
   }
 }
-export default App;
+export default withRouter(App);

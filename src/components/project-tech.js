@@ -5,13 +5,20 @@ class ProjectTech extends Component {
   
   render() {
     let techList = this.props.techList.map((tech, index) => {
-      return <li className='tech' key={`${index}`}>&#10061; {tech}</li>;
+      if (index !== this.props.techList.length - 1) {
+        return <span className='tech' key={`${index}`}>{tech}, </span>;  
+      } else {
+        return <span className='tech' key={`${index}`}>{tech}</span>;
+      }
       
     })
     return (
-      <ul className='tech-list'>
-        {techList}
-      </ul>
+      <div>
+        <h2 className='tech-h2'>Technologies Used</h2>
+        <div className='tech-list'>
+          {techList}
+        </div>
+      </div>
     )
   }
 }
