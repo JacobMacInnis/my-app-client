@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './project-tech.css';
+import './styles/project-tech.css';
 
 class ProjectTech extends Component {
   

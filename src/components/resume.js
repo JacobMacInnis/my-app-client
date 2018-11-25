@@ -1,6 +1,6 @@
 import React from "react";
 import Headshot from './../images/JacobMacInnis-square.jpg';
-import './resume.css';
+import './styles/resume.css';
 
 export default props => {
   return (

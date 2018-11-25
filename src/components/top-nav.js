@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './top-nav.css';
+import './styles/top-nav.css';
 
 class TopNav extends Component {
   render() {

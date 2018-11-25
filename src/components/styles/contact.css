@@ -1,0 +1,40 @@
+.footer {
+  margin: 5%;
+  font-family: 'Anonymous Pro', monospace;
+}
+.footer-header {
+  font-size: 3em;
+  margin: 0;
+}
+.footer-info {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 0 5% 0;
+  padding: 0;
+  line-height: .5;
+}
+.footer-info p {
+  color: white;
+}
+.mail-link, .github-link, .linkedin-link, .twitter-link .phone-icon{
+  text-decoration: none;
+  color: white;
+  margin: 2%;
+}
+.mail-link::after, .github-link::after, .linkedin-link::after, .twitter-link::after .phone-icon::after {
+  color: white;
+}
+.phone-icon {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.twitter-link {
+  margin-left: 5px;
+}
+a:-webkit-any-link {
+  color: white;
+}

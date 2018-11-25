@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Timeline } from 'react-twitter-widgets';
-import './twitter-section.css';
+import './styles/twitter-section.css';
 
 
 class Twitter extends Component {

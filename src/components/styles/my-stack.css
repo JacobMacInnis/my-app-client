@@ -1,6 +1,6 @@
 .tech-stack {
   height: 100%;
-  margin:5%;
+  /* margin:5%; */
   background-attachment: fixed;
   border-radius: 5px;
   color: white;
@@ -9,7 +9,6 @@
 .tech-stack-header {
   font-size: 3em;
   margin: 25px;
-  
   display: inline-block;
   padding: 5px;
   border-radius: 5px;
@@ -35,9 +34,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: flex-end;
 }
 .container-1 > div {
   /* border: 1px solid white; */
   /* padding: 5px; */
   margin: 5px;
+}
+.container-1 h3 {
+  color: black;
+  text-decoration: none;
+}
+.container-1 a {
+  text-decoration: none;
 }

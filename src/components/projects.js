@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './projects.css';
+import './styles/projects.css';
 import ProjectBuilder from './project-builder';
 
 

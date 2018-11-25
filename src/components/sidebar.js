@@ -1,6 +1,6 @@
 import React from "react";
 import { stack as Menu } from "react-burger-menu";
-import './sidebar.css';
+import './styles/sidebar.css';
 
 export default props => {
   return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './project-builder.css';
+import './styles/project-builder.css';
 import Iframe from 'react-iframe';
 import ProjectTech from './project-tech';
 import { projectsArray } from './../projects-array';
