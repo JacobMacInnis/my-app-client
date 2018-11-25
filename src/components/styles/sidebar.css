@@ -42,12 +42,12 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #ffffff;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #0b608e;
   padding: 2.5em 1.5em 0;
   font-size: 2.15em;
 }
