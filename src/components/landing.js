@@ -121,7 +121,7 @@ class LandingPage extends Component {
             <Typing.Delay ms={700} />
           </Typing>
         </header>
-        <div className='w3-animate-fading arrow-div'>
+        <div className='arrow-div'>
           <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
             <i className="fas fa-chevron-circle-down arrow fa-3x"></i>
           </Link>

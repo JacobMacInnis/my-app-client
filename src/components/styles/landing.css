@@ -28,11 +28,18 @@
   color: white;
   
 }
+@keyframes flickerAnimation { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
 .arrow-div {
   position: absolute;
   top: 90%;
   left: 0;
   right: 0;
+  opacity:1;  
+  animation: flickerAnimation 10s infinite;
 }
 .arrow-div:hover {
   cursor: pointer;
@@ -56,6 +63,7 @@
     font-size: 2.5em;
     padding-top: 10%;
   }
+
 }
 
 /* If the viewport width is greater than 1200px*/

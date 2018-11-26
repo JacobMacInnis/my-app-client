@@ -41,6 +41,16 @@
 .twitter-link {
   color: white;
 }
+@keyframes fadeAnimation { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
 .scroll-to-top {
   margin-top: 30px;
+  opacity:1;  
+  animation: fadeAnimation 10s infinite;
+}
+.scroll-to-top:hover {
+  cursor: pointer;
 }
