@@ -13,7 +13,7 @@ class ProjectTech extends Component {
       
     })
     return (
-      <div>
+      <div className='tech-list-container'>
         <h2 className='tech-h2'>Technologies Used</h2>
         <div className='tech-list'>
           {techList}

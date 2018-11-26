@@ -1,11 +1,9 @@
 .top-nav {
   z-index: 3;
   position: fixed;
-  /* top: 10px; */
   height: 60px;
   width: 100%;
   background: black;
-  /* background: #222831; */
 }
 .persistant-container {
   display: inline-block;

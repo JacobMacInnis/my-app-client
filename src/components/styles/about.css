@@ -1,13 +1,5 @@
 .about-me {
-  /* margin: 0 3% 5%; */
   color: #222831;
-  /* background: white; */
-  /* background: url('../images/architectural-design-architecture-blue-sky-.jpg') #222831 no-repeat; */
-  /* background-size: cover;
-  background-position: -465px 0px;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%; */
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   background-attachment: fixed;
@@ -18,8 +10,6 @@
   margin: 20px 15px 15px 15px;
   padding: 10px;
   border-radius: 4px;
-  /* background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  background-attachment: fixed; */
   background-color: transparent;
 }
 .about-me-header {

@@ -12,9 +12,9 @@
 }
 
 /* Change color on hover */
-.bm-item:hover {
+/* .bm-item:hover {
   color: white;
-}
+} */
 
 /* The rest copied directly from react-burger-menu docs */
 
@@ -27,11 +27,15 @@
   left: 15px;
   top: 15px;
 }
+.bm-burger-button button {
+  z-index: 1002;
+}
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   z-index: 1001;
   background: #ffffff;
+  cursor: pointer;
 }
 
 /* Position and sizing of clickable cross button */

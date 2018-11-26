@@ -1,3 +1,13 @@
+.tech-list-container {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(248, 251, 255);
+  border: 1px solid #0b608e;
+  border-radius: 4px;
+  -webkit-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  -moz-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+}
 .tech-list {
   margin-top: 0;
   margin-left: 5%;

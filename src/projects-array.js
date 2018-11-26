@@ -34,13 +34,14 @@ export  const projectsArray = [{
   githubLinkClient: 'https://github.com/JacobMacInnis/scottish-gaelic-client',
   githubLinkServer: 'https://github.com/JacobMacInnis/scottish-gaelic-server',
   techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ]
-},
-{
-  name: 'bookmarkcentral',
-  h2: 'Bookmark Central',
-  description: 'Bookmark Central is an early front-end responsive web app.  It allows users to save urls and rate them using 0 to 5 star rating.  Users can change ratings, edit descriptions and delete bookmarks.',
-  projectLink: 'https://thinkful-ei23.github.io/jacob-bookmarks-app/',
-  linkText: 'BookmarkCentral',
-  githubLinkClient: 'https://github.com/thinkful-ei23/jacob-bookmarks-app',
-  techList: ['JavaScript', 'JQuery', 'HTML5', 'CSS3', 'Github-Pages' ]
-}];
+}
+];
+// {
+//   name: 'bookmarkcentral',
+//   h2: 'Bookmark Central',
+//   description: 'Bookmark Central is an early front-end responsive web app.  It allows users to save urls and rate them using 0 to 5 star rating.  Users can change ratings, edit descriptions and delete bookmarks.',
+//   projectLink: 'https://thinkful-ei23.github.io/jacob-bookmarks-app/',
+//   linkText: 'BookmarkCentral',
+//   githubLinkClient: 'https://github.com/thinkful-ei23/jacob-bookmarks-app',
+//   techList: ['JavaScript', 'JQuery', 'HTML5', 'CSS3', 'Github-Pages' ]
+// }

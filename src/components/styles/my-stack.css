@@ -1,6 +1,5 @@
 .tech-stack {
   height: 100%;
-  /* margin:5%; */
   background-attachment: fixed;
   border-radius: 5px;
   color: white;
@@ -24,7 +23,7 @@
   background-color: white;
 }
 .github-icon {
-  background-color: white;
+  color: rgb(80, 52, 52);
 }
 .container-1 {
   border-radius: 5px;
@@ -37,8 +36,6 @@
   align-items: flex-end;
 }
 .container-1 > div {
-  /* border: 1px solid white; */
-  /* padding: 5px; */
   margin: 5px;
 }
 .container-1 h3 {

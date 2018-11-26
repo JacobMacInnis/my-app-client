@@ -32,9 +32,15 @@
   cursor: pointer;
   margin-right: 5px;
 }
+.phone-icon-fa {
+  height: 50px;
+}
 .twitter-link {
   margin-left: 5px;
 }
 .twitter-link {
   color: white;
+}
+.scroll-to-top {
+  margin-top: 30px;
 }

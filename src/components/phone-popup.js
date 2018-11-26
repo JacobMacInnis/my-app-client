@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles/phone-popup.css';
 
 export default class PhonePopup extends React.Component {

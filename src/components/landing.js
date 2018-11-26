@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import Typing from 'react-typing-animation';
 import Particles from 'react-particles-js';
+import { Link, animateScroll as scroll } from 'react-scroll'
+ 
 import './styles/landing.css';
 
 class LandingPage extends Component {
+  scrollTo() {
+    scroll.scrollTo(1000);
+  }
+  handleSetActive(to) {
+    console.log(to);
+  }
   render() {
     return (
       <div className="landing-page" id='home'>
@@ -41,10 +49,11 @@ class LandingPage extends Component {
             }}}
         />
         <header className='header'>
-          <h1>Jacob MacInnis</h1>
-          <h2>Web Developer</h2>
+          <h1>JACOB MACINNIS</h1>
+          <h2>WEB DEVELOPER</h2>
           <br />
           <Typing className='what-i-do' loop={true} hideCursor={true} speed={40}>
+            <Typing.Reset count={1} delay={10} />
             <Typing.Delay ms={1700} />
             <h2>I am not your average Software Engineer.</h2>
             <Typing.Delay ms={1500} />
@@ -98,7 +107,7 @@ class LandingPage extends Component {
             <Typing.Delay ms={1500} />
             <Typing.Backspace count={43} />
             <Typing.Delay ms={700} />
-            <h2>I have exploring the Python language</h2>
+            <h2>I am exploring the Python language</h2>
             <Typing.Delay ms={1500} />
             <Typing.Backspace count={36} />
             <Typing.Delay ms={700} />
@@ -112,6 +121,11 @@ class LandingPage extends Component {
             <Typing.Delay ms={700} />
           </Typing>
         </header>
+        <div className='w3-animate-fading arrow-div'>
+          <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+            <i className="fas fa-chevron-circle-down arrow fa-3x"></i>
+          </Link>
+        </div>
       </div>
     );
   }

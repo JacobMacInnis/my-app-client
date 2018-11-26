@@ -125,9 +125,7 @@
   }
   
   .sectionTitle h1, .sectionTitleSkills h1 {
-    /* font-family: 'Rokkitt', Helvetica, Arial, sans-serif; */
     font-family: 'Montserrat', sans-serif;
-    /* font-style: italic; */
     font-size: 1.5em;
     color: #cf8a05;
   }
