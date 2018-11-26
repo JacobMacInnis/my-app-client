@@ -1,7 +1,7 @@
 export  const projectsArray = [{
     name: 'thinkPrograming',
     h2: 'Think Programming',
-    description: 'A place to challenge another coding enthusiest in a language or programing category to come up with the fastest and cleanest correct code.',
+    description: 'A place to challenge other coding enthusiests in languages or programing categories.  Be fastest and cleanest coder to level up fast.  Gain experience and coding muscle memory fast.',
     projectLink: 'https://think-programming-client.herokuapp.com/',
     linkText: 'Demo Here',
     githubLinkClient: 'https://github.com/thinkful-ei23/think-programming-client',
