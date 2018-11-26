@@ -26,7 +26,7 @@ class LandingPage extends Component {
                     "value": 50
                 },
                 "size": {
-                    "value": 3
+                    "value": 4
                 },
                 "color": {
                   "value": "#0b608e"
