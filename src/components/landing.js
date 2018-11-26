@@ -23,7 +23,7 @@ class LandingPage extends Component {
           params={{
             "particles": {
                 "number": {
-                    "value": 50
+                    "value": 120
                 },
                 "size": {
                     "value": 4

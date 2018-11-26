@@ -24,10 +24,10 @@
 }
 .project-container {
   margin: 1% 5% 3% 5%;
-  border: 3px solid rgb(34,40,49);
-  -webkit-box-shadow: inset 0px 0px 8px 4px rgb(34,40,49);
-  -moz-box-shadow: inset 0px 0px 8px 4px rgb(34,40,49);
-  box-shadow: inset 0px 0px 8px 4px rgb(34,40,49);
+  border: 1px solid rgb(121, 121, 121);
+  -webkit-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  -moz-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
 }
 #project-iframe {
   padding: 0;
@@ -69,6 +69,9 @@
 }
 .fa-med {
   font-size: 1.3em;
+}
+.github-links {
+  margin-top: 10px;
 }
 @media (min-width: 750px) {
   .project {

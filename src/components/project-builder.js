@@ -23,7 +23,7 @@ class ProjectBuilder extends Component {
           </div>
           <a className='project-link'
             href={project.projectLink}>Demo Here</a>
-          <div>
+          <div className='github-links'>
             <a href={project.githubLinkClient} className='project-github-link'  target="_blank" rel='noopener noreferrer'><span className='github-span'>CLIENT</span><i className="fab fa-github fa-med icon"></i></a>
             <a href={project.githubLinkServer} className='project-github-link'  target="_blank" rel='noopener noreferrer'><span className='github-span'>SERVER</span><i className="fab fa-github fa-med icon"></i></a>
             </div>
