@@ -52,7 +52,7 @@ class LandingPage extends Component {
           <h1>JACOB MACINNIS</h1>
           <h2>WEB DEVELOPER</h2>
           <br />
-          <Typing className='what-i-do' loop={true} hideCursor={true} speed={30}>
+          <Typing className='what-i-do' loop={true} hideCursor={true} speed={60}>
             <Typing.Reset count={1} delay={10} />
             <Typing.Delay ms={1700} />
             <h2>I am not your average Software Engineer.</h2>
