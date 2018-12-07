@@ -15,6 +15,8 @@ import mongoose from './../images/tech-icons/mongoose.png';
 import mlab from './../images/tech-icons/mlab.png';
 import sql from './../images/tech-icons/sql.png';
 import postgresql from './../images/tech-icons/postgresql.png';
+import knex from './../images/tech-icons/knex.png';
+import sequalize from './../images/tech-icons/sequalize.png';
 import git from './../images/tech-icons/git.png';
 import heroku from './../images/tech-icons/heroku.png';
 import npm from './../images/tech-icons/npm-logo.png';
@@ -120,6 +122,12 @@ class MyStack extends Component {
             </a>
           </div>
           <div>
+            <a href='https://knexjs.org/' target='_blank' rel='noopener noreferrer'>
+              <img className='knex-icon' src={knex} alt= 'knex js logo' height='65px' />
+              <h3>Knex JS</h3>
+            </a>
+          </div>
+          <div>
             <a href='https://en.wikipedia.org/wiki/Git' target='_blank' rel='noopener noreferrer'>
               <img className='git-icon' src={git} alt='git logo' height='65px' />
               <h3>Git</h3>
@@ -149,12 +157,12 @@ class MyStack extends Component {
               <h3>Yarn</h3>
             </a>
           </div>
-          <div>
+          {/* <div>
             <a href='https://cloud.google.com/' target='_blank' rel='noopener noreferrer'>
               <img className='gcp-icon' src={gcp} alt='Google Cloud Platform logo' height='65px' />
               <h3>GCP</h3>
             </a>
-          </div>
+          </div> */}
           {/* <div>
             <a href='https://aws.amazon.com/' target='_blank' rel='noopener noreferrer'>
               <img className='aws-icon' src={aws} alt='Amazon Web Systems' height='60px' />
