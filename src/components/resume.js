@@ -100,6 +100,16 @@ export default props => {
                 <h1 className='resume-h1'>Work Experience</h1>
               </div>
               <div className="sectionContent work-experience">
+              <article>
+                  <h2 className='resume-h2'>Full-Stack Mobile Software Engineer at Function Earth</h2>
+                  <p className="subDetails resume-p">November 2018 to Present</p>
+                </article>
+                <div className='clear'>
+                  <ul className='work-experience-list'>
+                    <li>Developing IOS and Android applications designed to promote users to clean the environment - Using React-Native, React-Native-Navigation, React, Redux, Node, Express, MongoDB, Javascript, HTML, CSS </li>
+                    
+                  </ul>
+                </div>
                 <article>
                   <h2 className='resume-h2'>Developer Apprentice at Thinkful</h2>
                   <p className="subDetails resume-p">May 2018 to Present</p>
