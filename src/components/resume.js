@@ -107,7 +107,6 @@ export default props => {
                 <div className='clear'>
                   <ul className='work-experience-list'>
                     <li>Developing IOS and Android applications designed to promote users to clean the environment - Using React-Native, React-Native-Navigation, React, Redux, Node, Express, MongoDB, Javascript, HTML, CSS </li>
-                    
                   </ul>
                 </div>
                 <article>
