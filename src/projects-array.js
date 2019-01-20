@@ -34,6 +34,16 @@ export  const projectsArray = [{
   githubLinkClient: 'https://github.com/JacobMacInnis/scottish-gaelic-client',
   githubLinkServer: 'https://github.com/JacobMacInnis/scottish-gaelic-server',
   techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ]
+},
+{
+  name: 'PrimeThree',
+  h2: 'Prime Three',
+  description: 'One day project built to find the first prime number that contains the three digits a user inputs.',
+  projectLink: 'https://primethree-client.herokuapp.com/',
+  linkText: 'Scottish Gaelic',
+  githubLinkClient: 'https://github.com/JacobMacInnis/primethree-client',
+  githubLinkServer: 'https://github.com/JacobMacInnis/primethree-server',
+  techList: ['Node', 'React', 'Redux','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Mocha', 'Chai', 'Enzyme', 'Sinon', 'Heroku' ]
 }
 ];
 // {
