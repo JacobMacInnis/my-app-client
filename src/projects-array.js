@@ -5,7 +5,8 @@ export  const projectsArray = [{
     projectLink: 'https://think-programming-client.herokuapp.com/',
     linkText: 'Demo Here',
     githubLinkClient: 'https://github.com/thinkful-ei23/think-programming-client',
-    githubLinkServer: 'https://github.com/thinkful-ei23/think-programming-server',    techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'Socket.io', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+    githubLinkServer: 'https://github.com/thinkful-ei23/think-programming-server',    
+    techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'Socket.io', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
   },
   {
   name: 'beachtides',
