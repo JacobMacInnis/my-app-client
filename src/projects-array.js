@@ -1,5 +1,5 @@
 import TP from './images/screenshots/TP-SCREENSHOTS.png';
-import BT from './images/screenshots/BEACHTIDES-SCREENSHOTS.png';
+import BT from './images/screenshots/BEACHTIDES-SCREENSHOTS.jpg';
 import CSC from './images/screenshots/CS-CARDS-SCREENSHOTS.png';
 import SG from './images/screenshots/SG-SCREENSHOTS.png';
 import PT from './images/screenshots/PRIMETHREE-SCREENSHOTS.png';
