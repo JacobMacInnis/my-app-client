@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles/project-builder.css';
-import Iframe from 'react-iframe';
+// import Iframe from 'react-iframe';
 import ProjectTech from './project-tech';
 import { projectsArray } from './../projects-array';
 
@@ -13,13 +13,14 @@ class ProjectBuilder extends Component {
           <h2 className='project-header'>{project.h2}</h2>
           <p className='project-description'>{project.description}</p>
           <div className='project-container'>
-            <Iframe url={project.projectLink}
+            <img src={project.image} width='330px' alt={`${project.h2} screenshots`}/>
+            {/* <Iframe url={project.projectLink}
               className={project.name}
               width='100%'
               height='475px'
               display='initial'
               position='relative'
-            />
+            /> */}
           </div>
           <a className='project-link'
             href={project.projectLink}>Demo Here</a>

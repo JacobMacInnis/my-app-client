@@ -16,13 +16,13 @@ import mlab from './../images/tech-icons/mlab.png';
 import sql from './../images/tech-icons/sql.png';
 import postgresql from './../images/tech-icons/postgresql.png';
 import knex from './../images/tech-icons/knex.png';
-import sequalize from './../images/tech-icons/sequalize.png';
+// import sequalize from './../images/tech-icons/sequalize.png';
 import git from './../images/tech-icons/git.png';
 import heroku from './../images/tech-icons/heroku.png';
 import npm from './../images/tech-icons/npm-logo.png';
 import yarn from './../images/tech-icons/yarn.png';
-import gcp from './../images/tech-icons/gcp.png';
-import aws from './../images/tech-icons/aws-logo.png';
+// import gcp from './../images/tech-icons/gcp.png';
+// import aws from './../images/tech-icons/aws-logo.png';
 
 class MyStack extends Component {
   render() {
