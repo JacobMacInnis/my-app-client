@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Typing from 'react-typing-animation';
 import Particles from 'react-particles-js';
 import { Link, animateScroll as scroll } from 'react-scroll'
- 
 import './styles/landing.css';
 
 class LandingPage extends Component {
@@ -10,7 +9,6 @@ class LandingPage extends Component {
     scroll.scrollTo(1000);
   }
   handleSetActive(to) {
-
   }
   render() {
     return (

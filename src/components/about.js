@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './styles/about.css';
 import JacobMacInnisImage from '../images/JacobMacInnis-square.jpg'
 
-
 class AboutMe extends Component {
   render() {
     return (
