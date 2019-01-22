@@ -8,7 +8,7 @@ class ProjectTech extends Component {
         return <span className='tech' key={`${index}`}>{tech}, </span>;  
       } else {
         return <span className='tech' key={`${index}`}>{tech}</span>;
-      };
+      }
     });
     return (
       <div className='tech-list-container'>

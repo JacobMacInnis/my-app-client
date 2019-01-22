@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles/top-nav.css';
 
-class TopNav extends Component {
-  render() {
-    return (
-      <div className='top-nav'>
-      </div>
-    );
-  }
-}
-
-export default TopNav;
+export default () => (
+  <div className='top-nav'>
+  </div>
+);
