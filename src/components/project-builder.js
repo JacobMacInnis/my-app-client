@@ -6,7 +6,6 @@ import { projectsArray } from './../projects-array';
 
 class ProjectBuilder extends Component {
   render() {
-    
     const projectsComponents = projectsArray.map((project, index) => {
       return (
         <article id={`project-builder-${index}`}className='project' key={index}>
