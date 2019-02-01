@@ -183,6 +183,9 @@
     float: right;
     text-align: left;
   }
+  .work-experience-title {
+    margin-bottom: 10px;
+  }
   .work-experience-list, .education-list {
     margin-left: 5%;
     text-align: left;

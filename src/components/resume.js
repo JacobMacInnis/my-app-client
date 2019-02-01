@@ -32,7 +32,7 @@ export default props => {
                   <h1 className='resume-h1'>Professional Summary</h1>
                 </div> 	
 				        <div className="sectionContent">
-                  <p className='resume-p'>Experience designing, developing, testing, debugging full-stack front-end and back-end web applications. &nbsp;Developed dynamic interactive web apps using React, Redux, Node and Express. &nbsp;Experience with MongoDB and SQL. &nbsp;Built apps using React Router, Redux Form, Redux Thunk, Socket.io and more. &nbsp;Built RESTful API servers using NodeJS runtime environment and Express framework. Experience using Enzyme unit testing on React and Redux and Mocha and Chai on Node. &nbsp;Deployed using Travis CI and Heroku.</p>
+                  <p className='resume-p'>Full Stack Web Developer experienced in designing, developing, testing, debugging mobile and web applications.  &nbsp;Developed dynamic interactive web apps using React, Redux, Node and Express.  &nbsp;Experience with MongoDB and SQL.  &nbsp;Built RESTful API servers using NodeJS runtime environment. Experience using Enzyme, Mocha and Chai unit testing.  &nbsp;Deployed using Travis CI, Heroku and Expo.io.</p>
                 </div>
               </article>
               <div className="clear"></div>
@@ -43,18 +43,21 @@ export default props => {
               </div>
               <div className="sectionContentSkills">
                 <ul className="keySkills">
-                  <li><i class="fas fa-circle  fa-sm"></i> &nbsp;JavaScript ES6</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;JavaScript ES6</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;NodeJS, Express</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;React, Redux</li>
-                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;React Native</li>
-                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;GraphQL</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;React-Native, Expo.io</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;GraphQL, Apollo</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;Angular, VueJS</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;WebSockets</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;Socket.io</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;HTML5, CSS3, jQuery</li>
-                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;MongoDB, SQL</li>
-                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;Mongoose, PostgreSQL</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;MongoDB</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;SQL - PostgreSQL</li>
                   <li> <i class="fas fa-circle fa-sm"></i> &nbsp;Git + Github</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;NPM, Yarn</li>
-                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;Heroku, TravisCI</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;Heroku, Travis CI</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;C++, Python</li>
                 </ul>
               </div>
               <div className="clear"></div>
@@ -64,13 +67,16 @@ export default props => {
                 <h1 className='resume-h1'>Recent Projects</h1>
               </div>
               <article className='resume-projects'>
-              <p className='resume-p'><a href="https://think-programming-client.herokuapp.com/">Think Programming </a>&nbsp;- Competitive remote pair programming application using websockets. Challenge live opponents in head to head coding problems. Improve programming skills while writing and reviewing coding solutions. Teaches HTML, CSS, JavaScript and data structures.</p>
+              <p className='resume-p'><strong>Function Earth </strong>&nbsp;- React-Native App designed to promote Earth preservation (in development)</p>
               </article>
               <article className='resume-projects'>
-                <p className='resume-p'><a href="http://www.beachtides.us/">www.BeachTides.us</a> &nbsp;- US Tidal Predictions. Users can save locations for faster results.  Full-Stack Mobile First Responsive Web App. Built using MERN Stack and Google OAuth 2.0.</p>
+              <p className='resume-p'><strong><a href="https://think-programming-client.herokuapp.com/">Think Programming </a></strong>&nbsp;- Competitive remote pair programming application using websockets. Challenge live opponents in head to head coding problems. Improve programming skills while writing and reviewing coding solutions. Teaches HTML, CSS, JavaScript and data structures.</p>
               </article>
               <article className='resume-projects'>
-                <p className='resume-p'><a href="https://client-cs-cards.herokuapp.com/">CS-Cards</a> &nbsp;- Computer Science Cards is a mobile first full-stack project. Using Passport and JWTs for authentication and a spaced-repetition algorithm and Mongo linked list data-structure.</p>
+                <p className='resume-p'><strong><a href="http://www.beachtides.us/">www.BeachTides.us</a></strong> &nbsp;- US Tidal Predictions. Users can save locations for faster results.  Full-Stack Mobile First Responsive Web App. Built using MERN Stack and Google OAuth 2.0.</p>
+              </article>
+              <article className='resume-projects'>
+                <p className='resume-p'><strong><a href="https://client-cs-cards.herokuapp.com/">CS-Cards</a></strong> &nbsp;- Computer Science Cards is a mobile first full-stack project. Using Passport and JWTs for authentication and a spaced-repetition algorithm and Mongo linked list data-structure.</p>
               </article>
               <div className="clear"></div>
             </section>
@@ -96,7 +102,7 @@ export default props => {
 			        <div className="clear"></div>
 		        </section>
 		        <section className='section'>
-              <div className="sectionTitle">
+              <div className="sectionTitle work-experience-title">
                 <h1 className='resume-h1'>Work Experience</h1>
               </div>
               <div className="sectionContent work-experience">
@@ -155,17 +161,20 @@ export default props => {
               <div className="sectionContent education">
                 <article>
                   <h2 className='resume-h2'>Thinkful</h2>
-                  <p className="subDetails resume-p">Engineering Immersion - Full Stack</p>
+                  <p className="subDetails resume-p">Engineering Immersion - Full Stack - November 2018</p>
                 </article>
                 <div className="clear"></div>
                   <ul className='education-list'>
-                    <li>Daily mentorship meetings with Senior Software Developers.</li>
-                    <li>Over 1600 hrs hands on coding experience. &nbsp;Pair Programming, Agile Methodology</li>
+                    <li>Daily mentorship meetings with Senior Software Developers. Used Agile Methodology</li>
+                    <li>rigorous and structured full-time programming school - completed group projects and pair program with a group of 20 peers all day, every day for 5 months over 1600 hours of course work.</li>
+                    <li>JavaScript and ES6 - Built interactive web apps with React and Redux.</li>
+                    <li>Server Side Programming with NodeJS and ExpressJS- Build modern RESTful APIs with PostGres and Mongo backends. Learned modern JWT-based auth flows and test apps with the Mocha and Chai frameworks on TravisCI, and deploy to Heroku.</li>
+                    <li>Learned to design, build, test, and deploy complex apps using React, Redux, React Router, Redux Form, and Redux Thunk. Testing with Enzyme and Mocha, and deployment using Netlify and Heroku.</li>
+                    <li>Computer Science Foundations - Learn foundations of CS, data structures, and the analysis of algorithms</li>
                   </ul>
-                
                 <article>
                   <h2 className='resume-h2'>Eastern Nazarene College</h2>
-                  <p className="subDetails resume-p">Bachelor of Arts - Child/Adolescent Psychology</p>
+                  <p className="subDetails resume-p">Bachelor of Arts - Child/Adolescent Psychology - January 2009</p>
                 </article>
               </div>
 			      <div className="clear"></div>
