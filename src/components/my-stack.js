@@ -163,12 +163,12 @@ class MyStack extends Component {
               <h3>GCP</h3>
             </a>
           </div> */}
-          {/* <div>
+          <div>
             <a href='https://aws.amazon.com/' target='_blank' rel='noopener noreferrer'>
               <img className='aws-icon' src={aws} alt='Amazon Web Systems' height='60px' />
               <h3>AWS</h3>
             </a>
-          </div> */}
+          </div>
         </div>
       </section>
     );
