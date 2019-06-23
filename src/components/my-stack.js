@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles/my-stack.css';
+import typescript from './../images/tech-icons/typescript.png';
 import node from './../images/tech-icons/node.png';
 import express from './../images/tech-icons/express.png';
 import jQuery from './../images/tech-icons/jquery.png'
@@ -22,7 +23,7 @@ import heroku from './../images/tech-icons/heroku.png';
 import npm from './../images/tech-icons/npm-logo.png';
 import yarn from './../images/tech-icons/yarn.png';
 // import gcp from './../images/tech-icons/gcp.png';
-// import aws from './../images/tech-icons/aws-logo.png';
+import aws from './../images/tech-icons/aws-logo.png';
 
 class MyStack extends Component {
   render() {
@@ -34,6 +35,12 @@ class MyStack extends Component {
             <a href='https://www.javascript.com/' target='_blank' rel='noopener noreferrer'>
               <img className='javascript-icon' src={javascript} alt='javascript logo' height='65px' />
               <h3>JavaScript</h3>
+            </a>
+          </div>
+          <div>
+            <a href='https://www.typescriptlang.org/' target='_blank' rel='noopener noreferrer'>
+              <img className='typescript-icon' src={typescript} alt='typescript logo' height='65px' />
+              <h3>TypeScript</h3>
             </a>
           </div>
           <div>

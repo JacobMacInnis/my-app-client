@@ -32,7 +32,7 @@ export default props => {
                   <h1 className='resume-h1'>Professional Summary</h1>
                 </div> 	
 				        <div className="sectionContent">
-                  <p className='resume-p'>Full Stack Web Developer experienced in designing, developing, testing, debugging mobile and web applications.  &nbsp;Developed dynamic interactive web apps using React, Redux, Node and Express.  &nbsp;Experience with MongoDB and SQL.  &nbsp;Built RESTful API servers using NodeJS runtime environment. Experience using Enzyme, Mocha and Chai unit testing.  &nbsp;Deployed using Travis CI, Heroku and Expo.io.</p>
+                  <p className='resume-p'>Full Stack Javascript/Typescript Web Developer experienced in designing, developing, testing, debugging mobile and web applications.  &nbsp;Developed dynamic interactive applications using React, React-Native, Redux, Node, Express, Superagent.  &nbsp;Experience with MongoDB and SQL.  &nbsp;Built RESTful API servers using NodeJS runtime environment. &nbsp;Experience using Jest, Enzyme, Mocha and Chai unit and integration testing.</p>
                 </div>
               </article>
               <div className="clear"></div>
@@ -44,17 +44,20 @@ export default props => {
               <div className="sectionContentSkills">
                 <ul className="keySkills">
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;JavaScript ES6</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;TypeScript</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;NodeJS, Express</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;React, Redux</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;React-Native, Expo.io</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;AWS</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;GraphQL, Apollo</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;Angular, VueJS</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;WebSockets</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;Socket.io</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;HTML5, CSS3, jQuery</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;MongoDB</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;CouchDB/CouchDB</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;SQL - PostgreSQL</li>
-                  <li> <i class="fas fa-circle fa-sm"></i> &nbsp;Git + Github</li>
+                  <li><i class="fas fa-circle fa-sm"></i> &nbsp;Git + Github</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;NPM, Yarn</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;Heroku, Travis CI</li>
                   <li><i class="fas fa-circle fa-sm"></i> &nbsp;C++, Python</li>
@@ -67,7 +70,10 @@ export default props => {
                 <h1 className='resume-h1'>Recent Projects</h1>
               </div>
               <article className='resume-projects'>
-              <p className='resume-p'><strong>Function Earth </strong>&nbsp;- React-Native App designed to promote Earth preservation (in development)</p>
+                <p className='resume-p'><strong><a href="https://play.google.com/store/apps/details?id=com.beachtides.beachtides">BeachTides​</a></strong>&nbsp; (Mobile App) - M​VP version Available at Google Play Store - React Native mobile version of my BeachTides web application. Improved client side data handling using mobile async storage. Users can enter location and get daily or future dated tidal information.</p>
+              </article>
+              <article className='resume-projects'>
+                <p className='resume-p'><strong><a href="https://play.google.com/store/apps/details?id=com.functionearth.FunctionEarth">Function Earth​ (Mobile App)</a></strong>- M​VP Available at Google Play Store - React Native application t​racks what we are doing around the world to reduce our footprint and preserve our environment for future generations. Built a compost bin? Recycled? Picked up trash from the ocean? Helped the elderly? Took care of an animal? Use Function Earth to log these actions. Race other cities, states and countries to be the greenest region in the world!</p>
               </article>
               <article className='resume-projects'>
               <p className='resume-p'><strong><a href="https://think-programming-client.herokuapp.com/">Think Programming </a></strong>&nbsp;- Competitive remote pair programming application using websockets. Challenge live opponents in head to head coding problems. Improve programming skills while writing and reviewing coding solutions. Teaches HTML, CSS, JavaScript and data structures.</p>
@@ -106,13 +112,28 @@ export default props => {
                 <h1 className='resume-h1'>Work Experience</h1>
               </div>
               <div className="sectionContent work-experience">
-              <article>
+                <article>
+                  <h2 className='resume-h2'>Full Stack Software Engineer for Insight Global and OneView Commerce</h2>
+                  <p className="subDetails resume-p">February 2019 to Present</p>
+                </article>
+                <div className='clear'>
+                  <ul className='work-experience-list'>
+                    <li>Developed the ability for Kroger Supermarket customers to order online and pickup grocery orders at a  Walgreens store by developing associate to receive shipments from Kroger Supermarkets</li>
+                    <li>Developed for SaaS Desktop/Mobile Headless Point Of Sale application using Electron, Cordova</li>
+                    <li>Working with Serverless AWS Architected Software: Lambda, Gateway, Cloudfront, SNS, SQS</li>
+                    <li>TypeScript, JavaScript, Node, React, Redux, React-Context, CouchDB, PouchDB, AWS, IBM Cloudant</li>
+                  </ul>
+                </div>
+                <article>
                   <h2 className='resume-h2'>Full-Stack Mobile Software Engineer at Function Earth</h2>
                   <p className="subDetails resume-p">November 2018 to Present</p>
                 </article>
                 <div className='clear'>
                   <ul className='work-experience-list'>
-                    <li>Developing IOS and Android applications designed to promote users to clean the environment - Using React-Native, React-Native-Navigation, React, Redux, Node, Express, MongoDB, Javascript, HTML, CSS </li>
+                    <li>Deployed BeachTides Mobile App to Google Play Store June 2019</li>
+                    <li>Deployed Function Earth Mobile App to Google Play Store February 2019</li>
+                    <li>Developing IOS and Android application designed to promote users to clean the environment</li>
+                    <li>leveraged Using React-Native, React-Native-Navigation, React, Redux, Node, Express, MongoDB, Javascript, HTML, CSS </li>
                   </ul>
                 </div>
                 <article>

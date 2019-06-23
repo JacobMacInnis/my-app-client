@@ -1,10 +1,35 @@
+import FE from './images/screenshots/FUNCTION_EARTH_SCREENSHOTS.png'
+import BTM from './images/screenshots/BEACHTIDES_MOBILE_SCREENSHOTS.png';
 import TP from './images/screenshots/TP-SCREENSHOTS.png';
 import BT from './images/screenshots/BEACHTIDES-SCREENSHOTS.jpg';
 import CSC from './images/screenshots/CS-CARDS-SCREENSHOTS.jpg';
 import SG from './images/screenshots/SG-SCREENSHOTS.jpg';
 import PT from './images/screenshots/PRIMETHREE-SCREENSHOTS.png';
 
-export  const projectsArray = [{
+export  const projectsArray = [
+  {
+    name: 'functionEarth',
+    h2: 'Function Earth',
+    description: 'Available at Google Play Store - React Native application t​racks what we are doing around the world to reduce our footprint and preserve our environment for future generations. Built a compost bin? Recycled? Picked up trash from the ocean? Helped the elderly? Took care of an animal? Use Function Earth to log these actions. Race other cities, states and countries to be the greenest region in the world!',
+    image: FE,
+    projectLink: 'https://play.google.com/store/apps/details?id=com.functionearth.FunctionEarth',
+    linkText: 'Download Here',
+    githubLinkClient: 'https://github.com/JacobMacInnis/function-earth',
+    githubLinkServer: 'https://github.com/JacobMacInnis/server-function-earth',    
+    techList: ['JavaScript', 'Node', 'React-Native', 'React', 'Redux', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Passport-JWT', 'Jest', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+  },
+  {
+    name: 'beachTidesMobile',
+    h2: 'Beach Tides Mobile App',
+    description: 'Available at Google Play Store - MVP React-Native Application Beach Tides is built to give real time and future tide predictions for the coastal United States. Use BeachTides to search by zip code or city and get beach tide predictions. Search for tide information without creating accounts',
+    image: BTM,
+    projectLink: 'https://play.google.com/store/apps/details?id=com.beachtides.beachtides',
+    linkText: 'Download Here',
+    githubLinkClient: 'https://github.com/JacobMacInnis/BeachTides',
+    githubLinkServer: 'https://github.com/JacobMacInnis/beach-tides-server',    
+    techList: ['TypeScript', 'JavaScript', 'Node', 'React', 'Redux', 'Express', 'Socket.io', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+  },
+  {
     name: 'thinkPrograming',
     h2: 'Think Programming',
     description: 'A place to challenge other coding enthusiests in languages or programing categories.  Be fastest and cleanest coder to level up fast.  Gain experience and coding muscle memory fast.',
@@ -17,7 +42,7 @@ export  const projectsArray = [{
   },
   {
   name: 'beachtides',
-  h2: 'Beach Tides',
+  h2: 'Beach Tides Web App',
   description: 'A Full-Stack mobile first responisive web app built to give users in coastal U.S. tidal predictions. Search by zipcode or city and state. Create accounts using Google OAuth 2.0 to save locations and more.',
   image: BT,
   projectLink: 'https://www.beachtides.us',
