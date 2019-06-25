@@ -113,7 +113,7 @@ export default props => {
               </div>
               <div className="sectionContent work-experience">
                 <article>
-                  <h2 className='resume-h2'>Full Stack Software Engineer for Insight Global and OneView Commerce</h2>
+                  <h2 className='resume-h2'>Full Stack Software Engineer - Insight Global/OneView Commerce</h2>
                   <p className="subDetails resume-p">February 2019 to Present</p>
                 </article>
                 <div className='clear'>
@@ -168,10 +168,10 @@ export default props => {
                   <h2 className='resume-h2'>Elementary Education Support for Manchester, NH School District</h2>
                   <p className="subDetails resume-p">2009 - 2012</p>
                 </article>
-                <article>
+                {/* <article>
                   <h2 className='resume-h2'>Custom Picture Framer</h2>
                   <p className="subDetails framer resume-p">2006 - 2008</p>
-                </article>
+                </article> */}
               </div>
 			        <div className="clear"></div>
 		        </section>
