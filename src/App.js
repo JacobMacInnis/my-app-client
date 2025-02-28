@@ -18,8 +18,8 @@ class App extends Component {
         <Route exact path="/" component={TopNav} />
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/" component={AboutMe} />
-        <Route exact path="/" component={Projects} />
         <Route exact path="/" component={MyStack} />
+        <Route exact path="/" component={Projects} />
         <Route exact path="/" component={Contact} />
         <Route exact path="/resume" component={Resume} />
       </div>
