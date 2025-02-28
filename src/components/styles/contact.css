@@ -1,6 +1,6 @@
 .footer {
   margin: 5%;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
 }
 .footer-header {
   font-size: 3em;
@@ -11,17 +11,23 @@
   font-size: 1.5em;
   margin: 0 0 5% 0;
   padding: 0;
-  line-height: .5;
+  line-height: 0.5;
 }
 .footer-info p {
   color: white;
 }
-.mail-link, .github-link, .linkedin-link, .twitter-link .phone-icon{
+.mail-link,
+.github-link,
+.linkedin-link,
+.twitter-link .phone-icon {
   text-decoration: none;
   color: white;
   margin: 2%;
 }
-.mail-link::after, .github-link::after, .linkedin-link::after, .twitter-link::after .phone-icon::after {
+.mail-link::after,
+.github-link::after,
+.linkedin-link::after,
+.twitter-link::after .phone-icon::after {
   color: white;
 }
 .phone-icon {
@@ -41,14 +47,25 @@
 .twitter-link {
   color: white;
 }
-@keyframes fadeAnimation { /* flame pulses */
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
+.stack-overflow {
+  margin-left: 5px;
+  color: white;
+}
+@keyframes fadeAnimation {
+  /* flame pulses */
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .scroll-to-top {
   margin-top: 30px;
-  opacity:1;  
+  opacity: 1;
   animation: fadeAnimation 10s infinite;
 }
 .scroll-to-top:hover {

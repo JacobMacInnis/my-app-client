@@ -19,9 +19,9 @@ export default props => {
       <a className="menu-item" href='/#tech-stack'>
         Tech Stack
       </a>
-      <a className="menu-item" href="/#twitter">
+      {/* <a className="menu-item" href="/#twitter">
         Twitter
-      </a>
+      </a> */}
       <a className="menu-item" href="/#contact">
         Contact
       </a>
