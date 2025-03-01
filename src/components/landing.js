@@ -66,8 +66,9 @@ class LandingPage extends Component {
           }}
         />
         <header className='header'>
-          <h1>JACOB MACINNIS</h1>
-          <h2>Tech Leader | Mentor | Cloud & AI Enthusiast</h2>
+          <h1 className='name'>JACOB MACINNIS</h1>
+          <h2>Tech Leader | Mentor</h2>
+          <h2>Cloud & AI Enthusiast</h2>
           <br />
 
           <Typing className='what-i-do' loop={true} hideCursor={true} speed={60}>

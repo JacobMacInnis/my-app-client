@@ -94,6 +94,16 @@
     background-position: 0px 0px;
   }
   .about-me-list {
+    margin: 0 20% 10px 20%;
+  }
+}
+
+/* If the viewport width is greater than 1000px*/
+@media (min-width: 1500px) {
+  .about-me {
+    background-position: 0px 0px;
+  }
+  .about-me-list {
     margin: 0 30% 10px 30%;
   }
 }
