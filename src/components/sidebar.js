@@ -25,7 +25,9 @@ export default props => {
       <a className="menu-item" href="/#contact">
         Contact
       </a>
-      <a className="menu-item" href="/resume">Resume</a>
+      <a href="/files/Jacob_MacInnis_resume.pdf" target="_blank" rel="noopener noreferrer">
+        Resume
+      </a>
     </Menu>
   );
 };
