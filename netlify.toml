@@ -4,3 +4,9 @@
 
 [build.environment]
   RUBY_VERSION = "3.1.0"
+
+[[redirects]]
+from = "/files/*"
+to = "/files/:splat"
+status = 200
+force = true
