@@ -13,11 +13,12 @@ export default props => {
         About
       </a>
 
-      <a className="menu-item" href="/#projects">
-        Projects
-      </a>
       <a className="menu-item" href='/#tech-stack'>
         Tech Stack
+      </a>
+
+      <a className="menu-item" href="/#projects">
+        Projects
       </a>
       {/* <a className="menu-item" href="/#twitter">
         Twitter
@@ -25,7 +26,7 @@ export default props => {
       <a className="menu-item" href="/#contact">
         Contact
       </a>
-      <a href="https://jacobmacinnis.netlify.app/files/Jacob_MacInnis_resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="https://jacobmacinnis.netlify.app/files/Jacob_MacInnis_Resume.pdf" target="_blank" rel="noopener noreferrer">
         Resume
       </a>
     </Menu>

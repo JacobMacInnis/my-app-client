@@ -31,6 +31,7 @@ import cordova from './../images/tech-icons/cordova.png';
 import pandas from './../images/tech-icons/pandas.svg';
 import numpy from './../images/tech-icons/numpy.png';
 import matplotlib from './../images/tech-icons/matplotlib.png';
+import seaborn from './../images/tech-icons/seaborn.svg';
 
 /** Databases */
 import firestore from './../images/tech-icons/firestore.png';
@@ -93,6 +94,7 @@ class MyStack extends Component {
             { name: "TensorFlow", img: tensorflow, link: "https://www.tensorflow.org/", height: '70px' },
             { name: "Pandas", img: pandas, link: "https://pandas.pydata.org/" },
             { name: "NumPy", img: numpy, link: "https://numpy.org/" },
+            { name: "Seaborn", img: seaborn, link: "https://seaborn.pydata.org/" },
             { name: "Matplotlib", img: matplotlib, link: "https://matplotlib.org/" },
 
             { name: "Databases", type: 'header' },
