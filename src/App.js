@@ -13,15 +13,26 @@ import Resume from './components/resume';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" id="App">
         <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
-        <Route exact path="/" component={TopNav} />
-        <Route exact path="/" component={LandingPage} />
-        <Route exact path="/" component={AboutMe} />
-        <Route exact path="/" component={MyStack} />
-        <Route exact path="/" component={Projects} />
-        <Route exact path="/" component={Contact} />
-        <Route exact path="/resume" component={Resume} />
+        <div id="page-wrap">
+          <Route exact path="/" component={TopNav} />
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/" component={AboutMe} />
+          <Route
+            exact
+            path="/"
+            render={() => <Projects projectType={'ml'} />}
+          />
+          <Route exact path="/" component={MyStack} />
+          <Route
+            exact
+            path="/"
+            render={() => <Projects projectType={'fullStack'} />}
+          />
+          <Route exact path="/" component={Contact} />
+          <Route exact path="/resume" component={Resume} />
+        </div>
       </div>
     );
   }

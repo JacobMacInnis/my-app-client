@@ -1,12 +1,12 @@
 .tech-list-container {
-  margin-top: 10px;
+  margin-top: 25px;
   padding-bottom: 10px;
   background-color: rgb(248, 251, 255);
   border: 1px solid #0b608e;
   border-radius: 4px;
-  -webkit-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
-  -moz-box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
-  box-shadow: 3px 8px 28px -9px rgba(34,40,49,1);
+  -webkit-box-shadow: 1px 3px 10px -4px rgba(34, 40, 49, 0.15);
+  -moz-box-shadow: 1px 3px 10px -4px rgba(34, 40, 49, 0.15);
+  box-shadow: 1px 3px 10px -4px rgba(34, 40, 49, 0.15);
 }
 .tech-list {
   margin-top: 0;

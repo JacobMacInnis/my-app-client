@@ -18,6 +18,8 @@ import express from './../images/tech-icons/express.png';
 import react from './../images/tech-icons/react.png';
 import redux from './../images/tech-icons/redux.png';
 import webpack from './../images/tech-icons/webpack.png';
+import fastApi from './../images/tech-icons/fastApi.png';
+import streamlit from './../images/tech-icons/streamlit.png';
 
 // import reactNative from './../images/tech-icons/react-native.svg';
 import reactNative from './../images/tech-icons/reactnative.svg';
@@ -28,6 +30,8 @@ import cordova from './../images/tech-icons/cordova.png';
 // import graphQL from './../images/tech-icons/graphql-logo.png';
 
 /** Data Science and Machine Learning */
+import pytorch from './../images/tech-icons/pytorch.png';
+import langgraph from './../images/tech-icons/langgraph.png';
 import pandas from './../images/tech-icons/pandas.svg';
 import numpy from './../images/tech-icons/numpy.png';
 import matplotlib from './../images/tech-icons/matplotlib.png';
@@ -47,6 +51,7 @@ import cloudant from './../images/tech-icons/cloudant.svg';
 import pnpm from './../images/tech-icons/pnpm.png';
 import nx from './../images/tech-icons/nx.webp';
 import npm from './../images/tech-icons/npm-logo.png';
+import poetry from './../images/tech-icons/poetry.jpeg';
 
 /** Testing */
 import jest from './../images/tech-icons/jest.png';
@@ -81,7 +86,10 @@ class MyStack extends Component {
             { name: "Redux", img: redux, link: "https://redux.js.org/" },
             { name: "Electron", img: electron, link: "https://www.electronjs.org/" },
             { name: "Cordova", img: cordova, link: "https://cordova.apache.org/" },
-            { name: "Webpack", img: webpack, link: "https://webpack.js.org/" },
+            { name: "Webpack", img: webpack, link: "https://webpack.js.org/", height: '80px' },
+            { name: 'FastAPI', img: fastApi, link: "https://fastapi.tiangolo.com/", height: '70px' },
+            { name: 'Streamlit', height: '75px', img: streamlit, link: "https://streamlit.io/" },
+
             // { name: "GraphQL", img: graphQL, link: "https://graphql.org/" },
 
             { name: "Cloud and Infrastructure", type: 'header' },
@@ -89,9 +97,14 @@ class MyStack extends Component {
             { name: "GCP", img: gcp, link: "https://cloud.google.com/" },
             { name: "Azure", img: azure, link: "https://azure.microsoft.com/en-us/" },
             { name: "Serverless", img: serverless, link: "https://www.serverless.com/" },
+            { name: 'Docker', img: 'https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png', link: "https://www.docker.com/" },
 
             { name: "Data Science and Machine Learning", type: 'header' },
             { name: "TensorFlow", img: tensorflow, link: "https://www.tensorflow.org/", height: '70px' },
+            { name: 'PyTorch', img: pytorch, link: "https://pytorch.org/", height: '70px' },
+            { name: "Scikit-learn", img: 'https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png', link: "https://scikit-learn.org/stable/", height: '50px' },
+            { name: "LangChain", img: langgraph, link: "https://langchain.com/" },
+            { name: "LangGraph", img: langgraph, link: "https://langgraph.com/" },
             { name: "Pandas", img: pandas, link: "https://pandas.pydata.org/" },
             { name: "NumPy", img: numpy, link: "https://numpy.org/" },
             { name: "Seaborn", img: seaborn, link: "https://seaborn.pydata.org/" },
@@ -111,6 +124,7 @@ class MyStack extends Component {
             { name: "pnpm", img: pnpm, link: "https://pnpm.io/" },
             { name: "Nx", img: nx, link: "https://nx.dev/" },
             { name: "NPM", img: npm, link: "https://www.npmjs.com/", height: '45px' },
+            { name: 'Poetry', img: poetry, link: "https://python-poetry.org/" },
 
             { name: "CI/CD Services", type: 'header' },
             { name: "CircleCI", img: circleci, link: "https://circleci.com/" },

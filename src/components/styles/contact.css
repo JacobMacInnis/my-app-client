@@ -18,11 +18,11 @@
 }
 .mail-link,
 .github-link,
-.linkedin-link,
-.twitter-link .phone-icon {
+.twitter-link,
+.phone-icon {
   text-decoration: none;
   color: white;
-  margin: 2%;
+  margin: 20px;
 }
 .mail-link::after,
 .github-link::after,
@@ -41,14 +41,19 @@
 .phone-icon-fa {
   height: 50px;
 }
-.twitter-link {
-  margin-left: 5px;
+
+.linkedin-link {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.twitter-link {
+.medium {
+  margin-left: 20px;
+  margin-right: 20px;
   color: white;
 }
 .stack-overflow {
-  margin-left: 5px;
+  margin-left: 20px;
   color: white;
 }
 @keyframes fadeAnimation {

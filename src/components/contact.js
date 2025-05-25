@@ -30,6 +30,14 @@ class Contact extends Component {
           <button className='phone-icon' onClick={this.togglePopup.bind(this)}><i className="fas fa-phone fa-4x icon phone-icon-fa"></i></button>
           <a href='https://github.com/JacobMacInnis' className='github-link' target="_blank" rel='noopener noreferrer'><i className="fab fa-github fa-4x icon"></i></a>
           <a href='https://www.linkedin.com/in/jacob-macinnis/' className='linkedin-link' target="_blank" rel='noopener noreferrer'><i className="fab fa-linkedin-in fa-4x icon"></i></a>
+          <a
+            href='https://medium.com/@jacobmacinnis'
+            className='medium'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <i className='fab fa-medium fa-4x icon'></i>
+          </a>
           <a href='https://stackoverflow.com/users/10368887/jacob-macinnis' className='stack-overflow' target="_blank" rel='noopener noreferrer'><i className="fab fa-stack-overflow fa-4x icon"></i></a>
           {/* <a href='https://twitter.com/jacobcmacinnis' className='twitter-link' target='_blank' rel='noopener noreferrer'><i className="fab fa-twitter icon fa-4x"></i></a> */}
         </section>
