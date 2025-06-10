@@ -26,7 +26,7 @@ export default props => {
       <a className="menu-item" href="/#contact">
         Contact
       </a>
-      <a href="https://jacobmacinnis.netlify.app/files/Jacob_MacInnis_Resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="https://jacobmacinnis.netlify.app/files/Jacob_MacInnis_Cloud_AI.pdf" target="_blank" rel="noopener noreferrer">
         Resume
       </a>
     </Menu>
