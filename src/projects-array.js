@@ -16,7 +16,8 @@ export  const projectsArray = [
     linkText: 'Download Here',
     githubLinkClient: 'https://github.com/JacobMacInnis/function-earth',
     githubLinkServer: 'https://github.com/JacobMacInnis/server-function-earth',    
-    techList: ['JavaScript', 'Node', 'React-Native', 'React', 'Redux', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Passport-JWT', 'Jest', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+    techList: ['JavaScript', 'Node', 'React-Native', 'React', 'Redux', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Passport-JWT', 'Jest', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku'],
+    tags: ['mobile', 'legacy']
   },
   {
     name: 'beachTidesMobile',
@@ -27,7 +28,8 @@ export  const projectsArray = [
     linkText: 'Download Here',
     githubLinkClient: 'https://github.com/JacobMacInnis/BeachTides',
     githubLinkServer: 'https://github.com/JacobMacInnis/beach-tides-server',    
-    techList: ['TypeScript', 'JavaScript', 'Node', 'React', 'Redux', 'Express', 'Socket.io', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+    techList: ['TypeScript', 'JavaScript', 'Node', 'React', 'Redux', 'Express', 'Socket.io', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku'],
+    tags: ['mobile', 'legacy']
   },
   {
     name: 'thinkPrograming',
@@ -38,7 +40,8 @@ export  const projectsArray = [
     linkText: 'Demo Here',
     githubLinkClient: 'https://github.com/thinkful-ei23/think-programming-client',
     githubLinkServer: 'https://github.com/thinkful-ei23/think-programming-server',    
-    techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'Socket.io', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+    techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'Socket.io', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku'],
+    tags: ['legacy', 'web']
   },
   {
   name: 'beachtides',
@@ -49,7 +52,8 @@ export  const projectsArray = [
   linkText: 'BeachTides.us',
   githubLinkClient: 'https://github.com/JacobMacInnis/beach-tides-client',
   githubLinkServer: 'https://github.com/JacobMacInnis/beach-tides-server',
-  techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku']
+  techList: ['Node', 'React', 'Redux', 'JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Google-OAuth-2.0', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Travis-CI', 'Heroku'],
+  tags: ['legacy', 'cloud']
 }, {
   name: 'CS Cards',
   h2: 'CS Cards',
@@ -59,7 +63,8 @@ export  const projectsArray = [
   linkText: 'CS-Cards',
   githubLinkClient: 'https://github.com/thinkful-ei23/Client-CS-Cards',
   githubLinkServer: 'https://github.com/thinkful-ei23/Server-CS-Cards',
-  techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ]
+  techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ],
+  tags: ['legacy', 'web']
 }, {
   name: 'scottish-gaelic',
   h2: 'Scottish Gaelic',
@@ -69,7 +74,8 @@ export  const projectsArray = [
   linkText: 'Scottish Gaelic',
   githubLinkClient: 'https://github.com/JacobMacInnis/scottish-gaelic-client',
   githubLinkServer: 'https://github.com/JacobMacInnis/scottish-gaelic-server',
-  techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ]
+  techList: ['Node', 'React', 'Redux', 'Socket.io', 'WebSockets','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'JWT-Auth', 'Passport-JWT', 'Mocha', 'Chai', 'Enzyme', 'Heroku' ],
+  tags: ['legacy', 'web']
 },
 {
   name: 'PrimeThree',
@@ -80,7 +86,8 @@ export  const projectsArray = [
   linkText: 'Scottish Gaelic',
   githubLinkClient: 'https://github.com/JacobMacInnis/primethree-client',
   githubLinkServer: 'https://github.com/JacobMacInnis/primethree-server',
-  techList: ['Node', 'React', 'Redux','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Mocha', 'Chai', 'Enzyme', 'Sinon', 'Heroku' ]
+  techList: ['Node', 'React', 'Redux','JavaScript', 'Express', 'MongoDB', 'Mongoose', 'mLab', 'HTML5', 'CSS3', 'Mocha', 'Chai', 'Enzyme', 'Sinon', 'Heroku' ],
+  tags: ['legacy', 'web']
 }
 ];
 // {

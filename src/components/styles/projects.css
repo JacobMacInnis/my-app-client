@@ -1,19 +1,77 @@
+:root[data-theme='light'] .projects {
+  background: radial-gradient(circle at 20% 20%, rgba(107, 207, 255, 0.2), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(168, 139, 250, 0.2), transparent 40%),
+    linear-gradient(140deg, rgba(237, 242, 255, 0.95), rgba(223, 233, 255, 0.92));
+}
+
 .projects {
-  margin-bottom: 10px;
-  background-attachment: fixed;
-  background-color: black;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background: radial-gradient(circle at 20% 20%, rgba(107, 207, 255, 0.15), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(168, 139, 250, 0.12), transparent 50%),
+    linear-gradient(140deg, rgba(6, 9, 16, 0.92), rgba(10, 18, 32, 0.9));
+  color: var(--color-text);
 }
+
+.projects-intro {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+  text-align: center;
+}
+
 .projects-header {
-  color: white;
-  font-size: 3em;
-  padding: 1rem;
-  margin: 2% 5% 0;
+  color: inherit;
+  font-size: var(--text-3xl);
+  margin: 0 0 var(--spacing-sm);
 }
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+.projects-summary {
+  color: var(--color-text-muted);
+  margin: 0;
 }
-.project-github-link {
-  color: #222831;
+
+.project-section {
+  margin: var(--spacing-xl) auto;
+  max-width: 1100px;
+  position: relative;
+  padding: var(--spacing-lg);
+  color: var(--color-text);
+}
+
+.project-section-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.project-section-header h3 {
+  margin: var(--spacing-xs) 0;
+  font-size: var(--text-2xl);
+}
+
+.project-section-header p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.project-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  background: var(--panel-bg);
+  backdrop-filter: blur(25px);
+  z-index: 0;
+}
+
+.project-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .projects {
+    padding: var(--spacing-lg) 0.5rem;
+  }
+  .project-section {
+    padding: var(--spacing-md);
+  }
 }

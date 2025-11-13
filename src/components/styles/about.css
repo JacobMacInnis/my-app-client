@@ -1,109 +1,167 @@
 .about-me {
-  color: #222831;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  background-attachment: fixed;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  color: var(--color-text);
+  position: relative;
+  background: linear-gradient(160deg, rgba(12, 22, 42, 0.92), rgba(10, 18, 32, 0.75));
 }
-.about-me-content {
-  background-color: white;
-  display: inline-block;
-  margin: 20px 15px 15px 15px;
-  padding: 10px;
-  border-radius: 4px;
-  background-color: transparent;
-}
-.about-me-header {
-  font-size: 3em;
-  padding: 20px 20px 10px 20px;
-  margin: 0;
-  background: transparent;
-}
-.about-me-list {
-  list-style: none;
-  font-size: 1em;
-  text-align: center;
-  display: inline-block;
-  padding: 20px;
-  margin: 0 3% 5% 3%;
-  border-radius: 4px;
-  -webkit-box-shadow: 3px 8px 28px -9px rgba(34, 40, 49, 1);
-  -moz-box-shadow: 3px 8px 28px -9px rgba(34, 40, 49, 1);
-  box-shadow: 3px 8px 28px -9px rgba(34, 40, 49, 1);
-  border: 1px solid #cccccc;
-  background: white;
-}
-.about-me-list li {
-  margin: 0 0 10px 0;
-  line-height: 1.2;
-  font-family: "Anonymous Pro", monospace;
+:root[data-theme='light'] .about-me {
+  color: var(--color-text);
+  background: linear-gradient(160deg, rgba(244, 247, 255, 0.96), rgba(226, 233, 252, 0.92));
 }
 
-.section-header {
-  font-size: 1.4em;
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin: 0 auto var(--spacing-xl);
+  max-width: 1100px;
+  position: relative;
 }
-.content {
-  font-size: 1em;
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(35px);
+  background: var(--panel-bg);
+  z-index: 0;
+}
+.about-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.about-text {
+  flex: 1;
+}
+
+.about-me-header {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.about-summary {
+  color: var(--color-text-muted);
+  max-width: 640px;
+}
+
+.about-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-sm);
 }
 
 .profile-image {
-  width: 40%;
-  max-width: 350px;
-  border-radius: 50%;
-  border: 1px solid #cccccc;
-  -webkit-box-shadow: 3px 8px 28px -9px rgba(34, 40, 49, 1);
-  -moz-box-shadow: 3px 8px 28px -9px rgba(34, 40, 49, 1);
-  box-shadow: 3px 8px 28px -9px rgba(34, 40, 49, 1);
-  margin-bottom: 15px;
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-lg);
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-strong);
+  object-fit: cover;
 }
-.thinkful-link {
-  font-weight: 700;
-  color: rgb(1, 1, 163);
-  text-decoration: none;
+
+.profile-caption {
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: var(--text-xs);
 }
-/* If the viewport width is greater than 425px*/
-@media (min-width: 411px) {
-  .about-me {
-    background-position: -425px 0px;
-  }
+:root[data-theme='light'] .profile-caption {
+  color: var(--color-text-muted);
 }
-/* If the viewport width is greater than 600px*/
-@media (min-width: 600px) {
-  .about-me {
-    background-position: -530px 0px;
-  }
+
+.about-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
-/* If the viewport width is greater than 650px*/
-@media (min-width: 650px) {
-  .about-me-list {
-    padding: 20px;
-    margin: 0 10% 5% 10%;
-  }
+.about-grid::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  border-radius: var(--radius-lg);
+  z-index: 0;
+  background: var(--panel-bg);
 }
-/* If the viewport width is greater than 800px*/
-@media (min-width: 800px) {
-  .about-me-list {
-    margin: 0 20% 10px 20%;
-  }
-  .about-me-list li {
-    /* font-size: 1.3em; */
-  }
+.about-grid > * {
+  position: relative;
+  z-index: 1;
 }
-/* If the viewport width is greater than 1000px*/
-@media (min-width: 1000px) {
-  .about-me {
-    background-position: 0px 0px;
-  }
-  .about-me-list {
-    margin: 0 20% 10px 20%;
+
+.about-grid .about-card:first-child {
+  grid-column: auto;
+}
+
+@media (min-width: 900px) {
+  .about-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* If the viewport width is greater than 1000px*/
-@media (min-width: 1500px) {
-  .about-me {
-    background-position: 0px 0px;
+.about-card {
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow-soft);
+  color: var(--color-text);
+}
+
+.about-card h3 {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--text-xl);
+}
+
+.about-card p {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+}
+
+.about-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.about-card li {
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.about-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  box-shadow: 0 0 12px rgba(107, 207, 255, 0.8);
+}
+
+@media (min-width: 900px) {
+  .about-hero {
+    flex-direction: row;
+    align-items: center;
   }
-  .about-me-list {
-    margin: 0 30% 10px 30%;
+
+  .about-image-wrapper {
+    align-items: flex-end;
+    text-align: right;
   }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import './App.css';
-import SideBar from './components/sidebar';
 import TopNav from './components/top-nav';
 import LandingPage from './components/landing';
 import AboutMe from './components/about';
@@ -14,7 +13,6 @@ class App extends Component {
   render() {
     return (
       <div className="App" id="App">
-        <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
         <div id="page-wrap">
           <Route exact path="/" component={TopNav} />
           <Route exact path="/" component={LandingPage} />
@@ -25,11 +23,6 @@ class App extends Component {
             render={() => <Projects projectType={'ml'} />}
           />
           <Route exact path="/" component={MyStack} />
-          <Route
-            exact
-            path="/"
-            render={() => <Projects projectType={'fullStack'} />}
-          />
           <Route exact path="/" component={Contact} />
           <Route exact path="/resume" component={Resume} />
         </div>

@@ -1,61 +1,65 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles/contact.css';
-import PhonePopup from './phone-popup';
-import { animateScroll as scroll } from 'react-scroll'
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showPopup: false
-    };
+const contactChannels = [
+  {
+    label: 'LinkedIn',
+    action: 'linkedin.com/in/jacob-macinnis',
+    href: 'https://www.linkedin.com/in/jacob-macinnis/',
+    icon: 'fab fa-linkedin-in'
+  },
+  {
+    label: 'Email',
+    action: 'jacobmacinnis7@gmail.com',
+    href: 'mailto:jacobmacinnis7@gmail.com',
+    icon: 'fas fa-envelope'
+  },
+  {
+    label: 'Phone',
+    action: '(508) 244-1362',
+    href: 'tel:5082441362',
+    icon: 'fas fa-phone'
   }
-  togglePopup() {
-    this.setState({
-      showPopup: !this.state.showPopup
-    });
-  }
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-  render() {
-    return (
-      <footer className="footer" id='contact'>
-        <h2 className='footer-header'>Contact</h2>
-        <div className='footer-info'>
-          <p>Jacob MacInnis</p>
-        </div>
-        <section className='footer-icons'>
-          <a href='mailto:jacobmacinnis7@gmail.com' className='mail-link'><i className="fas fa-envelope fa-4x icon"></i></a>
-          <button className='phone-icon' onClick={this.togglePopup.bind(this)}><i className="fas fa-phone fa-4x icon phone-icon-fa"></i></button>
-          <a href='https://github.com/JacobMacInnis' className='github-link' target="_blank" rel='noopener noreferrer'><i className="fab fa-github fa-4x icon"></i></a>
-          <a href='https://www.linkedin.com/in/jacob-macinnis/' className='linkedin-link' target="_blank" rel='noopener noreferrer'><i className="fab fa-linkedin-in fa-4x icon"></i></a>
-          <a
-            href='https://medium.com/@jacobmacinnis'
-            className='medium'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <i className='fab fa-medium fa-4x icon'></i>
+];
+
+const socialLinks = [
+  // asdfd{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/jacob-macinnis/', icon: 'fab fa-linkedin-in' },
+  { label: 'GitHub', href: 'https://github.com/JacobMacInnis', icon: 'fab fa-github' },
+  { label: 'Medium', href: 'https://medium.com/@jacobmacinnis', icon: 'fab fa-medium' },
+  { label: 'Stack Overflow', href: 'https://stackoverflow.com/users/10368887/jacob-macinnis', icon: 'fab fa-stack-overflow' }
+];
+
+const Contact = () => (
+  <footer className="contact-section" id="contact">
+    <div className="contact-card">
+      <div className="contact-header">
+        <p className="eyebrow caption">Let’s connect</p>
+        <h2>Contact</h2>
+        <p>Drop a note with context. I reply as bandwidth allows.</p>
+      </div>
+
+      <div className="contact-grid">
+        {contactChannels.map(channel => (
+          <a key={channel.label} className="contact-channel" href={channel.href}>
+            <i className={`${channel.icon} channel-icon`} aria-hidden="true"></i>
+            <div>
+              <span className="channel-label">{channel.label}</span>
+              <span className="channel-action">{channel.action}</span>
+            </div>
           </a>
-          <a href='https://stackoverflow.com/users/10368887/jacob-macinnis' className='stack-overflow' target="_blank" rel='noopener noreferrer'><i className="fab fa-stack-overflow fa-4x icon"></i></a>
-          {/* <a href='https://twitter.com/jacobcmacinnis' className='twitter-link' target='_blank' rel='noopener noreferrer'><i className="fab fa-twitter icon fa-4x"></i></a> */}
-        </section>
-        {this.state.showPopup ?
-          <PhonePopup
-            text='Close Me'
-            closePopup={this.togglePopup.bind(this)}
-          />
-          : null
-        }
-        <div className='scroll-to-top'>
-          <a className='w3-animate-fading' onClick={this.scrollToTop}>
-            <i className="fas fa-chevron-circle-up arrow fa-3x"></i>
+        ))}
+      </div>
+
+      <div className="contact-socials">
+        {socialLinks.map(link => (
+          <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">
+            <i className={`${link.icon} social-icon`} aria-hidden="true"></i>
+            <span>{link.label}</span>
           </a>
-        </div>
-      </footer>
-    );
-  }
-}
+        ))}
+      </div>
+    </div>
+  </footer>
+);
 
 export default Contact;

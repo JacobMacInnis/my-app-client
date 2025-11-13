@@ -1,24 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles/project-tech.css';
 
-class ProjectTech extends Component {
-  render() {
-    let techList = this.props.techList.map((tech, index) => {
-      if (index !== this.props.techList.length - 1) {
-        return <span className='tech' key={`${index}`}>{tech}, </span>;  
-      } else {
-        return <span className='tech' key={`${index}`}>{tech}</span>;
-      }
-    });
-    return (
-      <div className='tech-list-container'>
-        <h2 className='tech-h2'>Technologies Used</h2>
-        <div className='tech-list'>
-          {techList}
-        </div>
-      </div>
-    );
-  };
-};
+const ProjectTech = ({ techList = [] }) => (
+  <section className='tech-list-container'>
+    <p className='tech-eyebrow caption'>Stack</p>
+    <div className='tech-list'>
+      {techList.map((tech, index) => (
+        <span className='tech-chip' key={`${tech}-${index}`}>
+          {tech}
+        </span>
+      ))}
+    </div>
+  </section>
+);
 
 export default ProjectTech;

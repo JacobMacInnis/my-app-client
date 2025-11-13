@@ -1,58 +1,82 @@
 .tech-stack {
-  height: 100%;
-  background-attachment: fixed;
-  border-radius: 5px;
-  color: white;
-  padding: 1rem;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  margin: var(--spacing-xl) auto;
+  max-width: 1100px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(240, 248, 255, 0.8)
+  );
+  border-radius: var(--radius-lg);
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.18);
+  color: #111;
+  @media (max-width: 600px) {
+    border-radius: 0;
+  }
+}
+
+.tech-stack-hero {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
 }
 .tech-stack-header {
-  font-size: 3em;
-  margin: 25px;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
   display: inline-block;
-  padding: 5px;
-  border-radius: 5px;
+  margin: 0;
 }
-.tech-category {
-  width: 100%;
-  display: block;
-  margin-top: 20px;
+
+.tech-card-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
-.tech-stack-list-header {
-  font-size: 1.75em;
-  font-weight: bold;
-  color: #222831;
-  padding-bottom: 20px;
+
+.tech-card {
+  border-radius: 20px;
+  padding: var(--spacing-lg);
+  background: #fff;
+  border: 1px solid rgba(4, 6, 18, 0.08);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
 }
-.javscript-icon-container {
-  height: 45px;
+
+.tech-card h2 {
+  margin: 0 0 var(--spacing-md);
+  font-size: 1.25rem;
+  color: #111;
 }
-.javascript {
-  color: yellow;
-  height: 100%;
+
+.tech-logo-grid {
+  display: grid;
+  gap: var(--spacing-xs);
 }
-.node-icon {
-  background-color: white;
-}
-.github-icon {
-  color: rgb(80, 52, 52);
-}
-.container-1 {
-  border-radius: 5px;
-  padding: 2rem;
-  margin: 0 5% 1% 5%;
-  background: white;
+
+.tech-logo-grid a {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
-.container-1 > div {
-  margin: 5px;
-}
-.container-1 h3 {
-  color: black;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 0.4rem;
+  padding-left: 8px;
+  border-radius: 12px;
+  transition: background 0.2s ease, transform 0.2s ease;
   text-decoration: none;
+  color: #111;
 }
-.container-1 a {
-  text-decoration: none;
+
+.tech-logo-grid a:hover {
+  background: rgba(15, 23, 42, 0.06);
+  transform: translateY(-2px);
+}
+
+.tech-logo-grid span {
+  font-weight: 600;
+}
+
+.tech-logo-grid img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
 }

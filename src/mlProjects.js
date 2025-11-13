@@ -20,7 +20,8 @@ export const mlProjects = [
             'Mistral',
             'OpenAI API',
             'Ruff',
-            'Poetry']
+            'Poetry'],
+        tags: ['ml', 'ai', 'agents']
     },
     {
         name: 'agent_cortex_v2',
@@ -36,7 +37,8 @@ export const mlProjects = [
             'FAISS',
             'DuckDuckGo Search',
             'Python Code Execution',
-            'Poetry']
+            'Poetry'],
+        tags: ['ml', 'agents']
     },
     {
         name: 'agent_cortex_v1',
@@ -52,7 +54,8 @@ export const mlProjects = [
             'FAISS',
             'DuckDuckGo Search',
             'Python Code Execution',
-            'Poetry']
+            'Poetry'],
+        tags: ['ml', 'agents']
     },
     {
         name: 'rag-api',
@@ -69,7 +72,8 @@ export const mlProjects = [
             'FAISS',
             'FLAN-T5',
             'Docker',
-            'Poetry']
+            'Poetry'],
+        tags: ['ml', 'cloud']
     },
     {
         name: 'agricultural-leaf-vision',
@@ -91,7 +95,8 @@ export const mlProjects = [
             'google-cloud-aiplatform',
             'Docker',
             'FastAPI',
-            'Poetry']
+            'Poetry'],
+        tags: ['ml', 'cv']
     },
     {
         name: 'summit-mind',
@@ -112,7 +117,8 @@ export const mlProjects = [
             'Google Cloud Registry',
             'Docker',
             'Poetry',
-        ]
+        ],
+        tags: ['ml', 'nlp']
     },
     {
         name: 'career-compass',
@@ -135,7 +141,8 @@ export const mlProjects = [
             'Google Cloud Registry',
             'Docker',
             'Poetry'
-        ]
+        ],
+        tags: ['ml', 'cloud']
     }
 
 
