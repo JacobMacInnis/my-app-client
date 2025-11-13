@@ -4,6 +4,8 @@ import AgentCortex2 from './images/screenshots/agent-cortex-v2.png';
 import ragApi from './images/screenshots/rag-api.jpeg';
 import agriculturalLeafVision from './images/screenshots/agricultural-leaf-vision.png';
 import summitMind from './images/screenshots/summit-mind.drawio.png';
+import parisAirbnbKMeans from './images/screenshots/paris_airbnb_clustering.png';
+import breastCancerSvm from './images/screenshots/binary_classification.png';
 import CareerCompass from './images/screenshots/career_compass_loss_curve.png';
 
 export const mlProjects = [
@@ -119,6 +121,51 @@ export const mlProjects = [
             'Poetry',
         ],
         tags: ['ml', 'nlp']
+    },
+    {
+        name: 'paris-airbnb-kmeans',
+        h2: 'Paris Airbnb Clustering',
+        description: 'Exploratory KMeans analysis of Paris Airbnb listings that contrasts amenity + pricing bundles with spatial price bands, highlighting how neighborhoods and feature sets drive nightly rates.',
+        image: parisAirbnbKMeans,
+        github: 'https://github.com/JacobMacInnis/Unsupervised_KMeans_AirBnb_Paris',
+        techList: [
+            'Python',
+            'pandas',
+            'numpy',
+            'scikit-learn',
+            'KMeans',
+            'matplotlib',
+            'seaborn',
+            'plotly',
+            'geopandas',
+            'contextily',
+            'Jupyter Notebook'
+        ],
+        tags: ['ml', 'unsupervised']
+    },
+    {
+        name: 'breast-cancer-svm',
+        h2: 'Breast Cancer SVM',
+        description: 'Binary classification pipeline that standardizes the UCI breast cancer dataset, trains an SVC baseline, then tunes C/Gamma and benchmarks against logistic regression and random forest to reach ~0.995 ROC-AUC.',
+        image: breastCancerSvm,
+        github: 'https://github.com/JacobMacInnis/SVM_Binary_Classification_Breast_Cancer_Diagnosis',
+        techList: [
+            'Python',
+            'pandas',
+            'numpy',
+            'scikit-learn',
+            'StandardScaler',
+            'ColumnTransformer',
+            'SVC (RBF)',
+            'GridSearchCV',
+            'SelectKBest',
+            'LogisticRegression',
+            'RandomForestClassifier',
+            'matplotlib',
+            'seaborn',
+            'Jupyter Notebook'
+        ],
+        tags: ['ml', 'classification']
     },
     {
         name: 'career-compass',

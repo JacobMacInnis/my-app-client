@@ -149,7 +149,7 @@ class LandingPage extends Component {
             <div className="stat-card glass">
               <p className="stat-label">Team Focus</p>
               <p className="stat-value">Director of Engineering</p>
-              <p className="stat-detail">Leading full stack engineering org across North America, Europe, Australia.</p>
+              <p className="stat-detail">Leading remote-first full stack engineering org across North America, Europe, Australia.</p>
             </div>
             <div className="visual-footer">
               <p className="stat-label">Academia, Certifications and Publications</p>
