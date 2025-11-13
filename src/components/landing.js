@@ -4,9 +4,9 @@ import { loadFull } from 'tsparticles';
 import './styles/landing.css';
 
 const heroHighlights = [
-  'Director of Engineering shipping global retail platforms across AWS and GCP.',
-  'Cut deployment windows from days to hours by rebuilding CI/CD and release practices.',
-  'Building applied AI side projects (R2AI, Agent Cortex, RAG API) to stay hands-on with emerging tech.'
+  '5+ years in engineering leadership, blending hands-on technical expertise with strategic vision to drive impactful outcomes.',
+  'From Backend to Frontend, CI/CD, and everything in between. Proven track record of building and leading teams that deliver scalable, resilient solutions.',
+  'Building AI (R2AI, Agent Cortex, RAG API) and ML projects (PyTorch, TensorFlow, Scikit-learn) staying hands-on with emerging tech.'
 ];
 
 class LandingPage extends Component {
@@ -57,7 +57,7 @@ class LandingPage extends Component {
     await loadFull(main);
   };
 
-  particlesLoaded = () => {};
+  particlesLoaded = () => { };
 
   updateParallax = () => {
     if (this.heroRef.current) {
@@ -112,10 +112,10 @@ class LandingPage extends Component {
           <div className="hero-text">
             <p className="eyebrow">Engineering Leadership · Cloud · AI</p>
             <p className="hero-name">Jacob MacInnis</p>
-            <h1>Building adaptive engineering orgs for the AI era.</h1>
+            <h1>Engineering Leader designing cloud & AI architectures.</h1>
             <p className="hero-subtitle">
-              I modernize legacy platforms, coach engineers, and build pragmatic cloud and AI solutions
-              that keep mission-critical commerce systems resilient and fast.
+              I provide hands-on technical leadership while contributing as a top IC, helping engineering orgs ship reliable, scalable software.
+              Balancing architecture, strategic planning, product speed, and pragmatic coaching to guide high-performing teams solving real problems.
             </p>
             <ul className="hero-highlights">
               {heroHighlights.map((highlight, index) => (
@@ -148,13 +148,15 @@ class LandingPage extends Component {
             </div>
             <div className="stat-card glass">
               <p className="stat-label">Team Focus</p>
-              <p className="stat-value">12+ Engineers</p>
-              <p className="stat-detail">Led cross-functional groups across North America, Europe, Australia.</p>
+              <p className="stat-value">Director of Engineering</p>
+              <p className="stat-detail">Leading full stack engineering org across North America, Europe, Australia.</p>
             </div>
             <div className="visual-footer">
+              <p className="stat-label">Academia, Certifications and Publications</p>
               <p>
-                Certified in AI/ML by Stanford, Duke, DeepLearning.AI, and Google, and author of 50+ technical articles.
+                Certified in AI/ML by Stanford, Duke, DeepLearning.AI, Google and more, as well as author of 50+ technical articles.
               </p>
+              <p>Working through Masters of Science in Artificial Intelligence at Colorado Boulder</p>
               <a
                 className="btn tertiary"
                 href="#about"

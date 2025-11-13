@@ -8,7 +8,7 @@ const projectSections = [
   {
     id: 'ai',
     title: 'AI Agents & Automation',
-    eyebrow: '2024–2025',
+    eyebrow: '2024–2025 AI',
     description: 'LangGraph agents, local copilots, and RAG systems designed to augment engineering teams.',
     dataset: 'ml',
     filter: project => project.tags?.includes('ai') || project.tags?.includes('agents')
@@ -16,15 +16,15 @@ const projectSections = [
   {
     id: 'ml',
     title: 'ML Systems & Data Products',
-    eyebrow: 'Applied ML',
+    eyebrow: '2024-2025 ML',
     description: 'Computer vision, summarization, and predictive models with pragmatic deployment stories.',
     dataset: 'ml',
     filter: project => project.tags?.includes('ml') && !(project.tags?.includes('ai') || project.tags?.includes('agents'))
   },
   {
     id: 'legacy',
-    title: 'Legacy Highlights',
-    eyebrow: '2019 Launches',
+    title: 'Legacy Full Stack & Mobile',
+    eyebrow: '',
     description: 'Full-stack and mobile builds that shipped fast, proved value, and still influence how I mentor teams.',
     dataset: 'legacy',
     filter: project => project.tags?.includes('legacy')
