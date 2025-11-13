@@ -4,9 +4,9 @@ import { loadFull } from 'tsparticles';
 import './styles/landing.css';
 
 const heroHighlights = [
-  '5+ years in engineering leadership, blending hands-on technical expertise with strategic vision to drive impactful outcomes.',
-  'From Backend to Frontend, CI/CD, and everything in between. Proven track record of building and leading teams that deliver scalable, resilient solutions.',
-  'Building AI (R2AI, Agent Cortex, RAG API) and ML projects (PyTorch, TensorFlow, Scikit-learn) staying hands-on with emerging tech.'
+  '5+ years in engineering leadership, blending hands-on technical expertise with strategic vision.',
+  'From Backend to Frontend and CI/CD, I\'ve led teams end-to-end to ship scalable, resilient solutions.',
+  'Building AI Agents and ML systems with PyTorch, TensorFlow, and Scikit-learn, staying hands-on with emerging tech.'
 ];
 
 class LandingPage extends Component {
@@ -114,8 +114,9 @@ class LandingPage extends Component {
             <p className="hero-name">Jacob MacInnis</p>
             <h1>Engineering Leader designing cloud & AI architectures.</h1>
             <p className="hero-subtitle">
-              I provide hands-on technical leadership while contributing as a top IC, helping engineering orgs ship reliable, scalable software.
-              Balancing architecture, strategic planning, product speed, and pragmatic coaching to guide high-performing teams solving real problems.
+              {/* I provide hands-on technical leadership while contributing as a top IC, helping engineering orgs ship reliable, scalable software.
+              Balancing architecture, strategic planning, product speed, and pragmatic coaching. */}
+              Hands-on as both a technical leader and top IC helping engineering orgs ship reliable, scalable software. Balancing architecture, strategic planning, product speed, and pragmatic coaching.
             </p>
             <ul className="hero-highlights">
               {heroHighlights.map((highlight, index) => (
