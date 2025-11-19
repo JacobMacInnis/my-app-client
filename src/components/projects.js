@@ -11,7 +11,8 @@ const projectSections = [
     eyebrow: '2024–2025 AI',
     description: 'LangGraph agents, local copilots, and RAG systems designed to augment engineering teams.',
     dataset: 'ml',
-    filter: project => project.tags?.includes('ai') || project.tags?.includes('agents')
+    filter: project => project.tags?.includes('ai') || project.tags?.includes('agents'),
+    maxListHeight: 647
   },
   {
     id: 'ml',
@@ -19,7 +20,8 @@ const projectSections = [
     eyebrow: '2024-2025 ML',
     description: 'Computer vision, summarization, and predictive models with pragmatic deployment stories.',
     dataset: 'ml',
-    filter: project => project.tags?.includes('ml') && !(project.tags?.includes('ai') || project.tags?.includes('agents'))
+    filter: project => project.tags?.includes('ml') && !(project.tags?.includes('ai') || project.tags?.includes('agents')),
+    maxListHeight: 647
   },
   {
     id: 'legacy',
@@ -27,7 +29,8 @@ const projectSections = [
     eyebrow: '',
     description: 'Full-stack and mobile builds that shipped fast, proved value, and still influence how I mentor teams.',
     dataset: 'legacy',
-    filter: project => project.tags?.includes('legacy')
+    filter: project => project.tags?.includes('legacy'),
+    maxListHeight: 959
   }
 ];
 
@@ -46,13 +49,17 @@ const Projects = () => (
       const list = source.filter(section.filter);
       if (!list.length) return null;
       return (
-        <div className='project-section' key={section.id}>
+        <div className='project-section' id={`projects-${section.id}`} key={section.id}>
           <div className='project-section-header'>
             <p className='eyebrow caption'>{section.eyebrow}</p>
             <h3>{section.title}</h3>
             <p>{section.description}</p>
           </div>
-          <ProjectBuilder projects={list} label={`More ${section.title}`} />
+          <ProjectBuilder
+            projects={list}
+            label={`More ${section.title}`}
+            maxListHeight={section.maxListHeight}
+          />
         </div>
       );
     })}

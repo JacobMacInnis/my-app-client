@@ -3,7 +3,9 @@ import AgentCortex from './images/screenshots/agent-cortex-v1.png';
 import AgentCortex2 from './images/screenshots/agent-cortex-v2.png';
 import ragApi from './images/screenshots/rag-api.jpeg';
 import agriculturalLeafVision from './images/screenshots/agricultural-leaf-vision.png';
+import cnnCancerDetection from './images/screenshots/cnn_Image_classfication_cancer.png';
 import summitMind from './images/screenshots/summit-mind.drawio.png';
+import tweetClassificationGru from './images/screenshots/disaster_tweet_classification.png';
 import parisAirbnbKMeans from './images/screenshots/paris_airbnb_clustering.png';
 import breastCancerSvm from './images/screenshots/binary_classification.png';
 import CareerCompass from './images/screenshots/career_compass_loss_curve.png';
@@ -101,6 +103,26 @@ export const mlProjects = [
         tags: ['ml', 'cv']
     },
     {
+        name: 'cnn-image-reg-cancer-detection',
+        h2: 'CNN Cancer Detection',
+        description: 'A research notebook that registers histopathology slides, normalizes staining, and trains a convolutional model to surface malignant vs. benign tissue with improved recall on minority classes.',
+        image: cnnCancerDetection,
+        github: 'https://github.com/JacobMacInnis/CNN-Image-Reg-Cancer-Detection',
+        techList: [
+            'Python',
+            'TensorFlow',
+            'Keras',
+            'OpenCV',
+            'scikit-image',
+            'albumentations',
+            'numpy',
+            'pandas',
+            'matplotlib',
+            'Jupyter Notebook'
+        ],
+        tags: ['ml', 'cv']
+    },
+    {
         name: 'summit-mind',
         h2: 'Summit Mind',
         description: 'a portfolio project built to experiment with and deploy lightweight abstracted summarization models based on the T5 (Text-to-Text Transfer Transformer series) models. Designed to summarize multi-turn conversations (e.g., meetings, support chats)',
@@ -119,6 +141,25 @@ export const mlProjects = [
             'Google Cloud Registry',
             'Docker',
             'Poetry',
+        ],
+        tags: ['ml', 'nlp']
+    },
+    {
+        name: 'tweet-classification-gru',
+        h2: 'GRU Tweet Classification',
+        description: 'A notebook-first NLP project that tokenizes noisy tweets, projects them through pretrained embeddings, and fine-tunes a bidirectional GRU classifier with attention-style pooling for better toxicity scoring.',
+        image: tweetClassificationGru,
+        github: 'https://github.com/JacobMacInnis/NLP_Tweet_Classification_GRU',
+        techList: [
+            'Python',
+            'PyTorch',
+            'torchtext',
+            'spaCy',
+            'GloVe Embeddings',
+            'scikit-learn',
+            'matplotlib',
+            'seaborn',
+            'Jupyter Notebook'
         ],
         tags: ['ml', 'nlp']
     },

@@ -93,7 +93,108 @@
 .project-list {
   display: flex;
   flex-direction: column;
+  gap: var(--spacing-xs);
+  min-height: 0;
+  height: min(
+    var(--project-list-height, var(--project-list-max, 647px)),
+    var(--project-list-max, 647px)
+  );
+  max-height: var(--project-list-max, 647px);
+  position: relative;
+  align-self: stretch;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  background: var(--panel-bg-soft);
+  overflow: hidden;
+}
+
+.project-list.scrollable {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.project-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-list-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-list-hint-icon {
+  font-size: 0.9rem;
+}
+
+.project-list-scroll {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+  height: 100%;
+}
+
+.project-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 0.35rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
+}
+
+.project-list-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.project-list-items::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-list-items::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 999px;
+}
+
+.project-list-fade {
+  position: absolute;
+  left: var(--spacing-sm);
+  right: var(--spacing-sm);
+  height: 32px;
+  border-radius: var(--radius-md);
+  pointer-events: none;
+  display: block;
+}
+
+.project-list-fade.top {
+  top: var(--spacing-xs);
+  background: linear-gradient(180deg, rgba(4, 7, 14, 0.9) 0%, rgba(4, 7, 14, 0));
+}
+
+.project-list-fade.bottom {
+  bottom: var(--spacing-xs);
+  background: linear-gradient(0deg, rgba(4, 7, 14, 0.9) 0%, rgba(4, 7, 14, 0));
+}
+
+:root[data-theme='light'] .project-list-fade.top {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0));
+}
+
+:root[data-theme='light'] .project-list-fade.bottom {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0));
 }
 
 .project-list-item {
@@ -153,7 +254,7 @@
 @media (min-width: 900px) {
   .project-layout {
     grid-template-columns: 1.7fr 1fr;
-    align-items: start;
+    align-items: stretch;
   }
   .project-feature {
     grid-template-columns: 1fr 1fr;
@@ -177,10 +278,34 @@
     padding: var(--spacing-md);
   }
   .project-list {
-    display: flex;
-    overflow-x: auto;
-    gap: var(--spacing-xs);
-    padding: var(--spacing-xs) 0;
+    border: none;
+    padding: 0;
+    max-height: none;
+    min-height: auto;
+    height: auto;
+    overflow: visible;
+    --project-list-height: auto;
+  }
+  .project-list-header {
+    margin-bottom: var(--spacing-xs);
+  }
+  .project-list-hint {
+    display: none;
+  }
+  .project-list-scroll {
+    position: static;
+    min-height: auto;
+    height: auto;
+  }
+  .project-list-fade {
+    display: none;
+  }
+  .project-list-items {
+    flex-direction: column;
+    overflow: visible;
+    gap: var(--spacing-sm);
+    padding: 0;
+    width: 100%;
   }
   .project-list-label {
     display: block;
@@ -210,24 +335,11 @@
     padding: 0.35rem 1rem;
   }
   .project-list-item {
-    flex: 0 0 auto;
-    padding: 0.35rem 0.8rem;
-    border-radius: 999px;
-    border: 1px solid var(--panel-border);
-    background: var(--panel-bg-soft);
-    min-width: auto;
-    justify-content: center;
-    gap: 0;
-  }
-  .project-list-item h4,
-  .project-list-item p,
-  .project-list-item span {
-    display: none;
-  }
-  .project-list-item::after {
-    content: attr(data-label);
-    font-size: var(--text-sm);
-    color: var(--color-text);
+    flex: 1 1 auto;
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    justify-content: space-between;
+    gap: var(--spacing-sm);
   }
   .project-list-item.active {
     border-color: var(--color-primary);

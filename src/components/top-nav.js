@@ -6,7 +6,8 @@ class TopNav extends Component {
     super(props);
     this.state = {
       isLight: false,
-      mobileMenuOpen: false
+      mobileMenuOpen: false,
+      projectsMenuOpen: false
     };
   }
 
@@ -39,19 +40,39 @@ class TopNav extends Component {
   };
 
   toggleMobileMenu = () => {
-    this.setState(prev => ({ mobileMenuOpen: !prev.mobileMenuOpen }));
+    this.setState(prev => ({
+      mobileMenuOpen: !prev.mobileMenuOpen,
+      projectsMenuOpen: prev.mobileMenuOpen ? false : prev.projectsMenuOpen
+    }));
   };
 
   closeMobileMenu = () => {
-    this.setState({ mobileMenuOpen: false });
+    this.setState({ mobileMenuOpen: false, projectsMenuOpen: false });
+  };
+
+  toggleProjectsMenu = () => {
+    this.setState(prev => ({ projectsMenuOpen: !prev.projectsMenuOpen }));
+  };
+
+  closeProjectsMenu = () => {
+    this.setState({ projectsMenuOpen: false });
+  };
+
+  handleProjectLinkClick = () => {
+    this.setState({ projectsMenuOpen: false, mobileMenuOpen: false });
   };
 
   render() {
-    const { isLight, mobileMenuOpen } = this.state;
+    const { isLight, mobileMenuOpen, projectsMenuOpen } = this.state;
+    const projectMenuItems = [
+      { label: 'AI Projects', href: '/#projects-ai' },
+      { label: 'ML Projects', href: '/#projects-ml' },
+      { label: 'Full Stack Legacy', href: '/#projects-legacy' }
+    ];
     const navLinks = [
       { label: 'Home', href: '/#home' },
       { label: 'About', href: '/#about' },
-      { label: 'Projects', href: '/#projects' },
+      { label: 'Projects', sublinks: projectMenuItems },
       { label: 'Tech Stack', href: '/#tech-stack' },
       { label: 'Contact', href: '/#contact' }
     ];
@@ -70,11 +91,42 @@ class TopNav extends Component {
             </a>
           </div>
           <nav className="nav-links">
-            {navLinks.slice(1).map(link => (
-              <a key={link.label} href={link.href}>
-                {link.label}
-              </a>
-            ))}
+            {navLinks
+              .filter(link => link.label !== 'Home')
+              .map(link => {
+                if (link.sublinks) {
+                  return (
+                    <div
+                      key={link.label}
+                      className={`nav-link-group ${projectsMenuOpen ? 'open' : ''}`}
+                      onMouseLeave={this.closeProjectsMenu}
+                    >
+                      <button
+                        type="button"
+                        className="nav-link-toggle"
+                        onClick={this.toggleProjectsMenu}
+                        aria-haspopup="true"
+                        aria-expanded={projectsMenuOpen}
+                      >
+                        {link.label}
+                        <span className="chevron" aria-hidden="true" />
+                      </button>
+                      <div className="nav-dropdown" role="menu">
+                        {link.sublinks.map(sublink => (
+                          <a key={sublink.label} href={sublink.href} onClick={this.handleProjectLinkClick} role="menuitem">
+                            {sublink.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
+                return (
+                  <a key={link.label} href={link.href}>
+                    {link.label}
+                  </a>
+                );
+              })}
           </nav>
           <div className="nav-actions">
             <a
@@ -94,11 +146,36 @@ class TopNav extends Component {
               ×
             </button>
             <nav>
-              {navLinks.map(link => (
-                <a key={link.label} href={link.href} onClick={this.closeMobileMenu}>
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map(link => {
+                if (link.sublinks) {
+                  return (
+                    <div key={link.label} className="mobile-link-group">
+                      <button
+                        type="button"
+                        className="mobile-link-toggle"
+                        onClick={this.toggleProjectsMenu}
+                        aria-haspopup="true"
+                        aria-expanded={projectsMenuOpen}
+                      >
+                        {link.label}
+                        <span className="chevron" aria-hidden="true" />
+                      </button>
+                      <div className={`mobile-sub-links ${projectsMenuOpen ? 'open' : ''}`}>
+                        {link.sublinks.map(sublink => (
+                          <a key={sublink.label} href={sublink.href} onClick={this.handleProjectLinkClick}>
+                            {sublink.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
+                return (
+                  <a key={link.label} href={link.href} onClick={this.closeMobileMenu}>
+                    {link.label}
+                  </a>
+                );
+              })}
             </nav>
             <a
               className="mobile-resume"
