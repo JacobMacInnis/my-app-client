@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/about.css';
-import JacobMacInnisImage from '../images/Jacob_MacInnis_LinkedIn_Square.png';
+import JacobMacInnisImage from '../images/Jacob_MacInnis_2026.png';
 
 const highlightCards = [
   {
