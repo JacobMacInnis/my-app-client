@@ -194,22 +194,25 @@
   display: block;
 }
 
+/* Derived from the list's own surface so the fade matches whatever palette
+   is active. Fading to a 0%-alpha copy of the same colour rather than
+   `transparent` avoids the grey cast some browsers add. */
 .project-list-fade.top {
   top: var(--spacing-xs);
-  background: linear-gradient(180deg, rgba(4, 7, 14, 0.9) 0%, rgba(4, 7, 14, 0));
+  background: linear-gradient(
+    180deg,
+    var(--panel-bg-soft) 0%,
+    color-mix(in srgb, var(--panel-bg-soft) 0%, transparent) 100%
+  );
 }
 
 .project-list-fade.bottom {
   bottom: var(--spacing-xs);
-  background: linear-gradient(0deg, rgba(4, 7, 14, 0.9) 0%, rgba(4, 7, 14, 0));
-}
-
-:root[data-theme='light'] .project-list-fade.top {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0));
-}
-
-:root[data-theme='light'] .project-list-fade.bottom {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    0deg,
+    var(--panel-bg-soft) 0%,
+    color-mix(in srgb, var(--panel-bg-soft) 0%, transparent) 100%
+  );
 }
 
 .project-list-item {
