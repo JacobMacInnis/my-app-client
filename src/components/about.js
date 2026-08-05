@@ -31,7 +31,8 @@ const highlightCards = [
       'Built R2AI (LangGraph refactoring agent) and Agent Cortex (local multi-tool assistant).',
       'Explored MCP orchestration, comparing ReAct agents against deterministic tool pipelines.',
       'Shipped RAG APIs, Summit Mind summarization, and the Folia Vision CV pipeline on Cloud Run.',
-      'Tooling: LangChain, LangGraph, MCP, TensorFlow, PyTorch, Hugging Face, FastAPI, Docker, GCP.'
+      'Expert in AI-assisted engineering: Claude Code, Anthropic and OpenAI APIs, Codex, MCP servers, and agent skills.',
+      'Tooling: LangChain, LangGraph, TensorFlow, PyTorch, Hugging Face, FastAPI, Docker, GCP.'
     ]
   },
   {

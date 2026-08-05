@@ -15,14 +15,16 @@ export const resumeData = {
   summary: [
     'Hands-on engineering leader with 5+ years leading high-performing teams and architecting scalable, cloud-native distributed systems. Proven track record of fast, reliable shipping, optimizing engineering processes, driving major feature development, system migrations, and leading teams toward 100% test coverage improving system reliability and long-term velocity.',
     'Combines technical expertise with clear communication and strategic vision to drive innovation in remote-first environments. Known for leading by example, promoting collaboration, and fostering pragmatic, inclusive team cultures built on empathy and continuous improvement.',
-    'Applied AI/ML experience across NLP, LLMs, classification, image recognition, RAG, and agentic workflows. Proficient with TensorFlow, PyTorch, LangChain, and LangGraph, with certifications from Stanford, DeepLearning.AI, Duke, and Google — combining theory with real-world delivery.'
+    'Applied AI/ML experience across NLP, LLMs, classification, image recognition, RAG, and agentic workflows. Proficient with TensorFlow, PyTorch, LangChain, and LangGraph, with certifications from Stanford, DeepLearning.AI, Duke, and Google — combining theory with real-world delivery.',
+    'Deep hands-on expertise in AI-assisted engineering: Claude Code, the Anthropic and OpenAI APIs, Codex, MCP servers, and agent skills — building the tooling and workflows that let teams ship faster.'
   ],
 
   skills: [
     { label: 'Frontend', items: 'React, Redux, TypeScript, JavaScript' },
     { label: 'Backend', items: 'Node.js, Express.js, Python, FastAPI' },
     { label: 'Cloud', items: 'AWS, GCP, Azure, Serverless Framework, Cloud Run, Terraform' },
-    { label: 'AI / ML', items: 'TensorFlow, PyTorch, LangChain, LangGraph, MCP, scikit-learn, Hugging Face' },
+    { label: 'AI / ML', items: 'TensorFlow, PyTorch, LangChain, LangGraph, scikit-learn, Hugging Face' },
+    { label: 'AI Tooling', items: 'Claude Code, Anthropic API, OpenAI API, Codex, MCP servers, agent skills' },
     { label: 'Data', items: 'Firestore, MongoDB, PostgreSQL, CouchDB, BigQuery, AWS S3' },
     { label: 'DevOps', items: 'Docker, CircleCI, Terraform, Dataflow, Pub/Sub' },
     { label: 'Leadership', items: 'Team management, coaching, mentorship, product vision, process optimization' }

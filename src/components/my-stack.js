@@ -110,6 +110,17 @@ export const techGroups = [
     ]
   },
   {
+    title: 'AI Coding & Agent Tooling',
+    items: [
+      { name: 'Claude Code', abbr: 'CC', link: 'https://claude.com/claude-code' },
+      { name: 'Anthropic API', abbr: 'AN', link: 'https://docs.anthropic.com/' },
+      { name: 'OpenAI API', abbr: 'OA', link: 'https://platform.openai.com/docs' },
+      { name: 'Codex', abbr: 'CX', link: 'https://openai.com/codex/' },
+      { name: 'Agent Skills', abbr: 'SK', link: 'https://code.claude.com/docs/en/skills' },
+      { name: 'MCP Servers', abbr: 'MCP', link: 'https://modelcontextprotocol.io/' }
+    ]
+  },
+  {
     title: 'Data & Search',
     items: [
       { name: 'Firestore', img: firestore, link: 'https://firebase.google.com/docs/firestore' },

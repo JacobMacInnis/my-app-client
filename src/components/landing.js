@@ -90,51 +90,49 @@ class LandingPage extends Component {
         <div className="hero-grain" aria-hidden="true" />
 
         <div className="hero-inner">
-          <div className="hero-text">
-            <p className="hero-kicker" data-reveal>
-              <span className="hero-dot" aria-hidden="true" />
-              Director of Engineering · Cloud &amp; AI
-            </p>
-            <h1 data-reveal>
-              Engineering leader designing <em>cloud &amp; AI</em> architectures.
-            </h1>
-            <p className="hero-subtitle" data-reveal>
-              Hands-on as both a technical leader and top IC, helping engineering orgs ship
-              reliable, scalable software.
-            </p>
+          <p className="hero-kicker" data-reveal>
+            <img className="hero-avatar" src={Portrait} alt="Jacob MacInnis" />
+            Director of Engineering · Cloud &amp; AI
+            <span className="hero-kicker-sep" aria-hidden="true" />
+            <span className="hero-kicker-muted">Rhode Island · Remote</span>
+          </p>
+
+          <h1 data-reveal>
+            Engineering leader designing <em>cloud &amp; AI</em> architectures.
+          </h1>
+
+          <div className="hero-columns">
+            <div className="hero-lede" data-reveal>
+              <p className="hero-subtitle">
+                Hands-on as both a technical leader and top IC, helping engineering orgs ship
+                reliable, scalable software.
+              </p>
+              <div className="cta-group">
+                <a className="btn primary" href="/resume">
+                  View Resume
+                </a>
+                <a
+                  className="btn secondary"
+                  href="/files/Jacob_MacInnis_Cloud_AI.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download PDF
+                </a>
+                <a
+                  className="btn ghost"
+                  href="mailto:jacobmacinnis7@gmail.com?subject=Let%27s%20talk%20engineering%20leadership"
+                >
+                  Get in touch
+                </a>
+              </div>
+            </div>
+
             <ul className="hero-highlights" data-reveal>
               {heroHighlights.map((highlight, index) => (
                 <li key={index}>{highlight}</li>
               ))}
             </ul>
-            <div className="cta-group" data-reveal>
-              <a className="btn primary" href="/resume">
-                View Resume
-              </a>
-              <a
-                className="btn secondary"
-                href="/files/Jacob_MacInnis_Cloud_AI.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download PDF
-              </a>
-              <a
-                className="btn ghost"
-                href="mailto:jacobmacinnis7@gmail.com?subject=Let%27s%20talk%20engineering%20leadership"
-              >
-                Get in touch
-              </a>
-            </div>
-          </div>
-
-          <div className="hero-portrait" data-reveal>
-            <div className="portrait-glow" aria-hidden="true" />
-            <img src={Portrait} alt="Jacob MacInnis" />
-            <div className="portrait-tag">
-              <span className="portrait-tag-dot" aria-hidden="true" />
-              Rhode Island · Remote
-            </div>
           </div>
         </div>
 
