@@ -1,144 +1,94 @@
 .tech-stack {
-  padding: var(--spacing-xl) var(--spacing-lg);
-  margin: var(--spacing-xl) auto;
-  max-width: 1100px;
-  background: var(--panel-bg);
-  border: 1px solid var(--panel-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-strong);
+  padding: var(--spacing-xl) clamp(1.25rem, 6vw, 5rem);
+  background: var(--color-bg);
   color: var(--color-text);
-}
-@media (max-width: 600px) {
-  .tech-stack {
-    border-radius: 0;
-  }
+  border-top: 1px solid var(--color-border);
 }
 
 .tech-stack-hero {
-  text-align: center;
-  margin-bottom: var(--spacing-lg);
+  max-width: 1180px;
+  margin: 0 auto var(--spacing-lg);
 }
+
 .tech-stack-header {
-  color: var(--color-text);
-  display: inline-block;
   margin: 0;
+  font-size: var(--text-2xl);
 }
 
 .tech-card-grid {
   display: grid;
-  gap: var(--spacing-lg);
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 1180px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: start;
 }
 
 .tech-card {
-  border-radius: 20px;
-  padding: var(--spacing-lg);
-  background: var(--panel-bg-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  background: var(--panel-bg);
   border: 1px solid var(--panel-border);
-  box-shadow: var(--shadow-soft);
 }
 
 .tech-card h2 {
-  margin: 0 0 var(--spacing-md);
-  font-size: 1.25rem;
-  color: var(--color-text);
+  margin: 0 0 var(--spacing-sm);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-muted);
 }
 
 .tech-logo-grid {
   display: grid;
-  gap: var(--spacing-xs);
+  gap: 2px;
 }
 
 .tech-logo-grid a {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  padding: 0.4rem;
-  padding-left: 8px;
-  border-radius: 12px;
-  transition: background 0.2s ease, transform 0.2s ease;
-  text-decoration: none;
+  gap: 0.7rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.18s ease;
   color: var(--color-text);
+  font-size: var(--text-sm);
 }
 
 .tech-logo-grid a:hover {
-  background: var(--color-border);
-  transform: translateY(-2px);
-}
-
-.tech-logo-grid a:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
-.tech-wordmark-tile {
-  width: 56px;
-  height: 56px;
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--color-primary);
-  background: rgba(107, 207, 255, 0.1);
-  border: 1px solid var(--color-border);
+  background: var(--color-surface-alt);
+  color: var(--color-text);
 }
 
 .tech-logo-grid span {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .tech-logo-grid img {
-  width: 56px;
-  height: 56px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
-@media (max-width: 640px) {
-  .tech-stack {
-    padding: var(--spacing-lg) var(--spacing-sm);
-    margin: var(--spacing-lg) auto;
-  }
-
-  .tech-card-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--spacing-sm);
-  }
-
-  .tech-card {
-    padding: var(--spacing-sm);
-  }
-
-  .tech-logo-grid {
-    gap: 2px;
-  }
-
-  .tech-logo-grid a {
-    gap: 8px;
-    padding: 0.25rem 0.45rem 0.25rem 0.35rem;
-    border-radius: 8px;
-  }
-
-  .tech-logo-grid img,
-  .tech-logo-grid .tech-wordmark-tile {
-    width: 32px;
-    height: 32px;
-  }
-
-  .tech-logo-grid .tech-wordmark-tile {
-    font-size: 0.75rem;
-    border-radius: 8px;
-  }
+.tech-wordmark-tile {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--color-primary);
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .tech-logo-grid a,
-  .tech-logo-grid a:hover {
-    transition: none;
-    transform: none;
+@media (max-width: 640px) {
+  .tech-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-sm);
   }
 }

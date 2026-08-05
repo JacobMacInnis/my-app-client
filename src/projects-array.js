@@ -1,10 +1,10 @@
-import FE from './images/screenshots/FUNCTION_EARTH_SCREENSHOTS.png'
-import BTM from './images/screenshots/BEACHTIDES_MOBILE_SCREENSHOTS.png';
-import TP from './images/screenshots/TP-SCREENSHOTS.png';
+import FE from './images/screenshots/FUNCTION_EARTH_SCREENSHOTS.jpg'
+import BTM from './images/screenshots/BEACHTIDES_MOBILE_SCREENSHOTS.jpg';
+import TP from './images/screenshots/TP-SCREENSHOTS.jpg';
 import BT from './images/screenshots/BEACHTIDES-SCREENSHOTS.jpg';
 import CSC from './images/screenshots/CS-CARDS-SCREENSHOTS.jpg';
 import SG from './images/screenshots/SG-SCREENSHOTS.jpg';
-import PT from './images/screenshots/PRIMETHREE-SCREENSHOTS.png';
+import PT from './images/screenshots/PRIMETHREE-SCREENSHOTS.jpg';
 
 export  const projectsArray = [
   {

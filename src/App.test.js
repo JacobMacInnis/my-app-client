@@ -4,10 +4,6 @@ import { act } from 'react-dom/test-utils';
 import { MemoryRouter } from 'react-router-dom';
 import App from './App';
 
-// tsparticles spins up canvas/rAF work that jsdom cannot service.
-jest.mock('react-tsparticles', () => () => null);
-jest.mock('tsparticles', () => ({ loadFull: () => Promise.resolve() }));
-
 const renderAt = path => {
   const container = document.createElement('div');
   document.body.appendChild(container);

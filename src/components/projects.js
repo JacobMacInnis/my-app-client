@@ -36,8 +36,7 @@ const projectSections = [
 
 const Projects = () => (
   <section className='projects' id='projects'>
-    <div className='projects-intro'>
-      <p className='eyebrow caption'>Project Stories</p>
+    <div className='projects-intro' data-reveal>
       <h2 className='projects-header'>Experiments, launches, and systems I still reference.</h2>
       <p className='projects-summary'>
         Each track highlights a different slice of the work—AI prototypes, ML systems, cloud programs, and the legacy apps that started it all.
@@ -49,9 +48,9 @@ const Projects = () => (
       const list = source.filter(section.filter);
       if (!list.length) return null;
       return (
-        <div className='project-section' id={`projects-${section.id}`} key={section.id}>
+        <div className='project-section' id={`projects-${section.id}`} key={section.id} data-reveal>
           <div className='project-section-header'>
-            <p className='eyebrow caption'>{section.eyebrow}</p>
+            {section.eyebrow && <p className='eyebrow caption'>{section.eyebrow}</p>}
             <h3>{section.title}</h3>
             <p>{section.description}</p>
           </div>

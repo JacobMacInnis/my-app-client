@@ -154,7 +154,7 @@ const MyStack = () => (
     </div>
     <div className='tech-card-grid'>
       {techGroups.map(group => (
-        <article key={group.title} className='tech-card'>
+        <article key={group.title} className='tech-card' data-reveal>
           <h2>{group.title}</h2>
           <div className='tech-logo-grid'>
             {group.items.map(item => (

@@ -1,13 +1,13 @@
 import R2AI from './images/screenshots/graph.svg';
-import AgentCortex from './images/screenshots/agent-cortex-v1.png';
-import AgentCortex2 from './images/screenshots/agent-cortex-v2.png';
+import AgentCortex from './images/screenshots/agent-cortex-v1.jpg';
+import AgentCortex2 from './images/screenshots/agent-cortex-v2.jpg';
 import ragApi from './images/screenshots/rag-api.jpeg';
-import agriculturalLeafVision from './images/screenshots/agricultural-leaf-vision.png';
-import cnnCancerDetection from './images/screenshots/cnn_Image_classfication_cancer.png';
+import agriculturalLeafVision from './images/screenshots/agricultural-leaf-vision.jpg';
+import cnnCancerDetection from './images/screenshots/cnn_Image_classfication_cancer.jpg';
 import summitMind from './images/screenshots/summit-mind.drawio.png';
-import tweetClassificationGru from './images/screenshots/disaster_tweet_classification.png';
-import parisAirbnbKMeans from './images/screenshots/paris_airbnb_clustering.png';
-import breastCancerSvm from './images/screenshots/binary_classification.png';
+import tweetClassificationGru from './images/screenshots/disaster_tweet_classification.jpg';
+import parisAirbnbKMeans from './images/screenshots/paris_airbnb_clustering.jpg';
+import breastCancerSvm from './images/screenshots/binary_classification.jpg';
 import CareerCompass from './images/screenshots/career_compass_loss_curve.png';
 
 export const mlProjects = [

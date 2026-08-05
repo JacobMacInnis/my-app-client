@@ -31,9 +31,8 @@ const socialLinks = [
 
 const Contact = () => (
   <footer className="contact-section" id="contact">
-    <div className="contact-card">
+    <div className="contact-card" data-reveal>
       <div className="contact-header">
-        <p className="eyebrow caption">Let’s connect</p>
         <h2>Contact</h2>
         <p>Drop a note with context. I reply as bandwidth allows.</p>
       </div>

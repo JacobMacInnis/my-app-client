@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/about.css';
-import JacobMacInnisImage from '../images/Jacob_MacInnis_2026.png';
+import JacobMacInnisImage from '../images/jacob-headshot.jpg';
 
 const highlightCards = [
   {
@@ -50,9 +50,8 @@ const highlightCards = [
 
 export default () => (
   <section className='about-me' id='about'>
-    <div className='about-hero'>
+    <div className='about-hero' data-reveal>
       <div className='about-text'>
-        <p className='eyebrow caption'>About Jacob</p>
         <h2 className='about-me-header'>Engineering leadership rooted in shipping, mentoring, and modernizing.</h2>
         <p className='about-summary'>
           I bridge executive priorities with hands-on architecture. From guiding global deployments to building AI side projects,
@@ -67,7 +66,7 @@ export default () => (
 
     <div className='about-grid'>
       {highlightCards.map(card => (
-        <article key={card.title} className='about-card'>
+        <article key={card.title} className='about-card' data-reveal>
           <h3>{card.title}</h3>
           <p>{card.description}</p>
           <ul>

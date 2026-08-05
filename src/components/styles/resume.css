@@ -1,11 +1,8 @@
 .resume-page {
   min-height: 100vh;
   padding: clamp(5.5rem, 8vw, 7rem) clamp(1rem, 4vw, 3rem) clamp(3rem, 6vw, 5rem);
-  background: linear-gradient(160deg, rgba(12, 22, 42, 0.92), rgba(10, 18, 32, 0.75));
+  background: var(--color-surface-alt);
   color: var(--color-text);
-}
-:root[data-theme='light'] .resume-page {
-  background: linear-gradient(160deg, rgba(244, 247, 255, 0.96), rgba(226, 233, 252, 0.92));
 }
 
 .resume-sheet {
@@ -55,7 +52,7 @@
 .resume-location {
   margin: 0 0 var(--spacing-sm);
   font-size: var(--text-xs);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-text-muted);
 }
@@ -97,7 +94,7 @@
 }
 
 .resume-btn {
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   padding: 0.7rem 1.6rem;
   font-weight: 600;
   font-size: var(--text-sm);
@@ -107,9 +104,8 @@
 }
 
 .resume-btn.primary {
-  background: linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary-strong) 100%);
-  color: #051627;
-  box-shadow: var(--shadow-soft);
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
 }
 
 .resume-btn.ghost {
@@ -178,7 +174,7 @@
 
 .resume-section > h2 {
   font-size: var(--text-xs);
-  letter-spacing: 0.24em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-text-muted);
   font-weight: 600;
@@ -220,7 +216,7 @@
 
 .resume-skill-row dt {
   font-size: var(--text-xs);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-primary);
   font-weight: 600;
@@ -263,9 +259,8 @@
   top: 0.55rem;
   width: 10px;
   height: 10px;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: var(--color-primary);
-  box-shadow: 0 0 12px rgba(107, 207, 255, 0.7);
 }
 
 .resume-job::after {
@@ -291,7 +286,7 @@
 
 .resume-dates {
   font-size: var(--text-xs);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-text-muted);
   font-variant-numeric: tabular-nums;
@@ -299,14 +294,14 @@
 
 .resume-badge {
   font-size: 0.68rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   font-weight: 600;
   padding: 0.15rem 0.6rem;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   color: var(--color-primary);
-  background: rgba(107, 207, 255, 0.12);
-  border: 1px solid rgba(107, 207, 255, 0.35);
+  background: transparent;
+  border: 1px solid var(--color-border-strong);
 }
 
 .resume-badge.subtle {
@@ -338,8 +333,7 @@
 .resume-job-location {
   margin: 0.2rem 0 0.6rem;
   font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
   color: var(--color-text-muted);
 }
 
@@ -369,7 +363,7 @@
   top: 0.6rem;
   width: 5px;
   height: 5px;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: var(--color-primary);
 }
 

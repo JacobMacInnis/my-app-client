@@ -1,11 +1,6 @@
 .tech-list-container {
   margin-top: var(--spacing-md);
   padding-top: var(--spacing-sm);
-
-  @media (max-width: 600px) {
-    margin-top: 0;
-    padding-top: 5px;
-  }
   border-top: 1px solid var(--panel-border);
   display: flex;
   flex-direction: column;
@@ -15,21 +10,28 @@
 .tech-eyebrow {
   margin: 0 0 var(--spacing-xs);
   color: var(--color-text-muted);
+  font-size: var(--text-xs);
 }
 
 .tech-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-xs);
+  gap: 0.35rem;
   width: 100%;
 }
 
 .tech-chip {
-  font-size: var(--text-sm);
-  border-radius: 999px;
-  padding: 0.3rem 0.85rem;
+  font-size: var(--text-xs);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.55rem;
   border: 1px solid var(--panel-border);
-  color: var(--color-text);
-  background: var(--panel-bg-soft);
-  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  .tech-list-container {
+    margin-top: 0;
+    padding-top: var(--spacing-xs);
+  }
 }

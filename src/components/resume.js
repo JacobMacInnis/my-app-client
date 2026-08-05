@@ -1,5 +1,5 @@
 import React from 'react';
-import Headshot from './../images/Jacob_MacInnis_2026.png';
+import Headshot from './../images/jacob-headshot.jpg';
 import { resumeData } from './../resumeData';
 import './styles/resume.css';
 
