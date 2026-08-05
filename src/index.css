@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --color-bg: #0b1211;
-  --color-surface: #131c1a;
-  --color-surface-alt: #18221f;
-  --color-text: #effcf8;
-  --color-text-muted: #9db5ad;
-  --color-primary: #2dd4bf;
-  --color-primary-strong: #5eead4;
-  --color-primary-contrast: #04211c;
-  --color-secondary: #5eead4;
+  --color-bg: #0a1020;
+  --color-surface: #111a2e;
+  --color-surface-alt: #16223a;
+  --color-text: #eef4ff;
+  --color-text-muted: #97a8c4;
+  --color-primary: #38bdf8;
+  --color-primary-strong: #7dd3fc;
+  --color-primary-contrast: #04121f;
+  --color-secondary: #7dd3fc;
   --color-accent: #fbbf24;
-  --color-border: rgba(255,255,255,0.10);
-  --color-border-strong: rgba(255,255,255,0.18);
+  --color-border: rgba(255,255,255,0.11);
+  --color-border-strong: rgba(255,255,255,0.20);
 
-  --mesh-a: rgba(45,212,191,0.18);
-  --mesh-b: rgba(129,140,248,0.14);
+  --mesh-a: rgba(56,189,248,0.26);
+  --mesh-b: rgba(59,130,246,0.18);
   --grain-opacity: 0.035;
 
-  --panel-bg: #131c1a;
-  --panel-bg-soft: #18221f;
-  --panel-border: rgba(255,255,255,0.10);
+  --panel-bg: #111a2e;
+  --panel-bg-soft: #16223a;
+  --panel-border: rgba(255,255,255,0.11);
 
   --spacing-xs: 0.4rem;
   --spacing-sm: 0.8rem;
@@ -45,26 +45,26 @@
 }
 
 :root[data-theme='light'] {
-  --color-bg: #f7faf9;
+  --color-bg: #f5f9ff;
   --color-surface: #ffffff;
-  --color-surface-alt: #eaf4f1;
-  --color-text: #122019;
-  --color-text-muted: #4f6660;
-  --color-primary: #0d9488;
-  --color-primary-strong: #0f766e;
+  --color-surface-alt: #e9f1fd;
+  --color-text: #0d1a2b;
+  --color-text-muted: #4a5c73;
+  --color-primary: #0284c7;
+  --color-primary-strong: #0369a1;
   --color-primary-contrast: #ffffff;
-  --color-secondary: #0f766e;
+  --color-secondary: #0369a1;
   --color-accent: #b45309;
-  --color-border: rgba(18,32,25,0.10);
-  --color-border-strong: rgba(18,32,25,0.19);
+  --color-border: rgba(13,26,43,0.10);
+  --color-border-strong: rgba(13,26,43,0.19);
 
-  --mesh-a: rgba(20,184,166,0.18);
-  --mesh-b: rgba(129,140,248,0.14);
+  --mesh-a: rgba(56,189,248,0.18);
+  --mesh-b: rgba(59,130,246,0.12);
   --grain-opacity: 0.022;
 
   --panel-bg: #ffffff;
-  --panel-bg-soft: #eaf4f1;
-  --panel-border: rgba(18,32,25,0.10);
+  --panel-bg-soft: #e9f1fd;
+  --panel-border: rgba(13,26,43,0.10);
 
   --shadow-soft: 0 1px 2px rgba(9, 9, 11, 0.05);
   --shadow-strong: 0 2px 8px rgba(9, 9, 11, 0.07);

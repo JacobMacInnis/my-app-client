@@ -24,6 +24,42 @@ const marqueeItems = techGroups
   .slice(0, 18);
 
 class LandingPage extends Component {
+  constructor(props) {
+    super(props);
+    this.heroRef = React.createRef();
+    this.rafId = null;
+  }
+
+  componentDidMount() {
+    // matchMedia is absent in jsdom and older embedded webviews; treat a
+    // missing implementation as "no spotlight" rather than throwing.
+    const matches = query => Boolean(window.matchMedia && window.matchMedia(query).matches);
+    if (!matches('(prefers-reduced-motion: reduce)') && matches('(hover: hover)')) {
+      window.addEventListener('pointermove', this.handlePointerMove, { passive: true });
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('pointermove', this.handlePointerMove);
+    if (this.rafId) cancelAnimationFrame(this.rafId);
+  }
+
+  // Spotlight follows the cursor across the hero. Coalesced into one frame so
+  // a fast mouse cannot outpace the paint.
+  handlePointerMove = event => {
+    this.lastPointer = { x: event.clientX, y: event.clientY };
+    if (this.rafId) return;
+    this.rafId = window.requestAnimationFrame(() => {
+      this.rafId = null;
+      const hero = this.heroRef.current;
+      if (!hero || !this.lastPointer) return;
+      const rect = hero.getBoundingClientRect();
+      if (rect.bottom < 0) return;
+      hero.style.setProperty('--mx', `${this.lastPointer.x - rect.left}px`);
+      hero.style.setProperty('--my', `${this.lastPointer.y - rect.top}px`);
+    });
+  };
+
   scrollToSection = id => {
     const target = document.getElementById(id);
     if (!target) return;
@@ -43,8 +79,14 @@ class LandingPage extends Component {
 
   render() {
     return (
-      <section className="landing-page" id="home">
-        <div className="hero-mesh" aria-hidden="true" />
+      <section className="landing-page" id="home" ref={this.heroRef}>
+        <div className="hero-grid" aria-hidden="true" />
+        <div className="hero-aurora" aria-hidden="true">
+          <span className="aurora-blob a" />
+          <span className="aurora-blob b" />
+          <span className="aurora-blob c" />
+        </div>
+        <div className="hero-spotlight" aria-hidden="true" />
         <div className="hero-grain" aria-hidden="true" />
 
         <div className="hero-inner">
