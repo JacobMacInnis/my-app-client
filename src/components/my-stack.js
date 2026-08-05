@@ -16,7 +16,6 @@ import fastApi from './../images/tech-icons/fastApi.png';
 import streamlit from './../images/tech-icons/streamlit.png';
 import serverless from './../images/tech-icons/serverless.png';
 import electron from './../images/tech-icons/electron.png';
-import cordova from './../images/tech-icons/cordova.png';
 
 import aws from './../images/tech-icons/aws-logo.png';
 import gcp from './../images/tech-icons/gcp.png';
@@ -37,7 +36,6 @@ import sql from './../images/tech-icons/sql.png';
 import postgresql from './../images/tech-icons/postgresql.png';
 import couchdb from './../images/tech-icons/couchdb.svg';
 import pouchdb from './../images/tech-icons/pouchdb.svg';
-import cloudant from './../images/tech-icons/cloudant.svg';
 
 import pnpm from './../images/tech-icons/pnpm.png';
 import nx from './../images/tech-icons/nx.webp';
@@ -47,10 +45,9 @@ import poetry from './../images/tech-icons/poetry.jpeg';
 import jest from './../images/tech-icons/jest.png';
 import mocha from './../images/tech-icons/mocha.png';
 import chai from './../images/tech-icons/chai.png';
-import enzyme from './../images/tech-icons/enzyme.png';
 
 import circleci from './../images/tech-icons/circleci.png';
-import travisci from './../images/tech-icons/travisci.png';
+import git from './../images/tech-icons/git.png';
 
 const techGroups = [
   {
@@ -59,25 +56,25 @@ const techGroups = [
       { name: 'TypeScript', img: typescript, link: 'https://www.typescriptlang.org/' },
       { name: 'JavaScript', img: javascript, link: 'https://www.javascript.com/' },
       { name: 'Python', img: python, link: 'https://www.python.org/' },
-      { name: 'HTML5', img: html5, link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' },
+      { name: 'Kotlin', abbr: 'KT', link: 'https://kotlinlang.org/' },
+      { name: 'HTML5', img: html5, link: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5' },
       { name: 'CSS3', img: css3, link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' }
     ]
   },
   {
     title: 'Frontend & UX',
     items: [
-      { name: 'React', img: react, link: 'https://reactjs.org/' },
+      { name: 'React', img: react, link: 'https://react.dev/' },
       { name: 'React Native', img: reactNative, link: 'https://reactnative.dev/' },
       { name: 'Redux', img: redux, link: 'https://redux.js.org/' },
       { name: 'Electron', img: electron, link: 'https://www.electronjs.org/' },
-      { name: 'Cordova', img: cordova, link: 'https://cordova.apache.org/' },
       { name: 'Streamlit', img: streamlit, link: 'https://streamlit.io/', height: '75px' }
     ]
   },
   {
     title: 'Backend & APIs',
     items: [
-      { name: 'Node.js', img: node, link: 'https://nodejs.org/en/' },
+      { name: 'Node.js', img: node, link: 'https://nodejs.org/en' },
       { name: 'Express', img: express, link: 'https://expressjs.com/' },
       { name: 'FastAPI', img: fastApi, link: 'https://fastapi.tiangolo.com/', height: '70px' }
     ]
@@ -87,19 +84,25 @@ const techGroups = [
     items: [
       { name: 'AWS', img: aws, link: 'https://aws.amazon.com/' },
       { name: 'GCP', img: gcp, link: 'https://cloud.google.com/' },
-      { name: 'Azure', img: azure, link: 'https://azure.microsoft.com/en-us/' },
+      { name: 'Azure', img: azure, link: 'https://azure.microsoft.com/' },
       { name: 'Serverless', img: serverless, link: 'https://www.serverless.com/' },
-      { name: 'Docker', img: 'https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png', link: 'https://www.docker.com/' }
+      { name: 'Docker', img: 'https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png', link: 'https://www.docker.com/' },
+      { name: 'Terraform', abbr: 'TF', link: 'https://developer.hashicorp.com/terraform' },
+      { name: 'Cloud Run', abbr: 'CR', link: 'https://cloud.google.com/run' },
+      { name: 'Firebase', abbr: 'FB', link: 'https://firebase.google.com/' }
     ]
   },
   {
     title: 'AI / ML Stack',
     items: [
-      { name: 'LangGraph', img: langgraph, link: 'https://langgraph.com/' },
-      { name: 'LangChain', img: langgraph, link: 'https://langchain.com/' },
-      { name: 'Scikit-learn', img: 'https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png', link: 'https://scikit-learn.org/stable/', height: '50px' },
+      { name: 'LangGraph', img: langgraph, link: 'https://www.langchain.com/langgraph' },
+      { name: 'LangChain', img: langgraph, link: 'https://www.langchain.com/' },
+      { name: 'MCP', abbr: 'MCP', link: 'https://modelcontextprotocol.io/' },
+      { name: 'Hugging Face', abbr: 'HF', link: 'https://huggingface.co/' },
+      { name: 'Ollama', abbr: 'OL', link: 'https://ollama.com/' },
       { name: 'TensorFlow', img: tensorflow, link: 'https://www.tensorflow.org/', height: '70px' },
       { name: 'PyTorch', img: pytorch, link: 'https://pytorch.org/', height: '70px' },
+      { name: 'Scikit-learn', img: 'https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png', link: 'https://scikit-learn.org/stable/', height: '50px' },
       { name: 'Pandas', img: pandas, link: 'https://pandas.pydata.org/' },
       { name: 'NumPy', img: numpy, link: 'https://numpy.org/' },
       { name: 'Seaborn', img: seaborn, link: 'https://seaborn.pydata.org/' },
@@ -110,25 +113,28 @@ const techGroups = [
     title: 'Data & Search',
     items: [
       { name: 'Firestore', img: firestore, link: 'https://firebase.google.com/docs/firestore' },
-      { name: 'Typesense', img: typesense, link: 'https://typesense.org/' },
-      { name: 'MongoDB', img: mongodb, link: 'https://www.mongodb.com/' },
-      { name: 'SQL', img: sql, link: 'https://en.wikipedia.org/wiki/SQL' },
+      { name: 'BigQuery', abbr: 'BQ', link: 'https://cloud.google.com/bigquery' },
       { name: 'PostgreSQL', img: postgresql, link: 'https://www.postgresql.org/' },
+      { name: 'MongoDB', img: mongodb, link: 'https://www.mongodb.com/' },
+      { name: 'Pub/Sub', abbr: 'PS', link: 'https://cloud.google.com/pubsub' },
+      { name: 'Dataflow', abbr: 'DF', link: 'https://cloud.google.com/dataflow' },
+      { name: 'Typesense', img: typesense, link: 'https://typesense.org/' },
+      { name: 'FAISS', abbr: 'FA', link: 'https://faiss.ai/' },
+      { name: 'SQL', img: sql, link: 'https://en.wikipedia.org/wiki/SQL' },
       { name: 'CouchDB', img: couchdb, link: 'https://couchdb.apache.org/' },
-      { name: 'PouchDB', img: pouchdb, link: 'https://pouchdb.com/' },
-      { name: 'Cloudant', img: cloudant, link: 'https://www.ibm.com/cloud/cloudant' }
+      { name: 'PouchDB', img: pouchdb, link: 'https://pouchdb.com/' }
     ]
   },
   {
     title: 'Tooling & Delivery',
     items: [
+      { name: 'Git', img: git, link: 'https://git-scm.com/' },
       { name: 'pnpm', img: pnpm, link: 'https://pnpm.io/' },
       { name: 'Nx', img: nx, link: 'https://nx.dev/' },
       { name: 'NPM', img: npm, link: 'https://www.npmjs.com/', height: '45px' },
       { name: 'Poetry', img: poetry, link: 'https://python-poetry.org/' },
       { name: 'Webpack', img: 'https://webpack.js.org/assets/icon-square-big.svg', link: 'https://webpack.js.org/', height: '60px' },
-      { name: 'CircleCI', img: circleci, link: 'https://circleci.com/' },
-      { name: 'Travis CI', img: travisci, link: 'https://travis-ci.org/' }
+      { name: 'CircleCI', img: circleci, link: 'https://circleci.com/' }
     ]
   },
   {
@@ -136,8 +142,7 @@ const techGroups = [
     items: [
       { name: 'Jest', img: jest, link: 'https://jestjs.io/' },
       { name: 'Mocha', img: mocha, link: 'https://mochajs.org/' },
-      { name: 'Chai', img: chai, link: 'https://www.chaijs.com/' },
-      { name: 'Enzyme', img: enzyme, link: 'https://enzymejs.github.io/enzyme/' }
+      { name: 'Chai', img: chai, link: 'https://www.chaijs.com/' }
     ]
   }
 ];
@@ -153,8 +158,25 @@ const MyStack = () => (
           <h2>{group.title}</h2>
           <div className='tech-logo-grid'>
             {group.items.map(item => (
-              <a href={item.link} key={item.name} target='_blank' rel='noopener noreferrer'>
-                <img src={item.img} alt={`${item.name} logo`} height={item.height ? item.height : '60px'} />
+              <a
+                href={item.link}
+                key={item.name}
+                target='_blank'
+                rel='noopener noreferrer'
+                className={item.img ? '' : 'tech-wordmark'}
+              >
+                {item.img ? (
+                  <img
+                    src={item.img}
+                    alt={`${item.name} logo`}
+                    height={item.height ? item.height : '60px'}
+                    loading='lazy'
+                  />
+                ) : (
+                  <span className='tech-wordmark-tile' aria-hidden='true'>
+                    {item.abbr}
+                  </span>
+                )}
                 <span>{item.name}</span>
               </a>
             ))}

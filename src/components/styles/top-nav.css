@@ -373,4 +373,13 @@
   background: transparent;
   color: white;
   text-decoration: none;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mobile-resume.ghost {
+  border-color: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+  opacity: 0.85;
 }

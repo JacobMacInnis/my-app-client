@@ -15,6 +15,12 @@ class LandingPage extends Component {
     this.heroRef = React.createRef();
     this.lastKnownScrollY = 0;
     this.rafId = null;
+    this.state = {
+      reducedMotion:
+        typeof window !== 'undefined' &&
+        window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    };
   }
 
   scrollToSection = (id) => {
@@ -34,12 +40,24 @@ class LandingPage extends Component {
   };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, { passive: true });
-    this.updateParallax();
+    if (window.matchMedia) {
+      this.motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+      this.handleMotionChange = event => this.setState({ reducedMotion: event.matches });
+      if (this.motionQuery.addEventListener) {
+        this.motionQuery.addEventListener('change', this.handleMotionChange);
+      }
+    }
+    if (!this.state.reducedMotion) {
+      window.addEventListener('scroll', this.handleScroll, { passive: true });
+      this.updateParallax();
+    }
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    if (this.motionQuery && this.motionQuery.removeEventListener) {
+      this.motionQuery.removeEventListener('change', this.handleMotionChange);
+    }
     if (this.rafId) {
       cancelAnimationFrame(this.rafId);
     }
@@ -68,9 +86,11 @@ class LandingPage extends Component {
   };
 
   render() {
+    const { reducedMotion } = this.state;
+
     return (
       <section className="landing-page" id="home">
-        <Particles
+        {!reducedMotion && <Particles
           className="particles"
           id="tsparticles"
           init={this.particlesInit}
@@ -105,7 +125,7 @@ class LandingPage extends Component {
             },
             detectRetina: true
           }}
-        />
+        />}
         <div className="hero-overlay" />
 
         <div className="hero-inner" ref={this.heroRef}>
@@ -124,19 +144,22 @@ class LandingPage extends Component {
               ))}
             </ul>
             <div className="cta-group">
+              <a className="btn primary" href="/resume">
+                View Resume
+              </a>
               <a
-                className="btn primary"
-                href="https://jacobmacinnis.netlify.app/files/Jacob_MacInnis_Cloud_AI.pdf"
+                className="btn secondary"
+                href="/files/Jacob_MacInnis_Cloud_AI.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Download Resume
+                Download PDF
               </a>
               <a
                 className="btn secondary"
                 href="mailto:jacobmacinnis7@gmail.com?subject=Let%27s%20talk%20engineering%20leadership"
               >
-                Book a Call
+                Get in Touch
               </a>
             </div>
           </div>

@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App" id="App">
         <div id="page-wrap">
-          <Route exact path="/" component={TopNav} />
+          <Route path="/" component={TopNav} />
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/" component={AboutMe} />
           <Route

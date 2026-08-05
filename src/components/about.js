@@ -26,18 +26,20 @@ const highlightCards = [
   {
     title: 'AI / ML Practice',
     description:
-      'Experimenting with applied AI—agents, RAG, and ML systems—to stay sharp while steering enterprise initiatives.',
+      'Applied AI across agents, RAG, NLP, and computer vision—shipped end to end, not left in notebooks.',
     bullets: [
-      'Built R2AI (LangGraph refactoring agent) and Agent Cortex (local AI assistant).',
-      'Shipped RAG APIs, Summit Mind summaries, Agricultural Leaf Vision CV pipeline.',
-      'Tooling: LangChain, LangGraph, TensorFlow, PyTorch, FastAPI, Docker, GCP.'
+      'Built R2AI (LangGraph refactoring agent) and Agent Cortex (local multi-tool assistant).',
+      'Explored MCP orchestration, comparing ReAct agents against deterministic tool pipelines.',
+      'Shipped RAG APIs, Summit Mind summarization, and the Folia Vision CV pipeline on Cloud Run.',
+      'Tooling: LangChain, LangGraph, MCP, TensorFlow, PyTorch, Hugging Face, FastAPI, Docker, GCP.'
     ]
   },
   {
-    title: 'Certifications & Credentials',
+    title: 'Education & Credentials',
     description:
       'Continuous learning keeps my leadership pragmatic and deeply technical.',
     bullets: [
+      'MS in Artificial Intelligence, University of Colorado Boulder (in progress).',
       'Stanford Machine Learning Specialization.',
       'DeepLearning.AI Machine Learning in Production.',
       'Duke Managing Machine Learning Projects.',
@@ -59,7 +61,7 @@ export default () => (
       </div>
       <div className='about-image-wrapper'>
         <img className='profile-image' src={JacobMacInnisImage} alt='Jacob MacInnis' />
-        <p className='profile-caption'>Director of Engineering · Cloud & AI · Remote/Boston</p>
+        <p className='profile-caption'>Director of Engineering · Cloud &amp; AI · Rhode Island / Remote</p>
       </div>
     </div>
 

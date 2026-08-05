@@ -71,6 +71,15 @@
   margin: 0 0 1.5rem;
 }
 
+/* The hero keeps its dark gradient in both themes, so its type must stay
+   on-dark — otherwise the light theme's dark --color-text wins and the
+   heading disappears against the background. */
+.landing-page h1,
+.landing-page h2,
+.landing-page h3 {
+  color: var(--color-text-on-dark);
+}
+
 .hero-text h1 {
   font-size: clamp(2.4rem, 4vw, 4.2rem);
   line-height: 1.1;
@@ -114,6 +123,7 @@
 .hero-highlights li::before {
   content: "";
   display: inline-block;
+  flex-shrink: 0;
   width: 10px;
   height: 10px;
   margin-top: 0.45rem;
