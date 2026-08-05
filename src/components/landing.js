@@ -1,11 +1,27 @@
 import React, { Component } from 'react';
 import './styles/landing.css';
+import Portrait from './../images/jacob-headshot.jpg';
+import { techGroups } from './my-stack';
+
+const heroStats = [
+  { value: '10k+', label: 'stores live', detail: 'North America, Europe, Australia' },
+  { value: '1M+', label: 'daily transactions', detail: 'Serverless retail architecture' },
+  { value: '99.99%', label: 'uptime', detail: '400+ cloud functions on AWS + GCP' },
+  { value: '12+', label: 'engineers led', detail: 'Across 3 remote-first teams' }
+];
 
 const heroHighlights = [
-  '5+ years in engineering leadership, blending hands-on technical expertise with strategic vision.',
-  'From Backend to Frontend and CI/CD, I\'ve led teams end-to-end to ship scalable, resilient solutions.',
-  'Building AI Agents and ML systems with PyTorch, TensorFlow, and Scikit-learn, staying hands-on with emerging tech.'
+  'Hands-on leadership, still reviewing PRs and prototyping architecture.',
+  'Backend, frontend, and CI/CD, end to end.',
+  'Building AI agents and ML systems with PyTorch, LangGraph, and MCP.'
 ];
+
+// A representative slice of the stack, drawn from the same source as the
+// Tech Stack section so the two never drift apart.
+const marqueeItems = techGroups
+  .flatMap(group => group.items)
+  .filter(item => item.img && typeof item.img === 'string' && !item.img.startsWith('http'))
+  .slice(0, 18);
 
 class LandingPage extends Component {
   scrollToSection = id => {
@@ -34,13 +50,15 @@ class LandingPage extends Component {
         <div className="hero-inner">
           <div className="hero-text">
             <p className="hero-kicker" data-reveal>
-              Engineering Leadership · Cloud · AI
+              <span className="hero-dot" aria-hidden="true" />
+              Director of Engineering · Cloud &amp; AI
             </p>
-            <h1 data-reveal>Engineering leader designing cloud &amp; AI architectures.</h1>
+            <h1 data-reveal>
+              Engineering leader designing <em>cloud &amp; AI</em> architectures.
+            </h1>
             <p className="hero-subtitle" data-reveal>
-              Hands-on as both a technical leader and top IC helping engineering orgs ship
-              reliable, scalable software. Balancing architecture, strategic planning, product
-              speed, and pragmatic coaching.
+              Hands-on as both a technical leader and top IC, helping engineering orgs ship
+              reliable, scalable software.
             </p>
             <ul className="hero-highlights" data-reveal>
               {heroHighlights.map((highlight, index) => (
@@ -63,40 +81,43 @@ class LandingPage extends Component {
                 className="btn ghost"
                 href="mailto:jacobmacinnis7@gmail.com?subject=Let%27s%20talk%20engineering%20leadership"
               >
-                Get in Touch
+                Get in touch
               </a>
             </div>
           </div>
 
-          <div className="hero-visual" data-reveal>
-            <div className="stat-card">
-              <p className="stat-label">Latest impact</p>
-              <p className="stat-value">10k+ stores</p>
-              <p className="stat-detail">
-                Serverless retail architecture powering 1M+ daily transactions.
-              </p>
+          <div className="hero-portrait" data-reveal>
+            <div className="portrait-glow" aria-hidden="true" />
+            <img src={Portrait} alt="Jacob MacInnis" />
+            <div className="portrait-tag">
+              <span className="portrait-tag-dot" aria-hidden="true" />
+              Rhode Island · Remote
             </div>
-            <div className="stat-card">
-              <p className="stat-label">Team focus</p>
-              <p className="stat-value">Director of Engineering</p>
-              <p className="stat-detail">
-                Leading a remote-first full stack org across North America, Europe, and Australia.
-              </p>
+          </div>
+        </div>
+
+        <div className="hero-stats" data-reveal>
+          {heroStats.map(stat => (
+            <div className="hero-stat" key={stat.label}>
+              <p className="hero-stat-value">{stat.value}</p>
+              <p className="hero-stat-label">{stat.label}</p>
+              <p className="hero-stat-detail">{stat.detail}</p>
             </div>
-            <div className="stat-card">
-              <p className="stat-label">Academia &amp; publications</p>
-              <p className="stat-detail">
-                Certified in AI/ML by Stanford, Duke, DeepLearning.AI, and Google. Author of 50+
-                technical articles.
-              </p>
-              <p className="stat-detail">
-                Working through an MS in Artificial Intelligence at CU Boulder.
-              </p>
-              <a className="stat-link" href="#about" onClick={() => this.scrollToSection('about')}>
-                About &amp; projects
-                <span aria-hidden="true">→</span>
-              </a>
-            </div>
+          ))}
+        </div>
+
+        <div className="hero-marquee" aria-hidden="true">
+          <div className="hero-marquee-track">
+            {[0, 1].map(copy => (
+              <div className="hero-marquee-group" key={copy}>
+                {marqueeItems.map(item => (
+                  <span className="hero-marquee-item" key={`${copy}-${item.name}`}>
+                    <img src={item.img} alt="" loading="lazy" />
+                    {item.name}
+                  </span>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </section>

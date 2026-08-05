@@ -41,6 +41,8 @@
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   object-fit: cover;
+  /* Source is 4:5; bias the square crop toward the face. */
+  object-position: center 28%;
 }
 
 .profile-caption {

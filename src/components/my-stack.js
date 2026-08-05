@@ -49,7 +49,7 @@ import chai from './../images/tech-icons/chai.png';
 import circleci from './../images/tech-icons/circleci.png';
 import git from './../images/tech-icons/git.png';
 
-const techGroups = [
+export const techGroups = [
   {
     title: 'Languages',
     items: [
