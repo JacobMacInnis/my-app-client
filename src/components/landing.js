@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles/landing.css';
-import Portrait from './../images/jacob-headshot.jpg';
+import Avatar from './../images/jacob-avatar.jpg';
 import { techGroups } from './my-stack';
 
 const heroStats = [
@@ -91,7 +91,7 @@ class LandingPage extends Component {
 
         <div className="hero-inner">
           <p className="hero-kicker" data-reveal>
-            <img className="hero-avatar" src={Portrait} alt="Jacob MacInnis" />
+            <img className="hero-avatar" src={Avatar} alt="Jacob MacInnis" />
             Director of Engineering · Cloud &amp; AI
             <span className="hero-kicker-sep" aria-hidden="true" />
             <span className="hero-kicker-muted">Rhode Island · Remote</span>
@@ -100,6 +100,10 @@ class LandingPage extends Component {
           <h1 data-reveal>
             Engineering leader designing <em>cloud &amp; AI</em> architectures.
           </h1>
+
+          <p className="hero-tagline" data-reveal>
+            Pragmatic systems. Architecture. Teams that ship.
+          </p>
 
           <div className="hero-columns">
             <div className="hero-lede" data-reveal>
