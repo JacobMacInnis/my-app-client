@@ -97,15 +97,9 @@ class LandingPage extends Component {
             <span className="hero-kicker-muted">Rhode Island · Remote</span>
           </p>
 
-          <h1 className="hero-name" data-reveal>
-            Jacob MacInnis
+          <h1 data-reveal>
+            Engineering leader designing <em>cloud &amp; AI</em> architectures.
           </h1>
-
-          <p className="hero-lockup" data-reveal>
-            Engineering Leadership
-            <span className="lockup-bar" aria-hidden="true">|</span>
-            <em>Cloud &amp; AI</em>
-          </p>
 
           <p className="hero-tagline" data-reveal>
             Pragmatic systems. Architecture. Teams that ship.
@@ -114,9 +108,8 @@ class LandingPage extends Component {
           <div className="hero-columns">
             <div className="hero-lede" data-reveal>
               <p className="hero-subtitle">
-                Engineering leader designing cloud and AI architectures. Hands-on as both a
-                technical leader and top IC, helping engineering orgs ship reliable, scalable
-                software.
+                Hands-on as both a technical leader and top IC, helping engineering orgs ship
+                reliable, scalable software.
               </p>
               <div className="cta-group">
                 <a className="btn primary" href="/resume">
