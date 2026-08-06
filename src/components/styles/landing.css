@@ -155,16 +155,32 @@
   color: var(--color-text-muted);
 }
 
-.hero-inner > h1 {
-  font-size: clamp(2.6rem, 6.6vw, 5.4rem);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
-  margin: 0 0 1.1rem;
-  max-width: 18ch;
+/* The hero mirrors the LinkedIn banner lockup: name in the brand serif,
+   then the spaced-caps discipline line, then the tagline. */
+.hero-name {
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: clamp(3rem, 8.5vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.15rem;
+  color: var(--color-text);
 }
 
-/* The one place colour carries meaning rather than decoration. */
-.hero-inner > h1 em {
+.hero-lockup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 1.4rem;
+  font-size: clamp(0.85rem, 1.35vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.hero-lockup em {
   font-style: normal;
   background: linear-gradient(
     100deg,
@@ -184,11 +200,17 @@
   50%      { background-position: 100% 50%; }
 }
 
+.lockup-bar {
+  color: var(--color-primary);
+  font-weight: 400;
+  opacity: 0.8;
+}
+
 .hero-tagline {
-  font-size: clamp(1.15rem, 1.9vw, 1.55rem);
+  font-size: clamp(1.2rem, 2.1vw, 1.7rem);
   font-weight: 500;
-  color: var(--color-text);
-  margin: 0 0 2.1rem;
+  color: var(--color-text-muted);
+  margin: 0 0 2.4rem;
   letter-spacing: -0.015em;
 }
 
@@ -380,10 +402,10 @@
 
 @media (min-width: 860px) {
   .hero-tagline {
-  font-size: clamp(1.15rem, 1.9vw, 1.55rem);
+  font-size: clamp(1.2rem, 2.1vw, 1.7rem);
   font-weight: 500;
-  color: var(--color-text);
-  margin: 0 0 2.1rem;
+  color: var(--color-text-muted);
+  margin: 0 0 2.4rem;
   letter-spacing: -0.015em;
 }
 
@@ -397,6 +419,17 @@
 @media (max-width: 640px) {
   .hero-kicker-sep,
   .hero-kicker-muted {
+    display: none;
+  }
+  /* The lockup cannot hold one line at this width; stack it and drop the
+     divider rather than leave the bar dangling at a line end. */
+  .hero-lockup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    letter-spacing: 0.16em;
+  }
+  .lockup-bar {
     display: none;
   }
 }
