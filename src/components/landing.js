@@ -101,10 +101,6 @@ class LandingPage extends Component {
             Engineering leader designing <em>cloud &amp; AI</em> architectures.
           </h1>
 
-          <p className="hero-tagline" data-reveal>
-            Pragmatic systems. Architecture. Teams that ship.
-          </p>
-
           <div className="hero-columns">
             <div className="hero-lede" data-reveal>
               <p className="hero-subtitle">

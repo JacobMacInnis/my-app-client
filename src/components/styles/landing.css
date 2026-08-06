@@ -159,7 +159,7 @@
   font-size: clamp(2.6rem, 6.6vw, 5.4rem);
   line-height: 1.02;
   letter-spacing: -0.04em;
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.75rem;
   max-width: 18ch;
 }
 
@@ -182,14 +182,6 @@
 @keyframes headline-shimmer {
   0%, 100% { background-position: 0% 50%; }
   50%      { background-position: 100% 50%; }
-}
-
-.hero-tagline {
-  font-size: clamp(1.15rem, 1.9vw, 1.55rem);
-  font-weight: 500;
-  color: var(--color-text);
-  margin: 0 0 2.1rem;
-  letter-spacing: -0.015em;
 }
 
 .hero-columns {
@@ -379,15 +371,7 @@
 /* ------------------------------------------------------------ breakpoints */
 
 @media (min-width: 860px) {
-  .hero-tagline {
-  font-size: clamp(1.15rem, 1.9vw, 1.55rem);
-  font-weight: 500;
-  color: var(--color-text);
-  margin: 0 0 2.1rem;
-  letter-spacing: -0.015em;
-}
-
-.hero-columns {
+  .hero-columns {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }
