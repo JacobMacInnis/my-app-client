@@ -1,25 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-126721917-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-126721917-2");
-    </script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#060910" />
 
     <!-- Title Tag -->
     <title>Jacob MacInnis | Engineering Leadership | Cloud and AI</title>
@@ -42,6 +29,16 @@
     />
     <meta property="og:url" content="https://jacobmacinnis.com/" />
     <meta property="og:image" content="%PUBLIC_URL%/jacob-favicon.jpg" />
+    <meta property="og:site_name" content="Jacob MacInnis" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jacob MacInnis | Cloud and AI" />
+    <meta
+      name="twitter:description"
+      content="Jacob MacInnis specializes in Leadership, Software Engineering, Cloud Computing and Artificial Intelligence, delivering innovative solutions and insights."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/jacob-favicon.jpg" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="%PUBLIC_URL%/jacob-favicon.jpg" />
@@ -50,19 +47,23 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Montserrat:300"
-      rel="stylesheet"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <div id="root"></div>
+
+    <!-- Cloudflare Web Analytics (cookieless; replaced the dead UA-126721917-2 tag) -->
+    <script
+      type="module"
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "16a5f0bd55ec491487bac0c852862399"}'
+    ></script>
   </body>
 </html>

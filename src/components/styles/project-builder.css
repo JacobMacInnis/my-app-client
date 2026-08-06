@@ -35,19 +35,21 @@
 .feature-media-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(4, 7, 14, 0.15), rgba(4, 7, 14, 0));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0));
   pointer-events: none;
 }
 
 .feature-body h3 {
   margin: var(--spacing-xs) 0;
   font-size: var(--text-2xl);
-  text-align: center;
+  text-align: left;
 }
 
 .feature-body p {
   color: var(--color-text-muted);
   margin-bottom: var(--spacing-sm);
+  /* .App centres everything; long descriptions read better ranged left. */
+  text-align: left;
 }
 
 .project-links {
@@ -55,12 +57,13 @@
   flex-wrap: wrap;
   gap: var(--spacing-sm);
   margin: var(--spacing-md) 0;
+  justify-content: flex-start;
 }
 
 .project-link {
   text-decoration: none;
-  border-radius: 999px;
-  padding: 0.45rem 1.2rem;
+  border-radius: var(--radius-md);
+  padding: 0.45rem 1rem;
   font-weight: 600;
   transition: background 0.2s ease, color 0.2s ease;
   display: inline-flex;
@@ -70,7 +73,7 @@
 
 .project-link.primary {
   background: var(--color-primary);
-  color: #04101d;
+  color: var(--color-primary-contrast);
   border: none;
 }
 
@@ -82,6 +85,19 @@
 .project-link.secondary:hover {
   border-color: var(--color-primary);
   color: var(--color-primary);
+}
+
+.project-archived {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-md);
+  padding: 0.45rem 1.2rem;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+  border: 1px dashed var(--color-border);
+  background: transparent;
 }
 
 .project-list-label {
@@ -110,7 +126,7 @@
 }
 
 .project-list.scrollable {
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  box-shadow: none;
 }
 
 .project-list-header {
@@ -126,12 +142,11 @@
   align-items: center;
   gap: 0.35rem;
   padding: 0.15rem 0.65rem;
-  border-radius: 999px;
-  border: 1px dashed rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-border-strong);
   color: var(--color-text-muted);
   font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .project-list-hint-icon {
@@ -166,7 +181,7 @@
 
 .project-list-items::-webkit-scrollbar-thumb {
   background: var(--color-primary);
-  border-radius: 999px;
+  border-radius: var(--radius-md);
 }
 
 .project-list-fade {
@@ -179,22 +194,25 @@
   display: block;
 }
 
+/* Derived from the list's own surface so the fade matches whatever palette
+   is active. Fading to a 0%-alpha copy of the same colour rather than
+   `transparent` avoids the grey cast some browsers add. */
 .project-list-fade.top {
   top: var(--spacing-xs);
-  background: linear-gradient(180deg, rgba(4, 7, 14, 0.9) 0%, rgba(4, 7, 14, 0));
+  background: linear-gradient(
+    180deg,
+    var(--panel-bg-soft) 0%,
+    color-mix(in srgb, var(--panel-bg-soft) 0%, transparent) 100%
+  );
 }
 
 .project-list-fade.bottom {
   bottom: var(--spacing-xs);
-  background: linear-gradient(0deg, rgba(4, 7, 14, 0.9) 0%, rgba(4, 7, 14, 0));
-}
-
-:root[data-theme='light'] .project-list-fade.top {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0));
-}
-
-:root[data-theme='light'] .project-list-fade.bottom {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    0deg,
+    var(--panel-bg-soft) 0%,
+    color-mix(in srgb, var(--panel-bg-soft) 0%, transparent) 100%
+  );
 }
 
 .project-list-item {
@@ -234,8 +252,7 @@
 
 .project-list-tag {
   font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
   color: var(--color-primary);
 }
 
@@ -254,14 +271,13 @@
 @media (min-width: 900px) {
   .project-layout {
     grid-template-columns: 1.7fr 1fr;
-    align-items: stretch;
-  }
-  .project-feature {
-    grid-template-columns: 1fr 1fr;
     align-items: start;
   }
-  .feature-media {
-    grid-row: span 2;
+  .project-feature {
+    /* media | body on row 1, stack spanning row 2. The media used to span two
+       rows, which left an empty row whenever the body was shorter than it. */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
   }
   .project-feature > .tech-list-container {
     grid-column: 1 / -1;
@@ -348,8 +364,7 @@
 }
 .project-tag {
   font-size: var(--text-xs);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
   color: var(--color-primary);
   display: block;
   text-align: center;

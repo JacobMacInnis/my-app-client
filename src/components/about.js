@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/about.css';
-import JacobMacInnisImage from '../images/Jacob_MacInnis_2026.png';
+import JacobMacInnisImage from '../images/jacob-headshot.jpg';
 
 const highlightCards = [
   {
@@ -26,18 +26,21 @@ const highlightCards = [
   {
     title: 'AI / ML Practice',
     description:
-      'Experimenting with applied AI—agents, RAG, and ML systems—to stay sharp while steering enterprise initiatives.',
+      'Applied AI across agents, RAG, NLP, and computer vision—shipped end to end, not left in notebooks.',
     bullets: [
-      'Built R2AI (LangGraph refactoring agent) and Agent Cortex (local AI assistant).',
-      'Shipped RAG APIs, Summit Mind summaries, Agricultural Leaf Vision CV pipeline.',
-      'Tooling: LangChain, LangGraph, TensorFlow, PyTorch, FastAPI, Docker, GCP.'
+      'Built R2AI (LangGraph refactoring agent) and Agent Cortex (local multi-tool assistant).',
+      'Explored MCP orchestration, comparing ReAct agents against deterministic tool pipelines.',
+      'Shipped RAG APIs, Summit Mind summarization, and the Folia Vision CV pipeline on Cloud Run.',
+      'Expert in AI-assisted engineering: Claude Code, Anthropic and OpenAI APIs, Codex, MCP servers, and agent skills.',
+      'Tooling: LangChain, LangGraph, TensorFlow, PyTorch, Hugging Face, FastAPI, Docker, GCP.'
     ]
   },
   {
-    title: 'Certifications & Credentials',
+    title: 'Education & Credentials',
     description:
       'Continuous learning keeps my leadership pragmatic and deeply technical.',
     bullets: [
+      'MS in Artificial Intelligence, University of Colorado Boulder (in progress).',
       'Stanford Machine Learning Specialization.',
       'DeepLearning.AI Machine Learning in Production.',
       'Duke Managing Machine Learning Projects.',
@@ -48,9 +51,8 @@ const highlightCards = [
 
 export default () => (
   <section className='about-me' id='about'>
-    <div className='about-hero'>
+    <div className='about-hero' data-reveal>
       <div className='about-text'>
-        <p className='eyebrow caption'>About Jacob</p>
         <h2 className='about-me-header'>Engineering leadership rooted in shipping, mentoring, and modernizing.</h2>
         <p className='about-summary'>
           I bridge executive priorities with hands-on architecture. From guiding global deployments to building AI side projects,
@@ -59,13 +61,13 @@ export default () => (
       </div>
       <div className='about-image-wrapper'>
         <img className='profile-image' src={JacobMacInnisImage} alt='Jacob MacInnis' />
-        <p className='profile-caption'>Director of Engineering · Cloud & AI · Remote/Boston</p>
+        <p className='profile-caption'>Director of Engineering · Cloud &amp; AI · Rhode Island / Remote</p>
       </div>
     </div>
 
     <div className='about-grid'>
       {highlightCards.map(card => (
-        <article key={card.title} className='about-card'>
+        <article key={card.title} className='about-card' data-reveal>
           <h3>{card.title}</h3>
           <p>{card.description}</p>
           <ul>

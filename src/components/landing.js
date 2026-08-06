@@ -1,179 +1,164 @@
 import React, { Component } from 'react';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
 import './styles/landing.css';
+import Avatar from './../images/jacob-avatar.jpg';
+import { techGroups } from './my-stack';
+
+const heroStats = [
+  { value: '$100B+', label: 'processed annually', detail: 'Retail platform live in 10k+ stores worldwide' },
+  { value: '1B+', label: 'requests per month', detail: '400+ serverless functions on AWS + GCP' },
+  { value: '99%', label: 'fewer prod incidents', detail: 'Directed Firestore migration: 20+ a week to <1 a quarter' },
+  { value: '12+', label: 'engineers led', detail: 'Across 3 remote-first teams' }
+];
 
 const heroHighlights = [
-  '5+ years in engineering leadership, blending hands-on technical expertise with strategic vision.',
-  'From Backend to Frontend and CI/CD, I\'ve led teams end-to-end to ship scalable, resilient solutions.',
-  'Building AI Agents and ML systems with PyTorch, TensorFlow, and Scikit-learn, staying hands-on with emerging tech.'
+  'Hands-on leadership, still reviewing PRs and prototyping architecture.',
+  'Backend, frontend, and CI/CD, end to end.',
+  'Building AI agents and ML systems with PyTorch, LangGraph, and MCP.'
 ];
+
+// A representative slice of the stack, drawn from the same source as the
+// Tech Stack section so the two never drift apart.
+const marqueeItems = techGroups
+  .flatMap(group => group.items)
+  .filter(item => item.img && typeof item.img === 'string' && !item.img.startsWith('http'))
+  .slice(0, 18);
 
 class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.heroRef = React.createRef();
-    this.lastKnownScrollY = 0;
     this.rafId = null;
   }
 
-  scrollToSection = (id) => {
+  componentDidMount() {
+    // matchMedia is absent in jsdom and older embedded webviews; treat a
+    // missing implementation as "no spotlight" rather than throwing.
+    const matches = query => Boolean(window.matchMedia && window.matchMedia(query).matches);
+    if (!matches('(prefers-reduced-motion: reduce)') && matches('(hover: hover)')) {
+      window.addEventListener('pointermove', this.handlePointerMove, { passive: true });
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('pointermove', this.handlePointerMove);
+    if (this.rafId) cancelAnimationFrame(this.rafId);
+  }
+
+  // Spotlight follows the cursor across the hero. Coalesced into one frame so
+  // a fast mouse cannot outpace the paint.
+  handlePointerMove = event => {
+    this.lastPointer = { x: event.clientX, y: event.clientY };
+    if (this.rafId) return;
+    this.rafId = window.requestAnimationFrame(() => {
+      this.rafId = null;
+      const hero = this.heroRef.current;
+      if (!hero || !this.lastPointer) return;
+      const rect = hero.getBoundingClientRect();
+      if (rect.bottom < 0) return;
+      hero.style.setProperty('--mx', `${this.lastPointer.x - rect.left}px`);
+      hero.style.setProperty('--my', `${this.lastPointer.y - rect.top}px`);
+    });
+  };
+
+  scrollToSection = id => {
     const target = document.getElementById(id);
     if (!target) return;
 
     const header = document.querySelector('.top-nav');
     const headerOffset = header ? header.offsetHeight + 16 : 0;
-    const targetY = target.offsetTop - headerOffset;
-    const supportsSmooth = 'scrollBehavior' in document.documentElement.style;
+    const targetY = Math.max(target.offsetTop - headerOffset, 0);
+    const reduced =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    if (supportsSmooth) {
-      window.scrollTo({ top: Math.max(targetY, 0), behavior: 'smooth' });
+    if ('scrollBehavior' in document.documentElement.style && !reduced) {
+      window.scrollTo({ top: targetY, behavior: 'smooth' });
     } else {
-      window.scrollTo(0, Math.max(targetY, 0));
+      window.scrollTo(0, targetY);
     }
-  };
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, { passive: true });
-    this.updateParallax();
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-    if (this.rafId) {
-      cancelAnimationFrame(this.rafId);
-    }
-  }
-
-  handleScroll = () => {
-    this.lastKnownScrollY = window.scrollY || 0;
-    if (this.rafId) {
-      return;
-    }
-    this.rafId = window.requestAnimationFrame(this.updateParallax);
-  };
-
-  particlesInit = async (main) => {
-    await loadFull(main);
-  };
-
-  particlesLoaded = () => { };
-
-  updateParallax = () => {
-    if (this.heroRef.current) {
-      const offset = Math.min(this.lastKnownScrollY * 0.05, 20);
-      this.heroRef.current.style.transform = `translateY(${offset}px)`;
-    }
-    this.rafId = null;
   };
 
   render() {
     return (
-      <section className="landing-page" id="home">
-        <Particles
-          className="particles"
-          id="tsparticles"
-          init={this.particlesInit}
-          loaded={this.particlesLoaded}
-          options={{
-            particles: {
-              number: {
-                value: 45,
-                density: { enable: true, area: 800 }
-              },
-              size: { value: 3 },
-              opacity: { value: 0.3 },
-              move: { enable: true, speed: 0.8 },
-              color: { value: '#8DF0FF' },
-              links: {
-                enable: true,
-                distance: 150,
-                color: '#74C4FF',
-                opacity: 0.25,
-                width: 1
-              }
-            },
-            interactivity: {
-              events: {
-                onHover: { enable: true, mode: 'grab' },
-                onClick: { enable: true, mode: 'push' }
-              },
-              modes: {
-                grab: { distance: 140, links: { opacity: 0.45 } },
-                push: { quantity: 4 }
-              }
-            },
-            detectRetina: true
-          }}
-        />
-        <div className="hero-overlay" />
+      <section className="landing-page" id="home" ref={this.heroRef}>
+        <div className="hero-grid" aria-hidden="true" />
+        <div className="hero-aurora" aria-hidden="true">
+          <span className="aurora-blob a" />
+          <span className="aurora-blob b" />
+          <span className="aurora-blob c" />
+        </div>
+        <div className="hero-spotlight" aria-hidden="true" />
+        <div className="hero-grain" aria-hidden="true" />
 
-        <div className="hero-inner" ref={this.heroRef}>
-          <div className="hero-text">
-            <p className="eyebrow">Engineering Leadership · Cloud · AI</p>
-            <p className="hero-name">Jacob MacInnis</p>
-            <h1>Engineering Leader designing cloud & AI architectures.</h1>
-            <p className="hero-subtitle">
-              {/* I provide hands-on technical leadership while contributing as a top IC, helping engineering orgs ship reliable, scalable software.
-              Balancing architecture, strategic planning, product speed, and pragmatic coaching. */}
-              Hands-on as both a technical leader and top IC helping engineering orgs ship reliable, scalable software. Balancing architecture, strategic planning, product speed, and pragmatic coaching.
-            </p>
-            <ul className="hero-highlights">
+        <div className="hero-inner">
+          <p className="hero-kicker" data-reveal>
+            <img className="hero-avatar" src={Avatar} alt="Jacob MacInnis" />
+            Director of Engineering · Cloud &amp; AI
+            <span className="hero-kicker-sep" aria-hidden="true" />
+            <span className="hero-kicker-muted">Rhode Island · Remote</span>
+          </p>
+
+          <h1 data-reveal>
+            Engineering leader designing <em>cloud &amp; AI</em> architectures.
+          </h1>
+
+          <div className="hero-columns">
+            <div className="hero-lede" data-reveal>
+              <p className="hero-subtitle">
+                Hands-on as both a technical leader and top IC, helping engineering orgs ship
+                reliable, scalable software.
+              </p>
+              <div className="cta-group">
+                <a className="btn primary" href="/resume">
+                  View Resume
+                </a>
+                <a
+                  className="btn secondary"
+                  href="/files/Jacob_MacInnis_Cloud_AI.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download PDF
+                </a>
+                <a
+                  className="btn ghost"
+                  href="mailto:jacobmacinnis7@gmail.com?subject=Let%27s%20talk%20engineering%20leadership"
+                >
+                  Get in touch
+                </a>
+              </div>
+            </div>
+
+            <ul className="hero-highlights" data-reveal>
               {heroHighlights.map((highlight, index) => (
                 <li key={index}>{highlight}</li>
               ))}
             </ul>
-            <div className="cta-group">
-              <a
-                className="btn primary"
-                href="https://jacobmacinnis.netlify.app/files/Jacob_MacInnis_Cloud_AI.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download Resume
-              </a>
-              <a
-                className="btn secondary"
-                href="mailto:jacobmacinnis7@gmail.com?subject=Let%27s%20talk%20engineering%20leadership"
-              >
-                Book a Call
-              </a>
-            </div>
-          </div>
-
-          <div className="hero-visual">
-            <div className="stat-card">
-              <p className="stat-label">Latest Impact</p>
-              <p className="stat-value">10k+ Stores</p>
-              <p className="stat-detail">Serverless retail architecture powering 1M+ daily transactions.</p>
-            </div>
-            <div className="stat-card glass">
-              <p className="stat-label">Team Focus</p>
-              <p className="stat-value">Director of Engineering</p>
-              <p className="stat-detail">Leading remote-first full stack engineering org across North America, Europe, Australia.</p>
-            </div>
-            <div className="visual-footer">
-              <p className="stat-label">Academia, Certifications and Publications</p>
-              <p>
-                Certified in AI/ML by Stanford, Duke, DeepLearning.AI, Google and more, as well as author of 50+ technical articles.
-              </p>
-              <p>Working through Masters of Science in Artificial Intelligence at Colorado Boulder</p>
-              <a
-                className="btn tertiary"
-                href="#about"
-                onClick={() => this.scrollToSection('about')}
-              >
-                About &amp; Projects
-              </a>
-            </div>
           </div>
         </div>
 
-        <div className="scroll-hint">
-          <a href="#about" onClick={() => this.scrollToSection('about')}>
-            <span>Scroll for more</span>
-            <i className="fas fa-chevron-down" aria-hidden="true"></i>
-          </a>
+        <div className="hero-stats" data-reveal>
+          {heroStats.map(stat => (
+            <div className="hero-stat" key={stat.label}>
+              <p className="hero-stat-value">{stat.value}</p>
+              <p className="hero-stat-label">{stat.label}</p>
+              <p className="hero-stat-detail">{stat.detail}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="hero-marquee" aria-hidden="true">
+          <div className="hero-marquee-track">
+            {[0, 1].map(copy => (
+              <div className="hero-marquee-group" key={copy}>
+                {marqueeItems.map(item => (
+                  <span className="hero-marquee-item" key={`${copy}-${item.name}`}>
+                    <img src={item.img} alt="" loading="lazy" />
+                    {item.name}
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     );
@@ -181,64 +166,3 @@ class LandingPage extends Component {
 }
 
 export default LandingPage;
-
-/* -------------------------------------------------------------------------- */
-/* Legacy hero preserved for quick rollback                                    */
-/* -------------------------------------------------------------------------- */
-/*
-import Typing from 'react-typing-animation';
-import { animateScroll as scroll } from 'react-scroll';
-
-const typingTexts = [
-  "Leading engineering teams to build scalable, real-world solutions.",
-  "Designing cloud-native architectures that prioritize resilience and flexibility.",
-  "Balancing technical execution with strategic decision-making.",
-  "Simplifying complex systems without compromising scalability.",
-  "Guiding teams through architectural transitions, from monoliths to microservices.",
-  "Managing just-in-time architecture to support product agility.",
-  "Mentoring engineers across all levels to improve technical and leadership skills.",
-  "Working at the intersection of engineering leadership and AI-driven solutions.",
-  "Focus on aligning engineering decisions with business outcomes.",
-  "Are you still reading? Here’s what I’m working on now.",
-  "Exploring AI applications in software engineering and system optimization.",
-  "Refining my approach to distributed architectures and cloud efficiency.",
-  "Still mentoring, still learning, and still improving how we build software.",
-  "See below for projects, insights, and ways to connect."
-];
-
-class LegacyLandingPage extends Component {
-  scrollTo() {
-    scroll.scrollTo(1000);
-  }
-  handleSetActive() {}
-  render() {
-    return (
-      <div className="landing-page" id='home'>
-        <header className='header'>
-          <h1 className='name'>JACOB MACINNIS</h1>
-          <h2>Engineering Leadership</h2>
-          <h2>Cloud & AI</h2>
-          <br />
-          <Typing className='what-i-do' loop={true} hideCursor={true} speed={60}>
-            <Typing.Reset count={1} delay={10} />
-            {typingTexts.map((text, index) => (
-              <React.Fragment key={index}>
-                <Typing.Delay ms={1700} />
-                <h2>{text}</h2>
-                <Typing.Delay ms={1700} />
-                <Typing.Backspace count={text.length} />
-                <Typing.Delay ms={1000} />
-              </React.Fragment>
-            ))}
-          </Typing>
-        </header>
-        <div className='arrow-div'>
-          <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
-            <i className="fas fa-chevron-circle-down arrow fa-3x"></i>
-          </Link>
-        </div>
-      </div>
-    );
-  }
-}
-*/

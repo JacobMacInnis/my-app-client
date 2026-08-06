@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
 import './styles/top-nav.css';
 
+const THEME_KEY = 'jm-theme';
+
+const getInitialTheme = () => {
+  try {
+    const stored = window.localStorage.getItem(THEME_KEY);
+    if (stored === 'light' || stored === 'dark') {
+      return stored === 'light';
+    }
+  } catch (error) {
+    /* localStorage unavailable (private mode) — fall through to system preference */
+  }
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+};
+
 class TopNav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLight: false,
+      isLight: getInitialTheme(),
       mobileMenuOpen: false,
       projectsMenuOpen: false
     };
@@ -13,6 +27,7 @@ class TopNav extends Component {
 
   componentDidMount() {
     this.applyTheme();
+    document.addEventListener('keydown', this.handleKeyDown);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -22,16 +37,24 @@ class TopNav extends Component {
   }
 
   componentWillUnmount() {
-    const root = document.documentElement;
-    if (root) {
-      root.removeAttribute('data-theme');
-    }
+    document.removeEventListener('keydown', this.handleKeyDown);
   }
+
+  handleKeyDown = event => {
+    if (event.key === 'Escape') {
+      this.setState({ mobileMenuOpen: false, projectsMenuOpen: false });
+    }
+  };
 
   applyTheme() {
     const root = document.documentElement;
-    if (root) {
-      root.setAttribute('data-theme', this.state.isLight ? 'light' : 'dark');
+    if (!root) return;
+    const theme = this.state.isLight ? 'light' : 'dark';
+    root.setAttribute('data-theme', theme);
+    try {
+      window.localStorage.setItem(THEME_KEY, theme);
+    } catch (error) {
+      /* persistence is best-effort */
     }
   }
 
@@ -129,12 +152,16 @@ class TopNav extends Component {
               })}
           </nav>
           <div className="nav-actions">
-            <a
-              className="resume-link"
-              href="/files/Jacob_MacInnis_Cloud_AI.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={this.toggleTheme}
+              aria-label={`Switch to ${isLight ? 'dark' : 'light'} theme`}
+              title={`Switch to ${isLight ? 'dark' : 'light'} theme`}
             >
+              <i className={isLight ? 'fas fa-moon' : 'fas fa-sun'} aria-hidden="true" />
+            </button>
+            <a className="resume-link" href="/resume">
               Resume
             </a>
           </div>
@@ -177,14 +204,21 @@ class TopNav extends Component {
                 );
               })}
             </nav>
+            <button type="button" className="mobile-theme" onClick={this.toggleTheme}>
+              <i className={isLight ? 'fas fa-moon' : 'fas fa-sun'} aria-hidden="true" />
+              &nbsp;{isLight ? 'Dark theme' : 'Light theme'}
+            </button>
+            <a className="mobile-resume" href="/resume" onClick={this.closeMobileMenu}>
+              Resume
+            </a>
             <a
-              className="mobile-resume"
+              className="mobile-resume ghost"
               href="/files/Jacob_MacInnis_Cloud_AI.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={this.closeMobileMenu}
             >
-              Resume
+              Download PDF
             </a>
           </div>
         </div>

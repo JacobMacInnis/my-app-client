@@ -89,6 +89,11 @@ const ProjectBuilder = ({ projects = [], label = 'More Projects', maxListHeight 
             <p>{activeProject.description}</p>
 
             <div className='project-links'>
+              {activeProject.archived && (
+                <span className='project-archived' title='The original hosted deployment is no longer online'>
+                  Archived · source available
+                </span>
+              )}
               {activeProject.projectLink && (
                 <a className='project-link primary' href={activeProject.projectLink} target="_blank" rel="noopener noreferrer">
                   {activeProject.linkText || 'View project'}
