@@ -26,7 +26,7 @@ const projectSections = [
   {
     id: 'legacy',
     title: 'Legacy Full Stack & Mobile',
-    eyebrow: '',
+    eyebrow: '2018–2019 Full Stack',
     description: 'Full-stack and mobile builds that shipped fast, proved value, and still influence how I mentor teams.',
     dataset: 'legacy',
     filter: project => project.tags?.includes('legacy'),
@@ -39,7 +39,7 @@ const Projects = () => (
     <div className='projects-intro' data-reveal>
       <h2 className='projects-header'>Experiments, launches, and systems I still reference.</h2>
       <p className='projects-summary'>
-        Each track highlights a different slice of the work—AI prototypes, ML systems, cloud programs, and the legacy apps that started it all.
+        Each track highlights a different slice of the work: AI prototypes, ML systems, cloud programs, and the legacy apps that started it all.
       </p>
     </div>
 

@@ -4,9 +4,9 @@ import Avatar from './../images/jacob-avatar.jpg';
 import { techGroups } from './my-stack';
 
 const heroStats = [
-  { value: '10k+', label: 'stores live', detail: 'North America, Europe, Australia' },
-  { value: '1M+', label: 'daily transactions', detail: 'Serverless retail architecture' },
-  { value: '99.99%', label: 'uptime', detail: '400+ cloud functions on AWS + GCP' },
+  { value: '$100B+', label: 'processed annually', detail: 'Retail platform live in 10k+ stores worldwide' },
+  { value: '1B+', label: 'requests per month', detail: '400+ serverless functions on AWS + GCP' },
+  { value: '99%', label: 'fewer prod incidents', detail: 'Directed Firestore migration: 20+ a week to <1 a quarter' },
   { value: '12+', label: 'engineers led', detail: 'Across 3 remote-first teams' }
 ];
 

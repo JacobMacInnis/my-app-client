@@ -32,7 +32,7 @@ export  const projectsArray = [
   {
     name: 'thinkPrograming',
     h2: 'Think Programming',
-    description: 'A place to challenge other coding enthusiests in languages or programing categories.  Be fastest and cleanest coder to level up fast.  Gain experience and coding muscle memory fast.',
+    description: 'A place to challenge other coding enthusiasts in languages or programming categories. Be the fastest and cleanest coder to level up quickly, gaining experience and coding muscle memory.',
     image: TP,
     archived: true,
     githubLinkClient: 'https://github.com/thinkful-ei23/think-programming-client',
@@ -43,7 +43,7 @@ export  const projectsArray = [
   {
   name: 'beachtides',
   h2: 'Beach Tides Web App',
-  description: 'A Full-Stack mobile first responisive web app built to give users in coastal U.S. tidal predictions. Search by zipcode or city and state. Create accounts using Google OAuth 2.0 to save locations and more.',
+  description: 'A full-stack, mobile-first responsive web app that gives users tidal predictions for the coastal U.S. Search by zip code or city and state. Create an account with Google OAuth 2.0 to save locations and more.',
   image: BT,
     archived: true,
   githubLinkClient: 'https://github.com/JacobMacInnis/beach-tides-client',
@@ -53,7 +53,7 @@ export  const projectsArray = [
 }, {
   name: 'CS Cards',
   h2: 'CS Cards',
-  description: 'Using a spaced repetition algorithm CS Cards teaches users Computer Science Concepts.  It is built using linked-lists in a mongo db and changes values of data structures depending on user answers.',
+  description: 'Using a spaced repetition algorithm, CS Cards teaches users computer science concepts. It is built with linked lists in MongoDB and adjusts the data structures based on user answers.',
   image: CSC,
     archived: true,
   githubLinkClient: 'https://github.com/thinkful-ei23/Client-CS-Cards',
@@ -63,7 +63,7 @@ export  const projectsArray = [
 }, {
   name: 'scottish-gaelic',
   h2: 'Scottish Gaelic',
-  description: 'Scottish Gaelic is a language learning app designed to improve your abilty to learn the beautiful Scottish language of Gaelic. Using our specialized algorithm it teaches words and phrases.',
+  description: 'Scottish Gaelic is a language learning app designed to improve your ability to learn the beautiful Scottish language of Gaelic. Using a spaced repetition algorithm, it teaches words and phrases.',
   image: SG,
     archived: true,
   githubLinkClient: 'https://github.com/JacobMacInnis/scottish-gaelic-client',
@@ -74,7 +74,7 @@ export  const projectsArray = [
 {
   name: 'PrimeThree',
   h2: 'Prime Three',
-  description: 'One day project built to find the first prime number that contains the three digits a user inputs.',
+  description: 'One-day project built to find the first prime number that contains the three digits a user inputs.',
   image: PT,
     archived: true,
   githubLinkClient: 'https://github.com/JacobMacInnis/primethree-client',

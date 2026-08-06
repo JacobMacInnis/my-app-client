@@ -30,7 +30,7 @@ export const mlProjects = [
     {
         name: 'agent_cortex_v2',
         h2: 'Agent Cortex v2',
-        description: 'Agent Cortex v2 expands the local AI assistant with new tools including: persistent long-term memory, Python code execution, and short-term conversational context. Built on LangChain and Mistral 7B, it enhances the original RAG, math, and web search tools',
+        description: 'Agent Cortex v2 expands the local AI assistant with new tools including persistent long-term memory, Python code execution, and short-term conversational context. Built on LangChain and Mistral 7B, it enhances the original RAG, math, and web search tools.',
         image: AgentCortex2,
         github: 'https://github.com/JacobMacInnis/agent_cortex_v2',
         techList: ['Python',
@@ -47,7 +47,7 @@ export const mlProjects = [
     {
         name: 'agent_cortex_v1',
         h2: 'Agent Cortex v1',
-        description: 'Agent Cortex is a local AI assistant powered by LangChain and Mistral 7B. It combines: Document retrieval (RAG), Math solving, and DuckDuckGo web search. Runs fully offline (except for websearch)—no paid LLM APIs',
+        description: 'Agent Cortex is a local AI assistant powered by LangChain and Mistral 7B. It combines document retrieval (RAG), math solving, and DuckDuckGo web search. Runs fully offline (except web search), with no paid LLM APIs.',
         image: AgentCortex,
         github: 'https://github.com/JacobMacInnis/agent_cortex_v1',
         techList: ['Python',
@@ -64,7 +64,7 @@ export const mlProjects = [
     {
         name: 'rag-api',
         h2: 'RAG API',
-        description: 'production-ready RAG (Retrieval-Augmented Generation) backend built with FastAPI, SentenceTransformers, and FLAN-T5. It demonstrates a modern approach to question-answering using both semantic search and language generation.',
+        description: 'Production-ready RAG (Retrieval-Augmented Generation) backend built with FastAPI, SentenceTransformers, and FLAN-T5. It demonstrates a modern approach to question answering using both semantic search and language generation.',
         image: ragApi,
         github: 'https://github.com/JacobMacInnis/rag-api',
         techList: ['Python',
@@ -82,7 +82,7 @@ export const mlProjects = [
     {
         name: 'agricultural-leaf-vision',
         h2: 'Agricultural Leaf Vision',
-        description: 'A lightweight computer vision project developed to deepen my understanding of image preprocessing, transfer learning, and end-to-end ML deployment with minimal cloud cost. It\'s built using transfer learning with CNN EfficientNetB2',
+        description: 'A lightweight computer vision project developed to deepen my understanding of image preprocessing, transfer learning, and end-to-end ML deployment with minimal cloud cost. It\'s built using transfer learning with the EfficientNetB2 CNN.',
         image: agriculturalLeafVision,
         github: 'https://github.com/JacobMacInnis/agricultural-leaf-vision',
         projectLink: 'https://agricultural-leaf-vision-7fab2.web.app/',
@@ -125,7 +125,7 @@ export const mlProjects = [
     {
         name: 'summit-mind',
         h2: 'Summit Mind',
-        description: 'a portfolio project built to experiment with and deploy lightweight abstracted summarization models based on the T5 (Text-to-Text Transfer Transformer series) models. Designed to summarize multi-turn conversations (e.g., meetings, support chats)',
+        description: 'A portfolio project built to experiment with and deploy lightweight abstractive summarization models based on the T5 (Text-to-Text Transfer Transformer) series. Designed to summarize multi-turn conversations (e.g., meetings, support chats).',
         image: summitMind,
         github: 'https://github.com/JacobMacInnis/summit_mind',
         projectLink: 'https://summit-mind-55f22.web.app/',

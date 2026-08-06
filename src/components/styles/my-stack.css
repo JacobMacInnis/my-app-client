@@ -70,6 +70,16 @@
   flex-shrink: 0;
 }
 
+/* black brand marks (Ollama, Anthropic, OpenAI, Codex, MCP) need to flip
+   to white on the dark theme; light theme keeps them as-is */
+.tech-logo-grid img.tech-icon-mono {
+  filter: invert(1);
+}
+
+:root[data-theme='light'] .tech-logo-grid img.tech-icon-mono {
+  filter: none;
+}
+
 .tech-wordmark-tile {
   width: 24px;
   height: 24px;
