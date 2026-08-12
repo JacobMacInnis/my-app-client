@@ -1,0 +1,82 @@
+.notfound-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(5.5rem, 8vw, 7rem) clamp(1rem, 4vw, 3rem) clamp(3rem, 6vw, 5rem);
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+}
+
+.notfound-panel {
+  /* .App sets text-align: center globally; keep it, the panel reads centred. */
+  max-width: 32rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: var(--radius-lg);
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow-strong);
+}
+
+.notfound-code {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.notfound-panel h1 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.notfound-body {
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  margin-bottom: var(--spacing-lg);
+}
+
+.notfound-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.notfound-btn {
+  border-radius: var(--radius-md);
+  padding: 0.7rem 1.6rem;
+  font-weight: 600;
+  font-size: var(--text-sm);
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.notfound-btn.primary {
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+
+.notfound-btn.ghost {
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.notfound-btn:hover {
+  transform: translateY(-2px);
+}
+
+.notfound-btn.ghost:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notfound-btn {
+    transition: none;
+  }
+  .notfound-btn:hover {
+    transform: none;
+  }
+}
