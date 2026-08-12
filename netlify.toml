@@ -10,3 +10,10 @@ from = "/files/*"
 to = "/files/:splat"
 status = 200
 force = true
+
+# SPA fallback: react-router owns /resume and any future client route.
+# Not forced, so real files (assets, /files/*) still win.
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

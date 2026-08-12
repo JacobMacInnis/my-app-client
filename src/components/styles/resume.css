@@ -28,9 +28,11 @@
   border-bottom: 1px solid var(--panel-border);
 }
 
+/* 100x125 is the source's own 4:5 aspect, so `cover` crops nothing. A square
+   box here sliced the top of the head off. */
 .resume-headshot {
-  width: 132px;
-  height: 132px;
+  width: 100px;
+  height: 125px;
   border-radius: var(--radius-md);
   object-fit: cover;
   border: 1px solid var(--color-border);
@@ -140,8 +142,8 @@
     gap: var(--spacing-md);
   }
   .resume-headshot {
-    width: 96px;
-    height: 96px;
+    width: 84px;
+    height: 105px;
   }
   .resume-identity h1 {
     font-size: 1.85rem;
