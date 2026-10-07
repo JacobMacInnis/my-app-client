@@ -5,7 +5,6 @@ export const resumeData = {
   pdf: '/files/Jacob_MacInnis_Cloud_AI.pdf',
   contacts: [
     { icon: 'fas fa-envelope', label: 'jacobmacinnis7@gmail.com', href: 'mailto:jacobmacinnis7@gmail.com' },
-    { icon: 'fas fa-phone', label: '(508) 244-1362', href: 'tel:5082441362' },
     { icon: 'fab fa-linkedin-in', label: 'in/Jacob-MacInnis', href: 'https://www.linkedin.com/in/jacob-macinnis/' },
     { icon: 'fab fa-github', label: 'github.com/JacobMacInnis', href: 'https://github.com/JacobMacInnis' },
     { icon: 'fab fa-medium', label: 'medium.com/@jacobmacinnis', href: 'https://medium.com/@jacobmacinnis' },
