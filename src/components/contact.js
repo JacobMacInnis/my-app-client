@@ -13,12 +13,6 @@ const contactChannels = [
     action: 'jacobmacinnis7@gmail.com',
     href: 'mailto:jacobmacinnis7@gmail.com',
     icon: 'fas fa-envelope'
-  },
-  {
-    label: 'Phone',
-    action: '(508) 244-1362',
-    href: 'tel:5082441362',
-    icon: 'fas fa-phone'
   }
 ];
 
