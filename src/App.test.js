@@ -43,6 +43,7 @@ it('renders a not-found panel for an unmatched path', () => {
 
 it('renders the resume page with current experience', () => {
   const { html, unmount } = renderAt('/resume');
+  expect(html).toContain('Vice President of Engineering');
   expect(html).toContain('Director of Engineering');
   expect(html).toContain('OneView Commerce');
   // Guards against the 2019 copy creeping back in.

@@ -6,8 +6,10 @@ const highlightCards = [
   {
     title: 'Leadership',
     description:
-      'Hands-on engineering leader focused on architecture, delivery, and coaching. Led global retail platforms across AWS + GCP and partner with product teams to unblock execution.',
+      'VP of Engineering leading the global Engineering and QA organizations at OneView Commerce. Hands-on with architecture, delivery, and coaching, and partner with product teams to unblock execution.',
     bullets: [
+      'Unified Engineering and QA into one org, with automated release gates and quality owned by engineers.',
+      'Lead AI adoption across development and QA, raising delivery velocity with strict technical accountability.',
       'Architect scalable cloud systems and mentor distributed teams.',
       'Optimize CI/CD, incident response, and technical decision-making.',
       'Publish 50+ technical articles to share playbooks with the community.'
@@ -61,7 +63,7 @@ export default () => (
       </div>
       <div className='about-image-wrapper'>
         <img className='profile-image' src={JacobMacInnisImage} alt='Jacob MacInnis' />
-        <p className='profile-caption'>Director of Engineering · Cloud &amp; AI · Rhode Island / Remote</p>
+        <p className='profile-caption'>VP of Engineering · Cloud &amp; AI · Rhode Island / Remote</p>
       </div>
     </div>
 
