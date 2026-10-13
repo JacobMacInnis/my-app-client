@@ -1,6 +1,6 @@
 export const resumeData = {
   name: 'Jacob MacInnis',
-  title: 'Director of Engineering | Cloud & AI',
+  title: 'Vice President of Engineering | Cloud & AI',
   location: 'Rhode Island · Remote',
   pdf: '/files/Jacob_MacInnis_Cloud_AI.pdf',
   contacts: [
@@ -12,7 +12,7 @@ export const resumeData = {
   ],
 
   summary: [
-    'Hands-on engineering leader with 5+ years leading high-performing teams and architecting scalable, cloud-native distributed systems. Proven track record of fast, reliable shipping, optimizing engineering processes, driving major feature development, system migrations, and leading teams toward 100% test coverage improving system reliability and long-term velocity.',
+    'Hands-on engineering leader with 6+ years leading high-performing teams and architecting scalable, cloud-native distributed systems. Proven track record of fast, reliable shipping, optimizing engineering processes, driving major feature development, system migrations, and leading teams toward 100% test coverage improving system reliability and long-term velocity.',
     'Combines technical expertise with clear communication and strategic vision to drive innovation in remote-first environments. Known for leading by example, promoting collaboration, and fostering pragmatic, inclusive team cultures built on empathy and continuous improvement.',
     'Applied AI/ML experience across NLP, LLMs, classification, image recognition, RAG, and agentic workflows. Proficient with TensorFlow, PyTorch, LangChain, and LangGraph, with certifications from Stanford, DeepLearning.AI, Duke, and Google — combining theory with real-world delivery.',
     'Deep hands-on expertise in AI-assisted engineering: Claude Code, the Anthropic and OpenAI APIs, Codex, MCP servers, and agent skills — building the tooling and workflows that let teams ship faster.'
@@ -26,17 +26,31 @@ export const resumeData = {
     { label: 'AI Tooling', items: 'Claude Code, Anthropic API, OpenAI API, Codex, MCP servers, agent skills' },
     { label: 'Data', items: 'Firestore, MongoDB, PostgreSQL, CouchDB, BigQuery, AWS S3' },
     { label: 'DevOps', items: 'Docker, CircleCI, Terraform, Dataflow, Pub/Sub' },
-    { label: 'Leadership', items: 'Team management, coaching, mentorship, product vision, process optimization' }
+    { label: 'Leadership', items: 'Org leadership, AI adoption strategy, Engineering & QA integration, release governance, coaching, mentorship, product vision' }
   ],
 
   experience: [
+    {
+      role: 'Vice President of Engineering',
+      company: 'OneView Commerce',
+      location: 'Remote / Boston',
+      start: '10/2026',
+      end: 'Present',
+      current: true,
+      bullets: [
+        "Head of the global Engineering and QA organizations, driving engineering practice, product delivery, and platform quality across OneView's headless unified commerce engine.",
+        'Manage engineering teams across global time zones, developing technical leaders and partnering closely with Product, Architecture, and enterprise client executives.',
+        'Spearheading AI adoption across development and QA lifecycles, increasing delivery velocity and engineer scope while enforcing strict technical accountability.',
+        'Oversee cloud-native, event-driven, edge-to-cloud architectures engineered for high-availability physical retail and complex network environments.',
+        'Merged QA into a single engineering organization, embedding automated release gates and shifting quality ownership directly to software engineering teams.'
+      ]
+    },
     {
       role: 'Director of Engineering',
       company: 'OneView Commerce',
       location: 'Remote / Boston',
       start: '06/2022',
-      end: 'Present',
-      current: true,
+      end: '10/2026',
       bullets: [
         'Implemented global-scale cloud architecture for 10,000+ stores across North America, Europe, and Australia, powering 1M+ daily transactions and hundreds of billions of dollars annually.',
         'Optimized deployment processes, cutting downtime from several days to 1–2 hours with a 99% success rate and saving hundreds of development hours per release.',

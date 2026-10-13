@@ -92,7 +92,7 @@ class LandingPage extends Component {
         <div className="hero-inner">
           <p className="hero-kicker" data-reveal>
             <img className="hero-avatar" src={Avatar} alt="Jacob MacInnis" />
-            Director of Engineering · Cloud &amp; AI
+            VP of Engineering · Cloud &amp; AI
             <span className="hero-kicker-sep" aria-hidden="true" />
             <span className="hero-kicker-muted">Rhode Island · Remote</span>
           </p>
